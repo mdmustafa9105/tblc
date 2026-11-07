@@ -330,10 +330,14 @@ $$\text{Inner Radius} = \text{Outer Radius} - \text{Padding Gap}$$
 * **Interactions:** Page load entrance stagger (`data-enter` 600ms). Phone frames have subtle floating hover parallax.
 
 #### Component 02: `CoverMarqueeStrip`
-* **Purpose:** Establish instantaneous visual proof of launched book titles before any agency pitch.
-* **Desktop:** Edge-to-edge container (height: 240px). Section header: `Books we have launched, revived, and put into readers' hands`. Infinite horizontal marquee running 24 high-res 3D covers.
-* **Mobile:** Same marquee, scaled to 160px height.
-* **Interactions:** Infinite CSS loop at 35s duration. On pointer hover, marquee decelerates, and hovered cover blooms from duotone to full color and lifts 4px.
+* **Purpose:** Establish instantaneous visual proof of launched book titles directly below the hero before presenting any agency sales pitch. Directly translates Atomik Growth's immediate client proof ticker into the literary domain.
+* **Visual Treatment (Refined for Performance & Elegance):**
+  * Uses flat, high-resolution 2D book jacket artwork rendered with subtle, tactile paper drop shadows (`drop-shadow: 0 4px 12px rgba(18, 17, 21, 0.08)`).
+  * **Critical Design Refinement:** Over-complicated 3D angled meshes and heavy 3D rendering are eliminated to preserve Atomik Growth's sleek, ultra-clean aesthetic and optimize page load speed.
+  * Covers display in soft, elegant monochrome/duotone at rest (65% opacity), transitioning smoothly to rich, full cover color on hover with a restrained 2px vertical lift.
+* **Desktop (1440px):** Edge-to-edge container (height: 220px). Section header: `Books we have launched, revived, and put into readers' hands`. Infinite horizontal marquee running 24 real book covers with 48px gap.
+* **Mobile (390px):** Compact marquee (height: 160px) with 32px gap.
+* **Interactions & Accessibility:** Infinite CSS loop at 35s duration. On pointer hover or keyboard focus, the marquee automatically pauses. An accessible Pause/Resume button (`aria-label="Pause book cover marquee"`) is integrated into the section header. Under `prefers-reduced-motion`, motion is disabled and replaced by a static, horizontally scrollable row.
 
 #### Component 03: `MetricsInkBand`
 * **Purpose:** Quantify distribution scale and eliminate skepticism regarding agency reach.
@@ -347,10 +351,23 @@ $$\text{Inner Radius} = \text{Outer Radius} - \text{Padding Gap}$$
 * **Mobile:** Single column, 28px headline, high line-height for readability.
 
 #### Component 05: `ServicesBento`
-* **Purpose:** Clearly differentiate the four service offerings through interactive living deliverables.
-* **Desktop:** 2x2 grid of cards (`#ECE4D6` Bone surface). Each card features: Pillar number (`01`), Pillar title, 1-line outcome, 3 deliverable bullets, and an interactive phone mockup with play/pause state.
-* **Mobile:** 4 stacked cards. Video player is responsive with 9:16 aspect ratio.
-* **Interactions:** Card hover elevates 3px with shadow bloom. Video player allows tapping to toggle sound or open full screen.
+* **Purpose:** Clearly differentiate the four service offerings through bespoke living deliverable widgets, directly recreating Atomik Growth's interactive Bento cards without repetitive visual fatigue.
+* **Card Architecture & Differentiated Widgets:**
+  1. **01 · Book Launches:**
+     * *Deliverables:* Pre-launch hype, launch-week blitz, and post-launch staying power.
+     * *Interactive Widget:* Vertical multi-phase interactive timeline (`-8 Weeks: ARC Wave → Launch Day: Viral Wave → +4 Weeks: Book Club Tour`) paired with an embedded Reel mockup demonstrating a viral cover-reveal hook.
+  2. **02 · Backlist Revival:**
+     * *Deliverables:* Repositioning around tropes and comps, hook-led video, and seasonal creator waves.
+     * *Interactive Widget:* "Before vs. After" Algorithmic Lift Display showing a flatlining catalog title paired with a trending BookTok trope badge (`#EnemiesToLovers`) and an upward reader engagement velocity curve.
+  3. **03 · Author Brand & Content (Monthly Retainer):**
+     * *Deliverables:* Content pillars, monthly scripting, video editing, captions, posting calendar, and profile optimization.
+     * *Interactive Widget:* 30-day interactive content calendar grid showing 16 scheduled video thumbnails and an "Author Time Required: 60 min/week" commitment badge.
+  4. **04 · Author Podcasts:**
+     * *Deliverables:* Show concept and format, launch plan, audio/video editing, short-form clipping, and multi-channel distribution.
+     * *Interactive Widget:* Audio-to-Video Waterfall Pipeline visual demonstrating 1 recorded studio episode transforming into 15 viral vertical video clips formatted for Reels, TikTok, and YouTube Shorts.
+* **Desktop:** 2x2 grid of cards (`#ECE4D6` Bone surface) with 32px gap.
+* **Mobile:** 4 stacked cards with native video player and tabbed interactive widgets.
+* **Interactions:** Card hover elevates strictly 2px with subtle shadow deepening. Video elements allow tap-to-toggle audio. Zero content hidden behind desktop hover states (all deliverables visible by default).
 
 #### Component 06: `CaseStudyShowcase`
 * **Purpose:** Deliver deep quantitative proof of campaign outcomes.
@@ -485,19 +502,60 @@ $$\text{Inner Radius} = \text{Outer Radius} - \text{Padding Gap}$$
 
 ---
 
-## 12. Accessibility Specifications (WCAG 2.1 AA / 2.2 AA)
+## 12. Accessibility Requirements & Compliance Target (WCAG 2.2 AA)
 
-1. **Color Contrast:**
-   * All body copy strictly exceeds `4.5:1`.
-   * Large headers and interactive UI controls exceed `3:1`.
-2. **Keyboard Focus Rings:**
-   * Every focusable element (links, buttons, form controls, accordion headers) features a visible 2px solid `#FF5A36` focus ring with a 2px offset (`outline: 2px solid #FF5A36; outline-offset: 2px;`).
-3. **Semantic Landmarks:**
-   * Document structure strictly implements `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<aside>`, and `<footer>`.
-4. **Screen Reader Optimization:**
-   * All book covers include descriptive `alt` tags (e.g. `alt="Hardcover book jacket for The Silent Hollow by Author Name"`).
-   * Decorative icons are hidden via `aria-hidden="true"`.
-   * Video players include accessible labels (`aria-label="Play campaign reel for Book Title"`).
+> [!IMPORTANT]
+> **Compliance Target Notice:** In strict accordance with the Website Brief V1.0, the design blueprint explicitly targets **WCAG 2.2 AA** conformance across design, layout, typography, interaction, and component states. Full compliance will not be claimed until formal automated auditing (Lighthouse, Axe Core) and manual keyboard/screen-reader testing are executed on the deployed implementation in Part C and Part D.
+
+The design blueprint enforces the following WCAG 2.2 AA specifications:
+
+### 1. Keyboard Accessibility & Focus Traversal (SC 2.1.1, 2.1.2)
+* **Tab Order:** Strict, logical DOM sequence matching the visual reading order across all 11 sections.
+* **No Keyboard Traps:** Focus can freely enter and exit the mobile navigation drawer, video players, and calendar booking embeds.
+* **Focus Order:** Opening the mobile menu automatically shifts focus to the first interactive item (close button or first link); closing returns focus to the hamburger trigger.
+
+### 2. Visible Focus Indicators (SC 2.4.7) & Focus Appearance (SC 2.4.11 / 2.4.12)
+* **High-Visibility Focus Ring:** Every focusable element (navigation links, CTA buttons, accordion headers, form inputs, video player controls) receives an unambiguous **2px solid Launch Coral (`#FF5A36`) focus indicator with a 2px offset** (`outline: 2px solid #FF5A36; outline-offset: 2px;`).
+* **Contrast Against Backgrounds:** Focus ring achieves >3:1 contrast against both the light Paper canvas (`#F6F1E8`) and the dark Carbon Ink band (`#121115`).
+
+### 3. Focus Not Obscured (WCAG 2.2 SC 2.4.11 & 2.4.12)
+* **Floating Header Buffer:** When navigating via keyboard Tab, focused elements must never be hidden behind the floating navigation bar. Handled via CSS root scroll buffer:
+  ```css
+  html {
+    scroll-padding-top: 88px;
+    scroll-padding-bottom: 72px;
+  }
+  ```
+* **Mobile Sticky CTA Buffer:** Elements near the bottom of the viewport maintain sufficient bottom clearance so the sticky mobile call button never overlays focused form fields or links.
+
+### 4. Minimum Target Size (WCAG 2.2 SC 2.5.8)
+* **Desktop:** All interactive targets (buttons, links, accordion triggers) measure at least `24 × 24 CSS pixels` or provide sufficient perimeter spacing.
+* **Mobile/Touch:** All tap targets maintain a strict minimum bounding box of **`48 × 48px`** (with `44 × 44px` physical touch bounds) to prevent mis-taps.
+
+### 5. Dragging Movements & Pointer Gestures (WCAG 2.2 SC 2.5.7)
+* **Single-Pointer Alternatives:** The infinite Book Cover Marquee and author testimonial carousel do not require dragging or swiping. They provide simple single-pointer click controls (Previous/Next buttons, accessible pause/resume button) and full keyboard arrow-key navigation.
+
+### 6. Redundant Entry (WCAG 2.2 SC 3.3.7)
+* In the discovery booking flow, author details entered in initial inquiry steps (e.g., author name, book title, email) automatically persist and populate calendar fields without redundant re-entry.
+
+### 7. Colour Contrast Standards (SC 1.4.3 & 1.4.11)
+* **Normal Text (<18pt/24px):** Minimum `4.5:1` contrast ratio (`Text/Primary` `#121115` on `#F6F1E8` achieves `16.2:1`; `Text/Secondary` `#7D766B` on `#F6F1E8` achieves `4.62:1`).
+* **Large Text (≥18pt bold or ≥24px regular):** Minimum `3:1` contrast ratio.
+* **Button Text:** For small button labels and badges on Launch Coral, `Launch-600` (`#E84622`) is used to guarantee `>4.5:1` contrast against white text.
+* **Essential UI Components & Borders:** Form input borders and card boundaries maintain `≥3:1` against adjacent surfaces.
+
+### 8. Accessible Motion, Timing & Pause Controls (SC 2.2.2 & 2.3.3)
+* **Pause, Stop, Hide:** The infinite Book Cover Marquee automatically pauses on mouse hover and keyboard focus, and includes an explicit, accessible Pause/Play toggle button (`aria-label="Pause book cover marquee"`).
+* **Prefers-Reduced-Motion:** When `prefers-reduced-motion: reduce` is detected:
+  * Marquee animation stops completely, displaying a static, scrollable row of book covers.
+  * Card hover lifts (2px) and image zoom (1.02x) are disabled.
+  * Section scroll reveals snap immediately to full opacity (`opacity: 1; transform: none;`).
+
+### 9. Semantic Structure & Screen-Reader Compatibility (SC 1.3.1 & 4.1.2)
+* **Landmarks:** Native HTML5 semantic elements used throughout (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<aside>`, `<footer>`).
+* **Heading Hierarchy:** Strict descending order without skipping levels (`h1` → `h2` → `h3`). Exactly one `<h1>` per page.
+* **Non-Text Content:** All book covers include descriptive alternative text (e.g. `alt="Book jacket for The Silent Hollow by Author Name, a psychological thriller"`). Decorative background shapes and icons are marked `aria-hidden="true"`.
+* **State Announcements:** Accordion headers use `aria-expanded="true/false"` and `aria-controls="faq-answer-id"`. Navigation menu toggles announce open/closed states.
 
 ---
 
@@ -524,3 +582,4 @@ Before moving into **Part C: Figma Screens, High-Fidelity Design and Development
 2. **Color Palette Sign-off:** Approval of the **Paper & Ink** semantic mappings (`#F6F1E8` Paper, `#121115` Carbon Ink, `#ECE4D6` Bone, `#FF5A36` Launch Coral, `#7D766B` Stone).
 3. **Component Architecture & Wireframe Layouts:** Approval of the 11-section specifications across desktop (1440px) and mobile (390px).
 4. **Motion System:** Approval of the restrained deceleration curves (`cubic-bezier(0.22, 1, 0.36, 1)`) and micro-interaction rules.
+

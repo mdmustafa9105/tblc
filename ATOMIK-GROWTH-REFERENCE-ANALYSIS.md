@@ -421,3 +421,4 @@ The Book Launch Company will recreate the **visible structural architecture, spa
 | **Key Metric Signals** | ARR, demo requests, signups | Verified video views, reader saves/bookmarks, pre-order spikes |
 | **Founder Clout** | Tech podcast host | Ariba: 50K+ literary curator at `@whynotnovels` |
 | **Copy Tone** | High-energy Silicon Valley operator | Confident, discerning literary editor who lives on Instagram |
+
