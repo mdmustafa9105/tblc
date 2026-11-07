@@ -226,3 +226,4 @@ Run through this sequence during every QA session:
 6. [ ] **Reference Check:** Verify that Atomik Growth patterns (visual hierarchy, bento structure, typography density) are adapted thoughtfully without copying assets.
 7. [ ] **Fact Check:** Confirm zero fabricated statistics, client logos, or testimonials.
 8. [ ] **Report Generation:** Publish the completed QA Audit Report using the template in Section 3.
+
