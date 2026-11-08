@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 88px;
+    scroll-padding-bottom: 72px;
+    background-color: #F6F1E8;
+    color: #121115;
+  }
+
+  /* Focus visible outline for WCAG 2.2 AA */
+  :focus-visible {
+    outline: 2px solid #FF5A36;
+    outline-offset: 2px;
+  }
+
+  /* Accessibility text balance */
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F6F1E8;
+}
+::-webkit-scrollbar-thumb {
+  background: #DDD3C1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #948E83;
+}
+
+/* Marquee pause utility */
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .marquee-track {
+    animation: none !important;
+  }
+}
+

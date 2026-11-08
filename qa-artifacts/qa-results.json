@@ -1,0 +1,550 @@
+{
+  "viewports": {
+    "1440px Desktop": {
+      "scrollW": 1432,
+      "innerW": 1440,
+      "overflow": false,
+      "offending": []
+    },
+    "1280px Laptop": {
+      "scrollW": 1272,
+      "innerW": 1280,
+      "overflow": false,
+      "offending": []
+    },
+    "768px Tablet": {
+      "scrollW": 760,
+      "innerW": 768,
+      "overflow": false,
+      "offending": []
+    },
+    "390px Mobile": {
+      "scrollW": 390,
+      "innerW": 390,
+      "overflow": false,
+      "offending": []
+    },
+    "360px Small Mobile": {
+      "scrollW": 360,
+      "innerW": 360,
+      "overflow": false,
+      "offending": []
+    }
+  },
+  "links": [
+    {
+      "href": "#main-content",
+      "text": "Skip to main content",
+      "targetExists": true
+    },
+    {
+      "href": "#",
+      "text": "BThe Book Launch Co.",
+      "targetExists": false
+    },
+    {
+      "href": "#services",
+      "text": "Services",
+      "targetExists": true
+    },
+    {
+      "href": "#case-studies",
+      "text": "Work",
+      "targetExists": true
+    },
+    {
+      "href": "#founder",
+      "text": "About",
+      "targetExists": true
+    },
+    {
+      "href": "#how-it-works",
+      "text": "How It Works",
+      "targetExists": true
+    },
+    {
+      "href": "#who-we-work-with",
+      "text": "For Publishers",
+      "targetExists": true
+    },
+    {
+      "href": "#case-studies",
+      "text": "Explore Our Work↓",
+      "targetExists": true
+    },
+    {
+      "href": "#services",
+      "text": "See our launch pathways",
+      "targetExists": true
+    },
+    {
+      "href": "#services",
+      "text": "Services",
+      "targetExists": true
+    },
+    {
+      "href": "#case-studies",
+      "text": "Case Studies",
+      "targetExists": true
+    },
+    {
+      "href": "#founder",
+      "text": "Meet the Founder",
+      "targetExists": true
+    },
+    {
+      "href": "#how-it-works",
+      "text": "The 4-Step Process",
+      "targetExists": true
+    },
+    {
+      "href": "#who-we-work-with",
+      "text": "Partnership Tiers",
+      "targetExists": true
+    },
+    {
+      "href": "#faq",
+      "text": "FAQs & Guarantees",
+      "targetExists": true
+    },
+    {
+      "href": "#services",
+      "text": "01. Book LaunchesNew Releases",
+      "targetExists": true
+    },
+    {
+      "href": "#services",
+      "text": "02. Backlist RevivalCatalog Ti",
+      "targetExists": true
+    },
+    {
+      "href": "#services",
+      "text": "03. Author Brand & ContentReta",
+      "targetExists": true
+    },
+    {
+      "href": "#services",
+      "text": "04. Author PodcastsAudio/Video",
+      "targetExists": true
+    }
+  ],
+  "headings": {
+    "headings": [
+      {
+        "level": 1,
+        "tag": "H1",
+        "text": "Launch the book.Build the author."
+      },
+      {
+        "level": 4,
+        "tag": "H4",
+        "text": "The Silent Hollow"
+      },
+      {
+        "level": 2,
+        "tag": "H2",
+        "text": "Books we have launched, revived, and put into readers' hands"
+      },
+      {
+        "level": 3,
+        "tag": "H3",
+        "text": "The Silent Hollow"
+      },
+      {
+        "level": 3,
+        "tag": "H3",
+        "text": "Crown of Starlight"
+      },
+      {
+        "level": 3,
+        "tag": "H3",
+        "text": "A Thousand Summer Days"
+      },
+      {
+        "level": 3,
+        "tag": "H3",
+        "text": "The Anatomy of Shadows"
+      },
+      {
+        "level": 3,
+        "tag": "H3",
+        "text": "Beneath the Salt Wind"
+      },
+      {
+        "level": 3,
+        "tag": "H3",
+        "text": "Whispers in Crimson"
+      },
+      {
+        "level": 3,
+        "tag": "H3",
+        "text": "The Cartographer’s Secret"
+      },
+      {
+        "level": 3,
+        "tag": "H3",
+        "text": "When the Tide Recedes"
+      },
+      {
+        "level": 3,
+        "tag": "H3",
+        "text": "The Silent Hollow"
+      },
+      {
+        "level": 3,
+        "tag": "H3",
+        "text": "Crown of Starlight"
+      },
+      {
+        "level": 3,
+        "tag": "H3",
+        "text": "A Thousand Summer Days"
+      },
+      {
+        "level": 3,
+        "tag": "H3",
+        "text": "The Anatomy of Shadows"
+      },
+      {
+        "level": 3,
+        "tag": "H3",
+        "text": "Beneath the Salt Wind"
+      },
+      {
+        "level": 3,
+        "tag": "H3",
+        "text": "Whispers in Crimson"
+      },
+      {
+        "level": 3,
+        "tag": "H3",
+        "text": "The Cartographer’s Secret"
+      },
+      {
+        "level": 3,
+        "tag": "H3",
+        "text": "When the Tide Recedes"
+      },
+      {
+        "level": 3,
+        "tag": "H3",
+        "text": "The Silent Hollow"
+      },
+      {
+        "level": 3,
+        "tag": "H3",
+        "text": "Crown of Starlight"
+      },
+      {
+        "level": 3,
+        "tag": "H3",
+        "text": "A Thousand Summer Days"
+      },
+      {
+        "level": 3,
+        "tag": "H3",
+        "text": "The Anatomy of Shadows"
+      },
+      {
+        "level": 3,
+        "tag": "H3",
+        "text": "Beneath the Salt Wind"
+      },
+      {
+        "level": 3,
+        "tag": "H3",
+        "text": "Whispers in Crimson"
+      },
+      {
+        "level": 3,
+        "tag": "H3",
+        "text": "The Cartographer’s Secret"
+      },
+      {
+        "level": 3,
+        "tag": "H3",
+        "text": "When the Tide Recedes"
+      },
+      {
+        "level": 2,
+        "tag": "H2",
+        "text": "Our work and reach, by the numbers."
+      },
+      {
+        "level": 3,
+        "tag": "H3",
+        "text": "Readers Reached"
+      },
+      {
+        "level": 3,
+        "tag": "H3",
+        "text": "Dedicated Readers"
+      },
+      {
+        "level": 3,
+        "tag": "H3",
+        "text": "Views on Top Campaign"
+      },
+      {
+        "level": 3,
+        "tag": "H3",
+        "text": "Literary Focus"
+      },
+      {
+        "level": 2,
+        "tag": "H2",
+        "text": "Great books don’t sell themselves anymore."
+      },
+      {
+        "level": 2,
+        "tag": "H2",
+        "text": "Reader attention is the moat. We build yours."
+      },
+      {
+        "level": 3,
+        "tag": "H3",
+        "text": "Launch Virality & Rollouts"
+      },
+      {
+        "level": 3,
+        "tag": "H3",
+        "text": "Backlist Revival & Trope Lift"
+      },
+      {
+        "level": 3,
+        "tag": "H3",
+        "text": "Author Brand & Content Engine"
+      },
+      {
+        "level": 3,
+        "tag": "H3",
+        "text": "Author Podcasts & Waterfall Repurposing"
+      },
+      {
+        "level": 2,
+        "tag": "H2",
+        "text": "Launches that moved books off shelves."
+      },
+      {
+        "level": 3,
+        "tag": "H3",
+        "text": "How The Silent Hollow Reached 1.4M Views and Hit the Top 20 "
+      },
+      {
+        "level": 4,
+        "tag": "H4",
+        "text": "The Silent Hollow"
+      },
+      {
+        "level": 3,
+        "tag": "H3",
+        "text": "How Crown of Starlight Revived Book 1 with 850K Views and a "
+      },
+      {
+        "level": 4,
+        "tag": "H4",
+        "text": "Crown of Starlight"
+      },
+      {
+        "level": 3,
+        "tag": "H3",
+        "text": "Ariba"
+      },
+      {
+        "level": 2,
+        "tag": "H2",
+        "text": "Built by a reader the internet listens to."
+      },
+      {
+        "level": 2,
+        "tag": "H2",
+        "text": "From manuscript to momentum in 4 steps."
+      },
+      {
+        "level": 3,
+        "tag": "H3",
+        "text": "Discovery & Manuscript Audit"
+      },
+      {
+        "level": 3,
+        "tag": "H3",
+        "text": "The Campaign Blueprint"
+      },
+      {
+        "level": 3,
+        "tag": "H3",
+        "text": "Produce & Deploy Waves"
+      },
+      {
+        "level": 3,
+        "tag": "H3",
+        "text": "Analyze & Scale Momentum"
+      },
+      {
+        "level": 4,
+        "tag": "H4",
+        "text": "Discovery & Manuscript Audit"
+      },
+      {
+        "level": 2,
+        "tag": "H2",
+        "text": "Tailored for every stage of the literary journey."
+      },
+      {
+        "level": 3,
+        "tag": "H3",
+        "text": "Break through the algorithmic noise."
+      },
+      {
+        "level": 3,
+        "tag": "H3",
+        "text": "Build an author brand that compounds."
+      },
+      {
+        "level": 3,
+        "tag": "H3",
+        "text": "Boutique new-media execution at scale."
+      },
+      {
+        "level": 2,
+        "tag": "H2",
+        "text": "What authors say about launching with us."
+      },
+      {
+        "level": 3,
+        "tag": "H3",
+        "text": "Frequently Asked Questions"
+      },
+      {
+        "level": 2,
+        "tag": "H2",
+        "text": "Your book has a launch day. Let's make it a launch."
+      },
+      {
+        "level": 3,
+        "tag": "H3",
+        "text": "Navigation"
+      },
+      {
+        "level": 3,
+        "tag": "H3",
+        "text": "Launch Pathways"
+      },
+      {
+        "level": 3,
+        "tag": "H3",
+        "text": "Our Promise"
+      }
+    ],
+    "h1Count": 1,
+    "landmarks": {
+      "header": true,
+      "nav": true,
+      "main": true,
+      "footer": true
+    }
+  },
+  "touchTargets": {
+    "total": 60,
+    "under44Count": 20,
+    "under48Count": 49,
+    "under44Sample": [
+      {
+        "tag": "A",
+        "text": "Skip to main content",
+        "width": 1,
+        "height": 1,
+        "meets44": false,
+        "meets48": false,
+        "visible": true
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Explore custom campaign scopes",
+        "width": 247,
+        "height": 20,
+        "meets44": false,
+        "meets48": false,
+        "visible": true
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Pre-Launch",
+        "width": 155,
+        "height": 32,
+        "meets44": false,
+        "meets48": false,
+        "visible": true
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Launch Blitz",
+        "width": 155,
+        "height": 32,
+        "meets44": false,
+        "meets48": false,
+        "visible": true
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Read-Through",
+        "width": 155,
+        "height": 32,
+        "meets44": false,
+        "meets48": false,
+        "visible": true
+      },
+      {
+        "tag": "BUTTON",
+        "text": "#EnemiesToLovers",
+        "width": 134,
+        "height": 28,
+        "meets44": false,
+        "meets48": false,
+        "visible": true
+      },
+      {
+        "tag": "BUTTON",
+        "text": "#DarkAcademia",
+        "width": 118,
+        "height": 28,
+        "meets44": false,
+        "meets48": false,
+        "visible": true
+      },
+      {
+        "tag": "BUTTON",
+        "text": "#MorallyGreyHero",
+        "width": 131,
+        "height": 28,
+        "meets44": false,
+        "meets48": false,
+        "visible": true
+      }
+    ]
+  },
+  "interactions": {
+    "marquee": {
+      "labelBefore": "Pause book marquee animation",
+      "labelAfter": "Pause book marquee animation",
+      "animState": "running"
+    },
+    "faq": {
+      "totalFaqs": 5,
+      "stateBefore": "true",
+      "stateAfter": "true"
+    },
+    "testimonials": {
+      "hasControls": true,
+      "quoteBefore": "“Working with Ariba was seamle",
+      "quoteAfter": "“Working with Ariba was seamle",
+      "changed": false
+    },
+    "booking": {
+      "isOpen": false,
+      "title": "",
+      "inputCount": 0
+    }
+  },
+  "defects": []
+}

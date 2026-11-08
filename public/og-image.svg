@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#121115"/>
+  <circle cx="950" cy="315" r="280" fill="#FF5A36" opacity="0.12" filter="blur(80px)"/>
+  
+  <!-- Monogram Logo -->
+  <g transform="translate(100, 100)">
+    <rect width="64" height="64" rx="16" fill="#FF5A36"/>
+    <text x="32" y="44" font-family="Georgia, serif" font-weight="bold" font-size="36" fill="#FFFFFF" text-anchor="middle">B</text>
+  </g>
+  <text x="180" y="142" font-family="system-ui, -apple-system, sans-serif" font-weight="bold" font-size="28" fill="#F6F1E8" letter-spacing="-0.5px">The Book Launch Company<tspan fill="#FF5A36">.</tspan></text>
+  
+  <!-- Headline -->
+  <text x="100" y="290" font-family="Georgia, serif" font-weight="bold" font-size="68" fill="#F6F1E8" letter-spacing="-1.5px">
+    Launch the book<tspan fill="#FF5A36">.</tspan>
+  </text>
+  <text x="100" y="370" font-family="Georgia, serif" font-style="italic" font-weight="normal" font-size="68" fill="#F6F1E8" letter-spacing="-1.5px">
+    Build the author.
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="100" y="450" font-family="system-ui, -apple-system, sans-serif" font-weight="normal" font-size="24" fill="#DDD3C1">
+    Creative short-form video campaigns, author branding &amp; podcasts.
+  </text>
+  <text x="100" y="490" font-family="system-ui, -apple-system, sans-serif" font-weight="500" font-size="20" fill="#FF5A36">
+    From the reader community behind @whynotnovels · 13M+ readers reached
+  </text>
+  
+  <!-- Footer Tag -->
+  <line x1="100" y1="540" x2="1100" y2="540" stroke="#272727" stroke-width="1"/>
+  <text x="100" y="580" font-family="ui-monospace, monospace" font-size="16" fill="#7D766B">thebooklaunchcompany.com</text>
+  <text x="1100" y="580" font-family="ui-monospace, monospace" font-size="16" fill="#7D766B" text-anchor="end">Book Launches · Backlist Revival · Author Brand · Podcasts</text>
+</svg>
+
