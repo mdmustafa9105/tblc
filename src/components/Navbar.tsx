@@ -43,10 +43,9 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
 
   const navLinks = [
     { label: 'Services', href: '#services' },
-    { label: 'Work', href: '#case-studies' },
-    { label: 'About', href: '#founder' },
-    { label: 'How It Works', href: '#how-it-works' },
-    { label: 'For Publishers', href: '#who-we-work-with' },
+    { label: 'Case Studies', href: '#case-studies' },
+    { label: 'Media Engine', href: '#media-engine' },
+    { label: 'FAQs', href: '#faq' },
   ];
 
   return (
@@ -59,41 +58,41 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
         Skip to main content
       </a>
 
-      {/* Floating Desktop Navbar */}
+      {/* Floating Desktop Navbar (Atomik Growth Minimal Floating Style) */}
       <header
-        className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 pointer-events-none flex justify-center px-3 sm:px-4 ${
-          isScrolled ? 'pt-2.5 sm:pt-3' : 'pt-4 sm:pt-5'
+        className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 pointer-events-none flex justify-center px-4 ${
+          isScrolled ? 'pt-3' : 'pt-5'
         }`}
       >
         <nav
           aria-label="Main Navigation"
-          className={`pointer-events-auto transition-all duration-300 w-full max-w-[1040px] rounded-full border border-bone-dark/40 shadow-sm flex items-center justify-between px-3.5 sm:px-5 md:px-6 py-2 sm:py-2.5 md:py-3 ${
+          className={`pointer-events-auto transition-all duration-300 w-full max-w-[960px] rounded-full border border-bone-dark/50 shadow-xs flex items-center justify-between px-4 sm:px-6 py-2.5 sm:py-3 ${
             isScrolled
-              ? 'bg-paper/95 backdrop-blur-md shadow-md py-2 sm:py-2.5'
+              ? 'bg-paper/95 backdrop-blur-md shadow-md'
               : 'bg-paper/85 backdrop-blur-md'
           }`}
         >
-          {/* Brand Logo */}
+          {/* Brand Logo Wordmark */}
           <a
             href="#"
-            className="flex items-center gap-2 group text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-coral rounded-full px-1 min-h-[44px]"
+            className="flex items-center gap-2.5 group text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-coral rounded-full px-1 min-h-[44px]"
             aria-label="The Book Launch Company Homepage"
           >
             <span className="w-8 h-8 rounded-full bg-ink text-paper flex items-center justify-center font-serif font-bold text-sm tracking-tighter group-hover:bg-coral transition-colors duration-200 shrink-0">
               B
             </span>
-            <span className="font-serif font-semibold text-sm sm:text-base md:text-lg tracking-tight text-ink whitespace-nowrap">
+            <span className="font-serif font-bold text-base sm:text-lg tracking-tight text-ink whitespace-nowrap">
               The Book Launch Co<span className="text-coral">.</span>
             </span>
           </a>
 
           {/* Desktop Nav Items */}
-          <div className="hidden md:flex items-center gap-2 lg:gap-4">
+          <div className="hidden md:flex items-center gap-1 lg:gap-2">
             {navLinks.map((link) => (
               <a
                 key={link.label}
                 href={link.href}
-                className="text-sm font-medium text-stone hover:text-ink transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-coral rounded-full px-3 py-2 min-h-[44px] flex items-center"
+                className="text-sm font-medium text-stone hover:text-ink transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-coral rounded-full px-3.5 py-2 min-h-[44px] flex items-center"
               >
                 {link.label}
               </a>
@@ -104,14 +103,14 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
           <div className="hidden md:flex items-center">
             <button
               onClick={onOpenBooking}
-              className="bg-coral hover:bg-coral-400 active:bg-coral-600 text-white font-semibold text-sm px-5 py-2.5 rounded-full transition-all duration-200 shadow-sm hover:shadow active:scale-[0.98] flex items-center gap-1.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-coral min-h-[44px]"
+              className="bg-coral hover:bg-coral-400 active:bg-coral-600 text-white font-semibold text-sm px-5 py-2.5 rounded-full transition-all duration-200 shadow-xs hover:shadow active:scale-[0.98] flex items-center gap-1.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-coral min-h-[44px]"
             >
-              <span>Book a call</span>
+              <span>Discuss Your Book</span>
               <ArrowRight className="w-4 h-4" />
             </button>
           </div>
 
-          {/* Mobile Hamburger Toggle (48x48px target) */}
+          {/* Mobile Hamburger Toggle (44px target) */}
           <div className="flex md:hidden items-center">
             <button
               type="button"
@@ -178,7 +177,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
               }}
               className="w-full bg-coral hover:bg-coral-400 active:bg-coral-600 text-white font-semibold text-base py-4 rounded-full transition-all shadow-md flex items-center justify-center gap-2 min-h-[48px]"
             >
-              <span>Book a discovery call</span>
+              <span>Discuss Your Book</span>
               <ArrowRight className="w-5 h-5" />
             </button>
             <p className="text-xs text-center text-stone font-sans">

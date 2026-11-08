@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import { ArrowRight, Bookmark, Heart, Star, Sparkles } from 'lucide-react';
+import { ArrowRight, Bookmark, Heart, Sparkles } from 'lucide-react';
 import { CASE_STUDIES } from '../data/content';
 
 interface CaseStudiesProps {
@@ -12,7 +12,7 @@ export const CaseStudies: React.FC<CaseStudiesProps> = ({ onOpenBooking }) => {
     <section id="case-studies" className="py-24 md:py-36 bg-paper border-t border-bone-dark/50" aria-label="Case Studies">
       <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
         
-        {/* Section Header (Atomik Reference Style) */}
+        {/* Section Header (Atomik Growth Reference Style) */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 lg:mb-20 gap-8">
           <div className="max-w-[760px]">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-bone border border-bone-dark text-xs font-mono uppercase tracking-wider text-coral font-bold mb-4">
@@ -25,7 +25,7 @@ export const CaseStudies: React.FC<CaseStudiesProps> = ({ onOpenBooking }) => {
             </h2>
           </div>
           <p className="font-sans text-sm sm:text-base text-stone max-w-[420px] leading-relaxed">
-            We don’t deal in vague marketing impressions or inflated bot counts. Every campaign is engineered around genuine reader discovery, BookTok hook testing, and measurable retail velocity.
+            We don’t deal in vague marketing impressions or inflated vanity numbers. Every campaign is engineered around genuine reader discovery, BookTok hook testing, and measurable retail velocity.
           </p>
         </div>
 

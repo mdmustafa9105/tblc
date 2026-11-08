@@ -117,8 +117,42 @@ async function runInteractiveTests() {
   })()`);
   console.log('   Result:', audio);
 
-  // 3. Test FAQ Accordion
-  console.log('\n3. Testing FAQ Accordion Toggles:');
+  // 3. Test Services Bento: Launch Timeline Phases
+  console.log('\n3. Testing Services Bento Launch Timeline Tabs:');
+  const timeline = await client.eval(`(async () => {
+    const tabs = Array.from(document.querySelectorAll('#services button')).filter(b => 
+      ['Pre-Launch', 'Launch Blitz', 'Read-Through'].includes(b.textContent.trim())
+    );
+    const initialActive = tabs.find(t => t.classList.contains('bg-ink'))?.textContent.trim();
+    if (tabs[0]) tabs[0].click(); // Click Pre-Launch
+    await new Promise(r => setTimeout(r, 100));
+    const preLaunchText = document.querySelector('#services')?.textContent.includes('ARC Seeding');
+    if (tabs[1]) tabs[1].click(); // Click Launch Blitz
+    await new Promise(r => setTimeout(r, 100));
+    const blitzText = document.querySelector('#services')?.textContent.includes('Synchronized Launch Day Wave');
+    return { tabCount: tabs.length, initialActive, preLaunchWorked: preLaunchText, blitzWorked: blitzText };
+  })()`);
+  console.log('   Result:', timeline);
+
+  // 4. Test Services Bento: Trope Repositioning Simulator
+  console.log('\n4. Testing Services Bento Trope Simulator:');
+  const tropeTest = await client.eval(`(async () => {
+    const buttons = Array.from(document.querySelectorAll('#services button')).filter(b => 
+      b.textContent.includes('#')
+    );
+    const initialTags = buttons.map(b => b.textContent.trim());
+    if (buttons[1]) buttons[1].click(); // Click #DarkAcademia
+    await new Promise(r => setTimeout(r, 100));
+    const darkAcademiaActive = document.querySelector('#services')?.textContent.includes('Secret History');
+    if (buttons[0]) buttons[0].click(); // Return to #EnemiesToLovers
+    await new Promise(r => setTimeout(r, 100));
+    const enemiesActive = document.querySelector('#services')?.textContent.includes('Fourth Wing');
+    return { tropeCount: buttons.length, tags: initialTags, darkAcademiaActive, enemiesActive };
+  })()`);
+  console.log('   Result:', tropeTest);
+
+  // 5. Test FAQ Accordion
+  console.log('\n5. Testing FAQ Accordion Toggles:');
   const faq = await client.eval(`(async () => {
     const btns = Array.from(document.querySelectorAll('#faq button[aria-expanded]'));
     const initialExpanded = btns.map(b => b.getAttribute('aria-expanded'));
@@ -137,42 +171,12 @@ async function runInteractiveTests() {
   })()`);
   console.log('   Result:', faq);
 
-  // 4. Test Testimonials Carousel
-  console.log('\n4. Testing Testimonials Carousel:');
-  const testimonials = await client.eval(`(async () => {
-    const quoteEl = document.querySelector('#faq blockquote');
-    const q1 = quoteEl ? quoteEl.textContent.trim().substring(0, 35) : '';
-    const nextBtn = document.querySelector('button[aria-label="Next testimonial"]');
-    if (nextBtn) nextBtn.click();
-    await new Promise(r => setTimeout(r, 100));
-    const q2 = quoteEl ? quoteEl.textContent.trim().substring(0, 35) : '';
-    const prevBtn = document.querySelector('button[aria-label="Previous testimonial"]');
-    if (prevBtn) prevBtn.click();
-    await new Promise(r => setTimeout(r, 100));
-    const q3 = quoteEl ? quoteEl.textContent.trim().substring(0, 35) : '';
-    return { q1, q2, q3, advanced: q1 !== q2, returned: q1 === q3 };
-  })()`);
-  console.log('   Result:', testimonials);
-
-  // 5. Test How It Works Stepper
-  console.log('\n5. Testing How It Works Stepper:');
-  const stepper = await client.eval(`(async () => {
-    const steps = Array.from(document.querySelectorAll('#how-it-works [role="button"]'));
-    const titleEl = document.querySelector('#how-it-works h4');
-    const initialTitle = titleEl ? titleEl.textContent : '';
-    if (steps[2]) steps[2].click();
-    await new Promise(r => setTimeout(r, 100));
-    const step3Title = titleEl ? titleEl.textContent : '';
-    return { stepCount: steps.length, initialTitle, step3Title, changed: initialTitle !== step3Title };
-  })()`);
-  console.log('   Result:', stepper);
-
   // 6. Test Booking Modal Lifecycle & Form Submission
   console.log('\n6. Testing Booking Modal & Form Submission:');
   const modalTest = await client.eval(`(async () => {
-    // Click 'Book a call' button in header
-    const navBtn = Array.from(document.querySelectorAll('button')).find(b => b.textContent.includes('Book a call'));
-    if (!navBtn) return { error: 'Book a call button not found' };
+    // Click 'Discuss Your Book' button in header
+    const navBtn = Array.from(document.querySelectorAll('header button')).find(b => b.textContent.includes('Discuss Your Book'));
+    if (!navBtn) return { error: 'Discuss Your Book button not found' };
     navBtn.click();
     await new Promise(r => setTimeout(r, 150));
     

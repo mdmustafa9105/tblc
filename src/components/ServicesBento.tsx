@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import { ArrowRight, CheckCircle2, Calendar, Mic, Sparkles, RefreshCw, Film, Play, Layers } from 'lucide-react';
+import { ArrowRight, CheckCircle2, Calendar, Mic, Sparkles, Film, Play, Layers } from 'lucide-react';
 
 interface ServicesBentoProps {
   onOpenBooking: () => void;
@@ -12,9 +12,6 @@ export const ServicesBento: React.FC<ServicesBentoProps> = ({ onOpenBooking }) =
 
   // Widget 2: Trope Selector for Backlist Revival
   const [selectedTrope, setSelectedTrope] = useState<'enemies' | 'darkAcademia' | 'morallyGrey'>('enemies');
-
-  // Widget 3: Weekly Content Queue Filter
-  const [contentFilter, setContentFilter] = useState<'all' | 'ready' | 'scheduled'>('all');
 
   const tropeData = {
     enemies: {
@@ -44,20 +41,32 @@ export const ServicesBento: React.FC<ServicesBentoProps> = ({ onOpenBooking }) =
     pre: {
       label: 'WEEKS -8 TO -1',
       title: 'ARC Seeding & Cover Reveal Buzz',
-      deliverables: ['15–20 BookTok ARC packages deployed', 'Cover reveal cinematic teaser (9:16)', 'Pre-order landing page optimization'],
-      impact: 'Build initial Goodreads TBR additions & pre-order traction',
+      deliverables: [
+        '15–20 BookTok ARC packages deployed',
+        'Cover reveal cinematic teaser (9:16 vertical)',
+        'Pre-order landing page optimization'
+      ],
+      impact: 'Build Goodreads TBR additions & pre-order traction',
     },
     blitz: {
       label: 'WEEK 0 (LAUNCH DAY)',
-      title: 'High-Impact Synchronized Wave',
-      deliverables: ['10 synchronized BookTok creator hooks', 'Launch-day hero video push with sound cue', 'Targeted category push to hit Amazon top 20'],
+      title: 'Synchronized Launch Day Wave',
+      deliverables: [
+        '10 synchronized BookTok creator hooks',
+        'Launch-day hero video push with trending audio',
+        'Targeted category velocity to hit Amazon top 20'
+      ],
       impact: 'Algorithmic surge across TikTok For You and Instagram Explore feeds',
     },
     sustain: {
       label: 'WEEKS +1 TO +4',
       title: 'Book Club Tour & Read-Through',
-      deliverables: ['Reader reaction stitching wave', 'Trope spotlight quote cards', 'Series read-through funnels for multi-title authors'],
-      impact: 'Prevent post-launch dip; convert readers into reviews',
+      deliverables: [
+        'Reader reaction stitching wave',
+        'Trope spotlight quote cards',
+        'Series read-through funnels for multi-title authors'
+      ],
+      impact: 'Prevent post-launch drop; convert readers into reviews',
     },
   };
 
@@ -65,7 +74,7 @@ export const ServicesBento: React.FC<ServicesBentoProps> = ({ onOpenBooking }) =
     <section id="services" className="py-24 md:py-36 bg-paper border-t border-bone-dark/50" aria-label="Our Services">
       <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
         
-        {/* Core Thesis Header (Atomik Reference: "Distribution is the moat. We build yours.") */}
+        {/* Core Thesis Header (Atomik Growth Reference: "Distribution is the moat. We build yours.") */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 lg:mb-20 gap-8">
           <div className="max-w-[760px]">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-bone border border-bone-dark text-xs font-mono uppercase tracking-wider text-coral font-bold mb-4">
@@ -83,15 +92,15 @@ export const ServicesBento: React.FC<ServicesBentoProps> = ({ onOpenBooking }) =
             </p>
             <button
               onClick={onOpenBooking}
-              className="inline-flex items-center gap-2 text-sm font-semibold text-coral hover:text-coral-600 transition-colors group"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-coral hover:text-coral-600 transition-colors group min-h-[44px]"
             >
-              <span>Explore custom campaign scopes</span>
+              <span>Discuss custom campaign scopes</span>
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
             </button>
           </div>
         </div>
 
-        {/* 2x2 Bento Grid with Living Widgets */}
+        {/* 2x2 Clean Bento Grid with Direct Deliverable Demos */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10">
           
           {/* Card 01: Book Launches (Launch Virality) */}
@@ -120,7 +129,7 @@ export const ServicesBento: React.FC<ServicesBentoProps> = ({ onOpenBooking }) =
                       <Calendar className="w-3.5 h-3.5 text-coral" /> Interactive Launch Timeline
                     </span>
                     <span className="text-[11px] font-mono font-bold text-coral bg-coral/10 px-2 py-0.5 rounded">
-                      Click Phase
+                      Select Phase
                     </span>
                   </div>
 
@@ -131,7 +140,7 @@ export const ServicesBento: React.FC<ServicesBentoProps> = ({ onOpenBooking }) =
                         key={phaseKey}
                         type="button"
                         onClick={() => setLaunchPhase(phaseKey)}
-                        className={`py-2 px-2.5 rounded-xl text-xs font-semibold text-center transition-all ${
+                        className={`py-2 px-2.5 rounded-xl text-xs font-semibold text-center transition-all min-h-[44px] ${
                           launchPhase === phaseKey
                             ? 'bg-ink text-paper shadow-sm'
                             : 'bg-bone/80 text-stone hover:bg-bone hover:text-ink'
@@ -159,7 +168,7 @@ export const ServicesBento: React.FC<ServicesBentoProps> = ({ onOpenBooking }) =
                       ))}
                     </ul>
                     <p className="text-[11px] text-stone font-medium italic pt-1 border-t border-bone-dark/40">
-                      Goal: {launchPhases[launchPhase].impact}
+                      Target: {launchPhases[launchPhase].impact}
                     </p>
                   </div>
                 </div>
@@ -174,7 +183,7 @@ export const ServicesBento: React.FC<ServicesBentoProps> = ({ onOpenBooking }) =
                 <span>Plan your release campaign</span>
                 <ArrowRight className="w-4 h-4" />
               </button>
-              <span className="text-xs font-mono text-stone">8–12 Wk Timeline</span>
+              <span className="text-xs font-mono text-stone">8–12 Wk Scope</span>
             </div>
           </div>
 
@@ -196,7 +205,7 @@ export const ServicesBento: React.FC<ServicesBentoProps> = ({ onOpenBooking }) =
                 Older books still have hundreds of thousands of readers waiting. We reposition published backlist titles around trending BookTok tropes.
               </p>
 
-              {/* Interactive Widget: Trope Repositioning Simulator (Atomik Bounty Reference) */}
+              {/* Interactive Widget: Trope Repositioning Simulator */}
               <div className="pt-4">
                 <div className="bg-paper p-5 rounded-2xl border border-bone-dark shadow-xs space-y-4">
                   <div className="flex items-center justify-between">
@@ -215,7 +224,7 @@ export const ServicesBento: React.FC<ServicesBentoProps> = ({ onOpenBooking }) =
                         key={tropeKey}
                         type="button"
                         onClick={() => setSelectedTrope(tropeKey)}
-                        className={`py-1.5 px-3 rounded-full text-xs font-semibold transition-all ${
+                        className={`py-2 px-3 rounded-full text-xs font-semibold transition-all min-h-[44px] ${
                           selectedTrope === tropeKey
                             ? 'bg-coral text-white shadow-xs'
                             : 'bg-bone text-stone hover:text-ink'
@@ -232,7 +241,7 @@ export const ServicesBento: React.FC<ServicesBentoProps> = ({ onOpenBooking }) =
                       {tropeData[selectedTrope].hook}
                     </p>
                     <div className="text-[11px] text-stone font-sans">
-                      Target Audience: <strong className="text-ink">{tropeData[selectedTrope].comps}</strong>
+                      Target Comps: <strong className="text-ink">{tropeData[selectedTrope].comps}</strong>
                     </div>
                     <div className="grid grid-cols-2 gap-2 pt-2 border-t border-bone-dark/40">
                       <div className="bg-paper p-2 rounded-lg border border-bone-dark">
@@ -254,7 +263,7 @@ export const ServicesBento: React.FC<ServicesBentoProps> = ({ onOpenBooking }) =
                 onClick={onOpenBooking}
                 className="inline-flex items-center gap-2 font-sans font-semibold text-sm text-ink group-hover:text-coral transition-colors min-h-[44px]"
               >
-                <span>Revive your older titles</span>
+                <span>Revive your catalog titles</span>
                 <ArrowRight className="w-4 h-4" />
               </button>
               <span className="text-xs font-mono text-stone">4-Week Activation</span>
@@ -295,7 +304,7 @@ export const ServicesBento: React.FC<ServicesBentoProps> = ({ onOpenBooking }) =
                     <div className="p-2.5 rounded-xl bg-bone/50 border border-bone-dark flex items-center justify-between">
                       <div className="flex items-center gap-2 truncate">
                         <Play className="w-3.5 h-3.5 text-coral shrink-0" />
-                        <span className="font-medium text-ink truncate">"3 Plot Twists That Broken My Readers"</span>
+                        <span className="font-medium text-ink truncate">"3 Plot Twists That Broke My Readers"</span>
                       </div>
                       <span className="px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 text-[10px] font-bold font-mono">
                         Ready to Post

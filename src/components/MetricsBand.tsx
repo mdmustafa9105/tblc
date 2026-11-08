@@ -29,12 +29,12 @@ export const MetricsBand: React.FC = () => {
       className="py-24 md:py-32 bg-ink text-paper relative overflow-hidden"
       aria-label="Our work and reach, by the numbers"
     >
-      {/* Background Radial Glow */}
-      <div className="absolute inset-0 bg-radial from-stone-800/20 via-transparent to-transparent opacity-50 pointer-events-none" />
+      {/* Background Subtle Radial Glow */}
+      <div className="absolute inset-0 bg-radial from-stone-800/30 via-transparent to-transparent opacity-60 pointer-events-none" />
 
       <div className="max-w-[1280px] mx-auto px-6 lg:px-8 relative z-10">
         
-        {/* Section Header (Atomik Reference: "Our work and reach, by the numbers.") */}
+        {/* Section Header (Atomik Growth Reference: "Our work and reach, by the numbers.") */}
         <div className="mb-16 md:mb-20 text-center max-w-[760px] mx-auto space-y-4">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-paper/10 border border-paper/15 text-xs font-mono uppercase tracking-widest text-coral font-bold">
             <span className="w-1.5 h-1.5 rounded-full bg-coral animate-pulse" />
@@ -69,7 +69,7 @@ export const MetricsBand: React.FC = () => {
                 {metric.label}
               </h3>
 
-              {/* Specific Timeframe / Scope */}
+              {/* Specific Scope / Qualification */}
               <p className="font-sans text-xs text-stone-400 max-w-[240px] leading-relaxed">
                 {metric.timeframe}
               </p>

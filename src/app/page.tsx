@@ -4,13 +4,10 @@ import React, { useState } from 'react';
 import { Navbar } from '../components/Navbar';
 import { Hero } from '../components/Hero';
 import { CoverMarquee } from '../components/CoverMarquee';
-import { MetricsBand } from '../components/MetricsBand';
-import { ProblemSection } from '../components/ProblemSection';
 import { ServicesBento } from '../components/ServicesBento';
+import { MetricsBand } from '../components/MetricsBand';
 import { CaseStudies } from '../components/CaseStudies';
 import { FounderSection } from '../components/FounderSection';
-import { HowItWorks } from '../components/HowItWorks';
-import { WhoWeWorkWith } from '../components/WhoWeWorkWith';
 import { TestimonialsAndFAQ } from '../components/TestimonialsAndFAQ';
 import { ClosingCTA } from '../components/ClosingCTA';
 import { Footer } from '../components/Footer';
@@ -30,46 +27,37 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen bg-paper text-ink font-sans selection:bg-coral selection:text-white flex flex-col">
-      {/* Floating Header Navigation */}
+      {/* Floating Header Navigation (Atomik Minimal Style) */}
       <Navbar onOpenBooking={handleOpenBooking} />
 
       {/* Main Landmark for Accessibility */}
       <main id="main-content" className="flex-grow">
-        {/* Section 01: Hero with live video simulation */}
+        {/* Stage 01: Hero (55/45 Split with Single Living Video Player) */}
         <Hero onOpenBooking={handleOpenBooking} />
 
-        {/* Section 02: Infinite Animated Book Cover Marquee */}
+        {/* Stage 02: Early Credibility Marquee ("We partner with authors...") */}
         <CoverMarquee />
 
-        {/* Section 03: High-Contrast Dark Metrics & Distribution Band */}
-        <MetricsBand />
-
-        {/* Section 04: The Publishing Shift (Problem Statement) */}
-        <ProblemSection />
-
-        {/* Section 05: 4-Pillar Services Bento Grid with Living Widgets */}
+        {/* Stage 03: Core Thesis & 4 Services ("Reader attention is the moat. We build yours.") */}
         <ServicesBento onOpenBooking={handleOpenBooking} />
 
-        {/* Section 06: Verified Client Case Studies Breakdown */}
+        {/* Stage 04: Dark Breakout Metrics ("Our work and reach, by the numbers.") */}
+        <MetricsBand />
+
+        {/* Stage 05: Editorial Narrative Case Studies (Elena Vance & Kaelen Thorne) */}
         <CaseStudies onOpenBooking={handleOpenBooking} />
 
-        {/* Section 07: Meet Founder Ariba & @whynotnovels Story */}
+        {/* Stage 06: Proprietary Media Engine & Founder Advantage (@whynotnovels) */}
         <FounderSection />
 
-        {/* Section 08: 4-Step How It Works Process Stepper */}
-        <HowItWorks onOpenBooking={handleOpenBooking} />
-
-        {/* Section 09: Partnership Profiles (Debut, Established, Publishers) */}
-        <WhoWeWorkWith onOpenBooking={handleOpenBooking} />
-
-        {/* Section 10: Testimonials & Objection-Dismantling FAQ */}
+        {/* Stage 07: High-Intent Objection Handling FAQs */}
         <TestimonialsAndFAQ onOpenBooking={handleOpenBooking} />
 
-        {/* Section 11: High-Contrast Closing Conversion Band */}
+        {/* Stage 08: Dark High-Contrast Closing Conversion Band ("Work With Us") */}
         <ClosingCTA onOpenBooking={handleOpenBooking} />
       </main>
 
-      {/* Section 12: Comprehensive Editorial Footer */}
+      {/* Stage 09: Minimal 4-Column Editorial Footer */}
       <Footer />
 
       {/* Interactive Discovery Call Booking Modal */}
@@ -80,4 +68,3 @@ export default function HomePage() {
     </div>
   );
 }
-
