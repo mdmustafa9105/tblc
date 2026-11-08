@@ -80,7 +80,7 @@ export const Footer: React.FC = () => {
             <ul className="space-y-2.5 text-[13px] text-[#CCCDCD]">
               <li>
                 <a href="#services" className="hover:text-white transition-colors">
-                  01 · Book Launch Virality
+                  01 · Book Launches
                 </a>
               </li>
               <li>
@@ -108,18 +108,18 @@ export const Footer: React.FC = () => {
             </span>
             <ul className="space-y-2.5 text-[13px] text-[#CCCDCD]">
               <li>
-                <a href="#case-studies" className="hover:text-white transition-colors">
-                  Case Studies
+                <a href="#work" className="hover:text-white transition-colors">
+                  Selected Work
                 </a>
               </li>
               <li>
-                <a href="#media" className="hover:text-white transition-colors">
-                  Founder &amp; Media
+                <a href="#process" className="hover:text-white transition-colors">
+                  Our Process
                 </a>
               </li>
               <li>
-                <a href="#books-showcase" className="hover:text-white transition-colors">
-                  Launched Titles
+                <a href="#founder" className="hover:text-white transition-colors">
+                  Founder &amp; Network
                 </a>
               </li>
               <li>

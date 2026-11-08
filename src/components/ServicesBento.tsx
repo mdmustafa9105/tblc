@@ -50,15 +50,15 @@ export const ServicesBento: React.FC<ServicesProps> = ({ onOpenBooking }) => {
               <div className="lg:col-span-7 space-y-6">
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-black/[0.04] text-[12px] font-medium text-[#111827] border border-black/[0.06]">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#0072F5]" />
-                  <span>Service 01 · Featured Launch Rollout</span>
+                  <span>Service 01 · New Releases</span>
                 </div>
 
                 <h3 className="display text-[28px] sm:text-[36px] font-semibold text-[#111827] tracking-tight leading-[1.1]">
-                  Book Launch Virality
+                  Book Launches
                 </h3>
 
                 <p className="font-sans text-[15px] sm:text-[16px] font-[450] text-[#52525B] leading-[1.6] max-w-xl">
-                  Creative campaigns that make a new release impossible to scroll past. We develop the hooks, short-form content and launch rollout that put your book in front of the right readers.
+                  We turn your release into a synchronized digital event. From pre-order teasing to release-week BookTok surges, we script and produce short-form hooks that put your book in front of high-intent readers.
                 </p>
 
                 {/* Editorial Campaign Phases */}

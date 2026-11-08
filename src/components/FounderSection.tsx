@@ -31,7 +31,8 @@ export const FounderSection: React.FC<FounderSectionProps> = ({ onOpenBooking })
   const [imageError, setImageError] = useState(false);
 
   return (
-    <section id="media" className="bg-[#FAFAFA] text-[#171717] py-24 sm:py-32 border-b border-black/10" aria-label="Founder and Reader Community">
+    <section id="founder" className="bg-[#FAFAFA] text-[#171717] py-24 sm:py-32 border-b border-black/10" aria-label="Founder and Reader Community">
+      <div id="media" className="sr-only" />
       <div className="mx-auto w-[calc(100%_-_32px)] max-w-shell">
         
         {/* Section Grid */}

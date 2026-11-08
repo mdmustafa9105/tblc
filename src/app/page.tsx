@@ -4,9 +4,10 @@ import React, { useState } from 'react';
 import { Navbar } from '../components/Navbar';
 import { Hero } from '../components/Hero';
 import { ProofStrip } from '../components/ProofStrip';
+import { CaseStudies } from '../components/CaseStudies';
 import { ServicesBento } from '../components/ServicesBento';
 import { MetricsBand } from '../components/MetricsBand';
-import { CaseStudies } from '../components/CaseStudies';
+import { HowItWorks } from '../components/HowItWorks';
 import { FounderSection } from '../components/FounderSection';
 import { TestimonialsAndFAQ } from '../components/TestimonialsAndFAQ';
 import { ClosingCTA } from '../components/ClosingCTA';
@@ -26,38 +27,41 @@ export default function HomePage() {
   };
 
   return (
-    <div className="min-h-screen bg-[#010405] text-white font-sans selection:bg-white selection:text-black flex flex-col">
-      {/* Floating Header Navigation (Atomik Minimal Style) */}
+    <div className="min-h-screen bg-[#0A0B0E] text-white font-sans selection:bg-white selection:text-black flex flex-col">
+      {/* Floating Header Navigation */}
       <Navbar onOpenBooking={handleOpenBooking} />
 
-      {/* Main Landmark for Accessibility */}
+      {/* Main Content Landmark */}
       <main id="main-content" className="flex-grow">
-        {/* Stage 01: Hero (Cinematic Open Book & Flowing Wave Visual) */}
+        {/* 1. Hero: The New Media Partner For Ambitious Authors */}
         <Hero onOpenBooking={handleOpenBooking} />
 
-        {/* Stage 02: Clean Proof & Publishing Partner Grid */}
-        <ProofStrip />
+        {/* 2. Selected Book Campaigns & Creative Work */}
+        <div id="work">
+          <ProofStrip />
+          <CaseStudies onOpenBooking={handleOpenBooking} />
+        </div>
 
-        {/* Stage 03: Core Thesis & 3 Visual Service Compositions */}
+        {/* 3. Four Core Services (Book Launches, Backlist Revival, Author Brand, Podcasts) */}
         <ServicesBento onOpenBooking={handleOpenBooking} />
 
-        {/* Stage 04: Dark Breakout Metrics with Panoramic Illuminated Horizon */}
+        {/* 4. Existing Metrics Section (Preserved: 13M+ Reach, 50K+ Community, 1.4M Views) */}
         <MetricsBand />
 
-        {/* Stage 05: Editorial Alternating Case Studies (Elena Vance & Kaelen Thorne) */}
-        <CaseStudies onOpenBooking={handleOpenBooking} />
+        {/* 5. How Our Process Works (4-Step Customer Journey) */}
+        <HowItWorks onOpenBooking={handleOpenBooking} />
 
-        {/* Stage 06: Proprietary Media Engine & Founder Advantage (@whynotnovels) */}
+        {/* 6. Founder & Agency Credibility (Ariba, @whynotnovels Reader Community) */}
         <FounderSection onOpenBooking={handleOpenBooking} />
 
-        {/* Stage 07: High-Intent Objection Handling FAQs */}
+        {/* 7. FAQs (High-Intent Objection Handling) */}
         <TestimonialsAndFAQ onOpenBooking={handleOpenBooking} />
 
-        {/* Stage 08: Dark High-Contrast Closing Conversion Band ("Work With Us") */}
+        {/* 8. Closing CTA (Work With Us / Discuss Your Book) */}
         <ClosingCTA onOpenBooking={handleOpenBooking} />
       </main>
 
-      {/* Stage 09: Minimal 4-Column Editorial Footer */}
+      {/* Footer */}
       <Footer />
 
       {/* Interactive Discovery Call Booking Modal */}
