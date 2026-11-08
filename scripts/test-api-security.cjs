@@ -10,7 +10,7 @@ async function testSecurity() {
   // 2. Test Missing Required Fields (400)
   const emptyRes = await fetch('http://localhost:3000/api/inquiry', {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
+    headers: { 'Content-Type': 'application/json', 'x-forwarded-for': '192.168.1.101' },
     body: JSON.stringify({ name: '' })
   });
   console.log('2. Empty Payload Status:', emptyRes.status, emptyRes.status === 400 ? '✅ PASS (Bad Request)' : '❌ FAIL');
@@ -18,7 +18,7 @@ async function testSecurity() {
   // 3. Test Invalid Email (400)
   const invalidEmailRes = await fetch('http://localhost:3000/api/inquiry', {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
+    headers: { 'Content-Type': 'application/json', 'x-forwarded-for': '192.168.1.102' },
     body: JSON.stringify({ name: 'Valid Name', email: 'not-an-email', authorType: 'Author' })
   });
   console.log('3. Invalid Email Status:', invalidEmailRes.status, invalidEmailRes.status === 400 ? '✅ PASS (Rejected)' : '❌ FAIL');
@@ -26,7 +26,7 @@ async function testSecurity() {
   // 4. Test Honeypot Spam Submission (Silent acceptance / drop)
   const botRes = await fetch('http://localhost:3000/api/inquiry', {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
+    headers: { 'Content-Type': 'application/json', 'x-forwarded-for': '192.168.1.103' },
     body: JSON.stringify({
       name: 'Spam Bot',
       email: 'bot@spam.com',
@@ -40,7 +40,7 @@ async function testSecurity() {
   // 5. Test Valid Submission with Script Sanitization
   const validRes = await fetch('http://localhost:3000/api/inquiry', {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
+    headers: { 'Content-Type': 'application/json', 'x-forwarded-for': '192.168.1.104' },
     body: JSON.stringify({
       name: 'Charlotte Bronte',
       email: 'charlotte@bronte.co.uk',

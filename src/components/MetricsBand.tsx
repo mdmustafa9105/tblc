@@ -4,23 +4,27 @@ import React, { useEffect, useRef, useState } from 'react';
 const METRICS = [
   {
     value: '13M+',
-    label: 'Combined Organic Reach',
-    sublabel: 'Historical campaign impressions across client titles & partner creator networks',
+    label: 'Readers Reached',
+    sublabel: 'Historical combined organic campaign reach across client titles & creator networks',
+    isStat: true,
   },
   {
     value: '50K+',
     label: 'Dedicated Reader Community',
-    sublabel: 'Active fiction book buyers across proprietary media channels (@whynotnovels)',
+    sublabel: 'Active book buyers across founder-led channels (@whynotnovels), subject to verification',
+    isStat: true,
   },
   {
     value: '1.4M',
-    label: 'Top Pilot Launch Campaign',
-    sublabel: 'Single-campaign views achieved on debut author rollout (The Silent Hollow)',
+    label: 'Top Campaign Views',
+    sublabel: 'Single launch-month view count achieved on top short-form campaign feature',
+    isStat: true,
   },
   {
-    value: '100%',
-    label: 'Literary Specialization',
-    sublabel: 'Exclusively dedicated to books, authors, indie presses & literary publishers',
+    value: 'Literary',
+    label: 'Exclusively Books & Authors',
+    sublabel: 'Single-niche specialization dedicated exclusively to authors, titles and publishers',
+    isStat: false,
   },
 ];
 
@@ -42,7 +46,7 @@ export const MetricsBand: React.FC = () => {
     return () => observer.disconnect();
   }, []);
 
-  // Background Panoramic Illuminated Curved Horizon (Atomik Growth Signature)
+  // Background Panoramic Illuminated Curved Horizon
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
@@ -127,9 +131,9 @@ export const MetricsBand: React.FC = () => {
         aria-hidden="true"
       />
 
-      <div className="relative z-10 mx-auto w-[calc(100%_-_32px)] max-w-shell">
+      <div className="relative z-10 mx-auto w-[calc(100%-32px)] max-w-shell">
         
-        {/* Section Header (Atomik Reference Layout) */}
+        {/* Section Header */}
         <div className="text-center max-w-[700px] mx-auto mb-20 sm:mb-24 space-y-4">
           <h2 className="display text-[32px] sm:text-[36px] font-semibold tracking-[0.01em] text-white leading-[1.1]">
             Our work and reach,
@@ -141,7 +145,7 @@ export const MetricsBand: React.FC = () => {
           </p>
         </div>
 
-        {/* 4-Column Horizontal Metrics (Atomik Growth Signature) */}
+        {/* 4-Column Horizontal Metrics */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {METRICS.map((metric, idx) => (
             <div
@@ -149,8 +153,8 @@ export const MetricsBand: React.FC = () => {
               className="flex flex-col items-center text-center p-6 rounded-[16px] bg-white/[0.02] border border-white/[0.08] hover:border-white/20 hover:bg-white/[0.04] transition-all"
             >
               {/* Massive Display Number */}
-              <div className="font-sans text-5xl sm:text-6xl font-semibold tracking-tight text-white mb-3">
-                {hasAnimated ? metric.value : '0'}
+              <div className="font-sans text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-white mb-3">
+                {metric.isStat ? (hasAnimated ? metric.value : '0') : metric.value}
               </div>
 
               {/* Bold Primary Label */}

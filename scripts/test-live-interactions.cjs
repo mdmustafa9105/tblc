@@ -90,27 +90,31 @@ async function runInteractiveTests() {
 
   await new Promise(r => setTimeout(r, 2000));
 
-  // 1. Test ProofStrip Partner Grid
-  console.log('1. Testing ProofStrip Partner Grid:');
+  // 1. Test ProofStrip Book Showcase & Pause Button
+  console.log('1. Testing ProofStrip Book Showcase:');
   const proof = await client.eval(`(() => {
-    const items = document.querySelectorAll('section[aria-label*="Publishing Partners"] .grid > div');
-    const partners = Array.from(items).map(i => i.querySelector('h3')?.textContent.trim());
-    return { count: items.length, sample: partners.slice(0, 5) };
+    const section = document.querySelector('#books-showcase');
+    const pauseBtn = section ? section.querySelector('button[aria-label*="scroll"]') : null;
+    return {
+      found: !!section,
+      hasPauseButton: !!pauseBtn,
+      initialAriaLabel: pauseBtn ? pauseBtn.getAttribute('aria-label') : null,
+    };
   })()`);
   console.log('   Result:', proof);
 
-  // 2. Test Audio Mute / Unmute
-  console.log('\n2. Testing Video Audio Mute / Unmute:');
-  const audio = await client.eval(`(async () => {
-    const btn = document.querySelector('button[aria-label*="video"]');
-    if (!btn) return { error: 'Video button not found' };
+  // 2. Test Video Preview Play / Pause Controls
+  console.log('\n2. Testing Video Preview Play / Pause Controls:');
+  const videoTest = await client.eval(`(async () => {
+    const btn = document.querySelector('button[aria-label*="Play preview"], button[aria-label*="preview"]');
+    if (!btn) return { error: 'Preview button not found' };
     const labelBefore = btn.getAttribute('aria-label');
     btn.click();
     await new Promise(r => setTimeout(r, 100));
     const labelAfter = btn.getAttribute('aria-label');
     return { labelBefore, labelAfter };
   })()`);
-  console.log('   Result:', audio);
+  console.log('   Result:', videoTest);
 
   // 3. Test FAQ Accordion Toggles
   console.log('\n3. Testing FAQ Accordion Toggles:');
