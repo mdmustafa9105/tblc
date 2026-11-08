@@ -96,7 +96,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) =
     >
       {/* Backdrop */}
       <div
-        className="fixed inset-0 bg-ink/75 backdrop-blur-xs transition-opacity animate-in fade-in duration-200"
+        className="fixed inset-0 bg-ink/75 backdrop-blur-sm transition-opacity duration-200"
         onClick={onClose}
         aria-hidden="true"
       />
@@ -104,19 +104,19 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) =
       {/* Modal Card */}
       <div
         ref={modalRef}
-        className="relative w-full max-w-xl bg-paper rounded-3xl border border-bone-dark shadow-2xl overflow-hidden z-10 my-8 text-ink animate-in zoom-in-95 duration-200"
+        className="relative z-10 my-8 w-full max-w-xl overflow-hidden rounded-2xl border border-line bg-paper text-ink shadow-2xl"
       >
         {/* Header Bar */}
-        <div className="flex items-center justify-between p-6 sm:p-8 border-b border-bone-dark/50 bg-bone/40">
+        <div className="flex items-center justify-between p-6 sm:p-8 border-b border-line bg-card/60">
           <div className="flex items-center gap-3">
-            <div className="w-11 h-11 rounded-full bg-coral/10 text-coral flex items-center justify-center shrink-0">
+            <div className="w-11 h-11 rounded-full bg-accent/10 text-accent flex items-center justify-center shrink-0">
               <Calendar className="w-5 h-5" />
             </div>
             <div>
-              <span className="text-xs uppercase font-mono tracking-widest text-coral font-bold block">
+              <span className="text-xs uppercase font-mono tracking-widest text-accent font-bold block">
                 Direct with Founder Ariba
               </span>
-              <h2 id="booking-modal-title" className="font-serif text-xl sm:text-2xl font-bold text-ink">
+              <h2 id="booking-modal-title" className="display text-xl sm:text-2xl font-bold text-ink">
                 Request a 20-Min Discovery Call
               </h2>
             </div>
@@ -125,7 +125,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) =
           <button
             type="button"
             onClick={onClose}
-            className="w-10 h-10 rounded-full bg-paper hover:bg-bone border border-stone-300 text-stone hover:text-ink flex items-center justify-center transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-coral"
+            className="w-10 h-10 rounded-full bg-paper hover:bg-card border border-line text-muted hover:text-ink flex items-center justify-center transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
             aria-label="Close booking modal"
           >
             <X className="w-5 h-5" />
@@ -140,42 +140,42 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) =
                 <div className="w-14 h-14 rounded-full bg-emerald-100 text-emerald-700 mx-auto flex items-center justify-center">
                   <CheckCircle2 className="w-8 h-8" />
                 </div>
-                <h3 className="font-serif text-2xl font-bold text-ink">
+                <h3 className="display text-2xl font-bold text-ink">
                   Discovery Request Received
                 </h3>
-                <p className="font-sans text-stone text-sm max-w-md mx-auto leading-relaxed">
-                  Thank you, <strong className="text-ink font-semibold">{formData.name}</strong>. Ariba has received your campaign inquiry for <em className="text-coral">"{formData.bookTitle || 'your title'}"</em>. Because every campaign is bespoke, we review your manuscript details before confirming call times.
+                <p className="font-sans text-muted text-sm max-w-md mx-auto leading-relaxed">
+                  Thank you, <strong className="text-ink font-semibold">{formData.name}</strong>. Ariba has received your campaign inquiry for <em className="text-accent">"{formData.bookTitle || 'your title'}"</em>. Because every campaign is bespoke, we review your manuscript details before confirming call times.
                 </p>
               </div>
 
               {/* What Happens Next: 3 Steps (from Brief V1.0) */}
-              <div className="p-5 rounded-2xl bg-bone/70 border border-stone-300 space-y-3">
+              <div className="p-5 rounded-2xl bg-card border border-line space-y-3">
                 <div className="text-xs font-mono font-bold uppercase tracking-wider text-ink flex items-center gap-1.5">
-                  <Sparkles className="w-4 h-4 text-coral" /> What Happens Next
+                  <Sparkles className="w-4 h-4 text-accent" /> What Happens Next
                 </div>
-                <ol className="space-y-2.5 text-xs text-stone-700 font-sans">
+                <ol className="space-y-2.5 text-xs text-muted font-sans">
                   <li className="flex items-start gap-2.5">
-                    <span className="font-mono font-bold text-coral bg-paper px-1.5 py-0.5 rounded border border-bone-dark">1</span>
+                    <span className="font-mono font-bold text-accent bg-paper px-1.5 py-0.5 rounded border border-line">1</span>
                     <span><strong>Manuscript &amp; Trope Audit:</strong> Ariba reviews your synopsis, comps, and timeline within 1 business day.</span>
                   </li>
                   <li className="flex items-start gap-2.5">
-                    <span className="font-mono font-bold text-coral bg-paper px-1.5 py-0.5 rounded border border-bone-dark">2</span>
+                    <span className="font-mono font-bold text-accent bg-paper px-1.5 py-0.5 rounded border border-line">2</span>
                     <span><strong>Calendar Invitation:</strong> We email you a direct invite to select your 20-minute Zoom slot across your local time zone.</span>
                   </li>
                   <li className="flex items-start gap-2.5">
-                    <span className="font-mono font-bold text-coral bg-paper px-1.5 py-0.5 rounded border border-bone-dark">3</span>
+                    <span className="font-mono font-bold text-accent bg-paper px-1.5 py-0.5 rounded border border-line">3</span>
                     <span><strong>Hook Blueprint on Call:</strong> You get a custom creative hook outline on the call — with zero hard sales pitch.</span>
                   </li>
                 </ol>
               </div>
 
               {/* Response Promise */}
-              <div className="flex flex-wrap items-center justify-between text-xs text-stone border-t border-bone-dark/50 pt-3">
+              <div className="flex flex-wrap items-center justify-between text-xs text-muted border-t border-line pt-3">
                 <span className="flex items-center gap-1.5">
-                  <Clock className="w-4 h-4 text-coral" /> Typical response: within 1 business day
+                  <Clock className="w-4 h-4 text-accent" /> Typical response: within 1 business day
                 </span>
                 <span className="flex items-center gap-1.5 font-mono text-[11px]">
-                  <Mail className="w-3.5 h-3.5 text-coral" /> hello@thebooklaunchcompany.com
+                  <Mail className="w-3.5 h-3.5 text-accent" /> hello@thebooklaunchcompany.com
                 </span>
               </div>
 
@@ -183,7 +183,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) =
                 <button
                   type="button"
                   onClick={onClose}
-                  className="w-full sm:w-auto px-8 py-3 rounded-full bg-ink text-white font-semibold text-sm hover:bg-stone-800 transition-colors"
+                  className="w-full sm:w-auto px-8 py-3 rounded-full bg-ink text-white font-semibold text-sm hover:bg-[#2a2a2a] transition-colors"
                 >
                   Close Confirmation
                 </button>
@@ -205,7 +205,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) =
                     placeholder="e.g. Elena Vance"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full px-4 py-2.5 rounded-xl bg-bone/50 border border-stone-300 focus:border-coral focus:ring-1 focus:ring-coral text-sm text-ink placeholder:text-stone/60 outline-none transition-all"
+                    className="w-full px-4 py-2.5 rounded-xl bg-card/50 border border-line focus:border-accent focus:ring-1 focus:ring-accent text-sm text-ink placeholder:text-muted/60 outline-none transition-all"
                   />
                 </div>
 
@@ -221,7 +221,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) =
                     placeholder="author@example.com"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full px-4 py-2.5 rounded-xl bg-bone/50 border border-stone-300 focus:border-coral focus:ring-1 focus:ring-coral text-sm text-ink placeholder:text-stone/60 outline-none transition-all"
+                    className="w-full px-4 py-2.5 rounded-xl bg-card/50 border border-line focus:border-accent focus:ring-1 focus:ring-accent text-sm text-ink placeholder:text-muted/60 outline-none transition-all"
                   />
                 </div>
               </div>
@@ -236,7 +236,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) =
                     id="booking-role"
                     value={formData.role}
                     onChange={(e) => setFormData({ ...formData, role: e.target.value })}
-                    className="w-full px-4 py-2.5 rounded-xl bg-bone/50 border border-stone-300 focus:border-coral focus:ring-1 focus:ring-coral text-sm text-ink outline-none transition-all"
+                    className="w-full px-4 py-2.5 rounded-xl bg-card/50 border border-line focus:border-accent focus:ring-1 focus:ring-accent text-sm text-ink outline-none transition-all"
                   >
                     <option value="Author">Author (Indie, Debut, or Established)</option>
                     <option value="Publisher">Publisher / Imprint</option>
@@ -254,7 +254,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) =
                     id="booking-genre"
                     value={formData.genre}
                     onChange={(e) => setFormData({ ...formData, genre: e.target.value })}
-                    className="w-full px-4 py-2.5 rounded-xl bg-bone/50 border border-stone-300 focus:border-coral focus:ring-1 focus:ring-coral text-sm text-ink outline-none transition-all"
+                    className="w-full px-4 py-2.5 rounded-xl bg-card/50 border border-line focus:border-accent focus:ring-1 focus:ring-accent text-sm text-ink outline-none transition-all"
                   >
                     <option value="Fiction / Literary">Fiction / Literary</option>
                     <option value="Thriller / Mystery">Thriller / Mystery</option>
@@ -279,7 +279,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) =
                     placeholder="e.g. The Silent Hollow"
                     value={formData.bookTitle}
                     onChange={(e) => setFormData({ ...formData, bookTitle: e.target.value })}
-                    className="w-full px-4 py-2.5 rounded-xl bg-bone/50 border border-stone-300 focus:border-coral focus:ring-1 focus:ring-coral text-sm text-ink placeholder:text-stone/60 outline-none transition-all"
+                    className="w-full px-4 py-2.5 rounded-xl bg-card/50 border border-line focus:border-accent focus:ring-1 focus:ring-accent text-sm text-ink placeholder:text-muted/60 outline-none transition-all"
                   />
                 </div>
 
@@ -292,7 +292,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) =
                     id="booking-service"
                     value={formData.service}
                     onChange={(e) => setFormData({ ...formData, service: e.target.value })}
-                    className="w-full px-4 py-2.5 rounded-xl bg-bone/50 border border-stone-300 focus:border-coral focus:ring-1 focus:ring-coral text-sm text-ink outline-none transition-all"
+                    className="w-full px-4 py-2.5 rounded-xl bg-card/50 border border-line focus:border-accent focus:ring-1 focus:ring-accent text-sm text-ink outline-none transition-all"
                   >
                     <option value="Book Launches">01. Book Launches (New Release)</option>
                     <option value="Backlist Revival">02. Backlist Revival (Published Title)</option>
@@ -312,7 +312,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) =
                   id="booking-timeline"
                   value={formData.timeline}
                   onChange={(e) => setFormData({ ...formData, timeline: e.target.value })}
-                  className="w-full px-4 py-2.5 rounded-xl bg-bone/50 border border-stone-300 focus:border-coral focus:ring-1 focus:ring-coral text-sm text-ink outline-none transition-all"
+                  className="w-full px-4 py-2.5 rounded-xl bg-card/50 border border-line focus:border-accent focus:ring-1 focus:ring-accent text-sm text-ink outline-none transition-all"
                 >
                   <option value="Upcoming in 8–12 weeks">Upcoming in 8–12 weeks (Ideal window for ARC seeding)</option>
                   <option value="Upcoming in 4–8 weeks">Upcoming in 4–8 weeks (Fast-track pre-orders)</option>
@@ -332,7 +332,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) =
                   placeholder="Share a short pitch, your comps (e.g. 'For fans of Yellowface and Rebecca'), or any specific launch goals..."
                   value={formData.notes}
                   onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
-                  className="w-full px-4 py-2.5 rounded-xl bg-bone/50 border border-stone-300 focus:border-coral focus:ring-1 focus:ring-coral text-sm text-ink placeholder:text-stone/60 outline-none transition-all resize-none"
+                  className="w-full px-4 py-2.5 rounded-xl bg-card/50 border border-line focus:border-accent focus:ring-1 focus:ring-accent text-sm text-ink placeholder:text-muted/60 outline-none transition-all resize-none"
                 />
               </div>
 
@@ -351,12 +351,12 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) =
               </div>
 
               {/* Assurances */}
-              <div className="flex items-center gap-4 text-xs text-stone pt-1">
+              <div className="flex items-center gap-4 text-xs text-muted pt-1">
                 <span className="flex items-center gap-1.5">
-                  <ShieldCheck className="w-4 h-4 text-coral" /> Zero hard sales pitches
+                  <ShieldCheck className="w-4 h-4 text-accent" /> Zero hard sales pitches
                 </span>
                 <span className="flex items-center gap-1.5">
-                  <Clock className="w-4 h-4 text-coral" /> 20-min focused session
+                  <Clock className="w-4 h-4 text-accent" /> 20-min focused session
                 </span>
               </div>
 
@@ -365,7 +365,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) =
                 <button
                   type="submit"
                   disabled={loading}
-                  className="w-full py-4 px-6 rounded-full bg-coral hover:bg-coral-400 active:bg-coral-600 text-white font-semibold text-base transition-all duration-200 shadow-md hover:shadow-lg flex items-center justify-center gap-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-coral disabled:opacity-75 min-h-[48px]"
+                  className="w-full py-4 px-6 rounded-full bg-ink hover:bg-ink-400 active:bg-ink-600 text-white font-semibold text-base transition-all duration-200 shadow-md hover:shadow-lg flex items-center justify-center gap-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accent disabled:opacity-75 min-h-[48px]"
                 >
                   {loading ? (
                     <span>Submitting Discovery Inquiry...</span>
@@ -379,18 +379,18 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) =
               </div>
 
               {/* Privacy Notice & Confidentiality */}
-              <p className="text-[11px] text-stone text-center leading-normal pt-2">
+              <p className="text-[11px] text-muted text-center leading-normal pt-2">
                 By requesting a discovery call, you agree to receive direct communication regarding your campaign. We treat all author synopses, comp titles, and release dates with strict editorial confidentiality.
               </p>
 
               {calendarUrl && (
-                <div className="pt-3 text-center border-t border-stone-300/60 mt-3">
-                  <span className="text-xs text-stone block mb-1.5">Prefer direct calendar scheduling?</span>
+                <div className="pt-3 text-center border-t border-line mt-3">
+                  <span className="text-xs text-muted block mb-1.5">Prefer direct calendar scheduling?</span>
                   <a
                     href={calendarUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-coral hover:underline"
+                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-accent hover:underline"
                   >
                     Open live calendar in new tab <ArrowRight className="w-3.5 h-3.5" />
                   </a>

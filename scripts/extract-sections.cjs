@@ -1,0 +1,15 @@
+const fs = require('fs');
+const b = fs.readFileSync('scripts/atomik-body-stripped.html', 'utf8');
+const start = b.indexOf('<section id="stats"');
+const end = b.indexOf('<section id="case-studies"');
+fs.writeFileSync('qa-artifacts/stats.html', b.slice(start, end));
+const start2 = b.indexOf('<section id="podcast"');
+const end2 = b.indexOf('<section id="faq"');
+fs.writeFileSync('qa-artifacts/podcast.html', b.slice(start2, end2));
+const start3 = b.indexOf('<section id="faq"');
+const end3 = b.indexOf('<section id="footer-cta"');
+fs.writeFileSync('qa-artifacts/faq.html', b.slice(start3, end3));
+const start4 = b.indexOf('<section id="footer-cta"');
+const end4 = b.indexOf('</main>');
+fs.writeFileSync('qa-artifacts/cta-footer.html', b.slice(start4, end4));
+console.log('ok', end - start, end2 - start2, end3 - start3, end4 - start4);

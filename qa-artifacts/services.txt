@@ -1,0 +1,18 @@
+NAV {"box":{"x":120,"y":0,"w":1200,"h":112},"bg":"rgba(0, 0, 0, 0)","padding":"40px 32px","font":"inter, \"inter Fallback\", system-ui, sans-serif","size":"16px"}
+
+NAV LINKS
+{"tag":"a","text":"Atomik","box":{"x":152,"y":40,"w":90,"h":24},"size":"16px","weight":"400","color":"rgb(255, 255, 255)","bg":"rgba(0, 0, 0, 0)","radius":"0px","pad":"0px","border":"rgb(255, 255, 255) 0px"}
+{"tag":"a","text":"Services","box":{"x":558,"y":49,"w":70,"h":20},"size":"13px","weight":"500","color":"rgb(255, 255, 255)","bg":"rgba(0, 0, 0, 0)","radius":"0px","pad":"0px","border":"rgb(255, 255, 255) 0px"}
+{"tag":"a","text":"Case Studies","box":{"x":660,"y":49,"w":82,"h":20},"size":"13px","weight":"500","color":"rgb(255, 255, 255)","bg":"rgba(0, 0, 0, 0)","radius":"0px","pad":"0px","border":"rgb(255, 255, 255) 0px"}
+{"tag":"a","text":"Blog","box":{"x":774,"y":49,"w":28,"h":20},"size":"13px","weight":"500","color":"rgb(255, 255, 255)","bg":"rgba(0, 0, 0, 0)","radius":"0px","pad":"0px","border":"rgb(255, 255, 255) 0px"}
+{"tag":"a","text":"Contact","box":{"x":833,"y":49,"w":49,"h":20},"size":"13px","weight":"500","color":"rgb(255, 255, 255)","bg":"rgba(0, 0, 0, 0)","radius":"0px","pad":"0px","border":"rgb(255, 255, 255) 0px"}
+{"tag":"a","text":"Book a call","box":{"x":1177,"y":43,"w":111,"h":32},"size":"13px","weight":"500","color":"rgb(0, 0, 0)","bg":"rgb(242, 242, 242)","radius":"3.35544e+07px","pad":"0px 14px","border":"rgb(0, 0, 0) 0px"}
+{"tag":"button","text":"","box":{"x":0,"y":0,"w":0,"h":0},"size":"16px","weight":"400","color":"rgb(255, 255, 255)","bg":"rgba(0, 0, 0, 0)","radius":"3.35544e+07px","pad":"0px","border":"rgb(255, 255, 255) 0px"}
+
+SERVICES
+{"box":{"x":0,"y":1912,"w":1440,"h":1671},"bg":"rgb(250, 250, 250)"}
+{"tag":"article","text":"Launch ViralityProduct launches and fundraising announcements at guaranteed millions of views on X/LinkedIn% of all launch views on X by TLVC:where(number-flow-","box":{"x":128,"y":2295,"w":1184,"h":572},"bg":"rgb(6, 16, 26)","radius":"16px","border":"rgb(255, 255, 255) 0px","pad":"0px","display":"block","grid":"none","gap":"normal","size":"16px","weight":"400","color":"rgb(255, 255, 255)"}
+{"tag":"div","text":"Launch ViralityProduct launches and fundraising announcements at guaranteed millions of views on X/LinkedIn% of all launch views on X by TLVC:where(number-flow-","box":{"x":128,"y":2295,"w":592,"h":572},"bg":"rgba(0, 0, 0, 0)","radius":"0px","border":"rgb(255, 255, 255) 0px","pad":"0px","display":"flex","grid":"none","gap":"normal","size":"16px","weight":"400","color":"rgb(255, 255, 255)"}
+{"tag":"div","text":":where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-","box":{"x":720,"y":2295,"w":592,"h":572},"bg":"rgba(0, 0, 0, 0)","radius":"0px","border":"rgb(255, 255, 255) 0px","pad":"0px","display":"block","grid":"none","gap":"normal","size":"16px","weight":"400","color":"rgb(255, 255, 255)"}
+{"tag":"article","text":"Brex X Atomik ClipsSince Dec 22, 2025Views Delivered22.5MCPM per 1K views$3.00Total Bounty$100,000Target Views30MViews Progress:where(number-flow-react){line-he","box":{"x":128,"y":2875,"w":588,"h":588},"bg":"rgb(255, 255, 255)","radius":"16px","border":"rgb(255, 255, 255) 0px","pad":"0px","display":"block","grid":"none","gap":"normal","size":"16px","weight":"400","color":"rgb(255, 255, 255)"}
+{"tag":"article","text":"PodcastingComplete production from guest research to episode distribution.Learn more","box":{"x":724,"y":2875,"w":588,"h":588},"bg":"rgb(0, 0, 0)","radius":"16px","border":"rgb(255, 255, 255) 0px","pad":"0px","display":"block","grid":"none","gap":"normal","size":"16px","weight":"400","color":"rgb(255, 255, 255)"}

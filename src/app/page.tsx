@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { Navbar } from '../components/Navbar';
 import { Hero } from '../components/Hero';
-import { CoverMarquee } from '../components/CoverMarquee';
+import { ProofStrip } from '../components/ProofStrip';
 import { ServicesBento } from '../components/ServicesBento';
 import { MetricsBand } from '../components/MetricsBand';
 import { CaseStudies } from '../components/CaseStudies';
@@ -26,29 +26,29 @@ export default function HomePage() {
   };
 
   return (
-    <div className="min-h-screen bg-paper text-ink font-sans selection:bg-coral selection:text-white flex flex-col">
+    <div className="min-h-screen bg-[#010405] text-white font-sans selection:bg-white selection:text-black flex flex-col">
       {/* Floating Header Navigation (Atomik Minimal Style) */}
       <Navbar onOpenBooking={handleOpenBooking} />
 
       {/* Main Landmark for Accessibility */}
       <main id="main-content" className="flex-grow">
-        {/* Stage 01: Hero (55/45 Split with Single Living Video Player) */}
+        {/* Stage 01: Hero (Cinematic Open Book & Flowing Wave Visual) */}
         <Hero onOpenBooking={handleOpenBooking} />
 
-        {/* Stage 02: Early Credibility Marquee ("We partner with authors...") */}
-        <CoverMarquee />
+        {/* Stage 02: Clean Proof & Publishing Partner Grid */}
+        <ProofStrip />
 
-        {/* Stage 03: Core Thesis & 4 Services ("Reader attention is the moat. We build yours.") */}
+        {/* Stage 03: Core Thesis & 3 Visual Service Compositions */}
         <ServicesBento onOpenBooking={handleOpenBooking} />
 
-        {/* Stage 04: Dark Breakout Metrics ("Our work and reach, by the numbers.") */}
+        {/* Stage 04: Dark Breakout Metrics with Panoramic Illuminated Horizon */}
         <MetricsBand />
 
-        {/* Stage 05: Editorial Narrative Case Studies (Elena Vance & Kaelen Thorne) */}
+        {/* Stage 05: Editorial Alternating Case Studies (Elena Vance & Kaelen Thorne) */}
         <CaseStudies onOpenBooking={handleOpenBooking} />
 
         {/* Stage 06: Proprietary Media Engine & Founder Advantage (@whynotnovels) */}
-        <FounderSection />
+        <FounderSection onOpenBooking={handleOpenBooking} />
 
         {/* Stage 07: High-Intent Objection Handling FAQs */}
         <TestimonialsAndFAQ onOpenBooking={handleOpenBooking} />

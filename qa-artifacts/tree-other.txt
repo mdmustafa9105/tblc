@@ -1,0 +1,337 @@
+
+######## #case-studies
+<section> [0,4483,1440,1540] block row normal normal g:normal bg:rgb(250, 250, 250) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+  <div> [120,4483,1200,1540] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+    <div> [120,4483,1200,1540] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:160px 32px 120px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+      <div> [152,4643,1136,1100] flex column normal normal g:160px bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+        <article> [152,4643,1136,470] grid row normal center g:32px bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+          <div> [152,4662,552,433] flex column space-between flex-start g:normal bg:rgba(0, 0, 0, 0) r:0px p:32px 32px 8px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+            <div> [184,4694,488,216] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+              <div> [184,4694,488,20] flex row normal center g:8px bg:rgba(0, 0, 0, 0) r:0px p:0px inter/13px/600 lh:19.5px c:rgb(0, 114, 245)
+                <svg> [184,4696,15,15] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/13px/600 lh:19.5px c:rgb(0, 114, 245)
+                  <g> [187,4696,10,14] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/13px/600 lh:19.5px c:rgb(0, 114, 245)
+                    <path> [187,4696,10,14] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/13px/600 lh:19.5px c:rgb(0, 114, 245)
+                <span> [207,4694,129,20] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/13px/600 lh:19.5px c:rgb(0, 114, 245) :: Acquired case study
+              <h2> [184,4737,450,28] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px switzer/20px/500 lh:28px c:rgb(23, 23, 23) :: How Acquired Gained 52M Views on Autopilot
+              <p> [184,4789,488,59] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/13px/450 lh:19.5px c:rgb(102, 102, 102) :: Acquired needed to repurpose long-form episodes into short-form content to stay top of mind, grow its social following, and create a discovery funnel for new li
+              <a> [184,4872,152,38] inline-flex row normal center g:8px bg:rgb(242, 242, 242) r:32px p:0px 16px inter/13px/500 lh:19.5px c:rgb(23, 23, 23) :: View Case study
+                <svg> [312,4887,8,8] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/13px/500 lh:19.5px c:rgb(23, 23, 23)
+                  <path> [314,4887,4,7] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/13px/500 lh:19.5px c:rgb(23, 23, 23)
+            <dl> [184,4942,488,145] grid row normal normal g:normal bg:rgba(0, 0, 0, 0) r:6px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+              <div> [185,4943,243,72] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:14px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+                <dt> [199,4957,214,18] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/12px/450 lh:18px c:rgb(125, 125, 125) :: Total Views
+                <dd> [199,4979,214,21] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/14px/600 lh:21px c:rgb(23, 23, 23) :: 52M+
+              <div> [428,4943,243,72] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:14px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+                <dt> [442,4957,215,18] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/12px/450 lh:18px c:rgb(125, 125, 125) :: New Subscribers
+                <dd> [442,4979,215,21] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/14px/600 lh:21px c:rgb(23, 23, 23) :: 29.8k
+              <div> [185,5015,243,71] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:14px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+                <dt> [199,5029,214,18] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/12px/450 lh:18px c:rgb(125, 125, 125) :: Total Likes
+                <dd> [199,5051,214,21] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/14px/600 lh:21px c:rgb(23, 23, 23) :: 684K
+              <div> [428,5015,243,71] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:14px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+                <dt> [442,5029,215,18] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/12px/450 lh:18px c:rgb(125, 125, 125) :: Timeframe
+                <dd> [442,5051,215,21] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/14px/600 lh:21px c:rgb(23, 23, 23) :: 15 months
+          <div> [736,4643,552,470] block row normal normal g:normal bg:rgb(242, 242, 242) r:16px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+            <a> [817,4768,390,219] block row normal normal g:normal bg:rgb(255, 255, 255) r:12px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+              <video> [818,4769,388,217] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+            <div> [736,5065,552,49] flex row space-between center g:normal bg:rgba(0, 0, 0, 0) r:0px p:16px inter/11px/500 lh:16.5px c:rgb(125, 125, 125)
+              <span> [752,5081,91,17] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/11px/500 lh:16.5px c:rgb(125, 125, 125) :: Client testimonial
+              <a> [1170,5081,102,17] flex row normal center g:6px bg:rgba(0, 0, 0, 0) r:0px p:0px inter/11px/500 lh:16.5px c:rgb(125, 125, 125) :: View on youtube
+                <svg> [1264,5085,8,8] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/11px/500 lh:16.5px c:rgb(125, 125, 125)
+                  <path> [1266,5086,4,7] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/11px/500 lh:16.5px c:rgb(125, 125, 125)
+        <article> [152,5273,1136,470] grid row normal center g:32px bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+          <div> [736,5292,552,433] flex column space-between flex-start g:normal bg:rgba(0, 0, 0, 0) r:0px p:32px 32px 8px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+            <div> [768,5324,488,216] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+              <div> [768,5324,488,20] flex row normal center g:8px bg:rgba(0, 0, 0, 0) r:0px p:0px inter/13px/600 lh:19.5px c:rgb(0, 114, 245)
+                <svg> [768,5326,15,15] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/13px/600 lh:19.5px c:rgb(0, 114, 245)
+                  <g> [771,5326,10,14] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/13px/600 lh:19.5px c:rgb(0, 114, 245)
+                    <path> [771,5326,10,14] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/13px/600 lh:19.5px c:rgb(0, 114, 245)
+                <span> [791,5324,145,20] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/13px/600 lh:19.5px c:rgb(0, 114, 245) :: Enrich Labs case study
+              <h2> [768,5367,450,28] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px switzer/20px/500 lh:28px c:rgb(23, 23, 23) :: Launching Helena: 3.6M Views on X
+              <p> [768,5419,488,59] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/13px/450 lh:19.5px c:rgb(102, 102, 102) :: How we orchestrated Enrich Labs’ autonomous AI marketer to become the largest launch in its category, generating 10× homepage traffic and sustained momentum thr
+              <a> [768,5502,152,38] inline-flex row normal center g:8px bg:rgb(242, 242, 242) r:32px p:0px 16px inter/13px/500 lh:19.5px c:rgb(23, 23, 23) :: View Case study
+                <svg> [896,5517,8,8] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/13px/500 lh:19.5px c:rgb(23, 23, 23)
+                  <path> [898,5517,4,7] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/13px/500 lh:19.5px c:rgb(23, 23, 23)
+            <dl> [768,5572,488,145] grid row normal normal g:normal bg:rgba(0, 0, 0, 0) r:6px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+              <div> [769,5573,243,72] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:14px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+                <dt> [783,5587,214,18] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/12px/450 lh:18px c:rgb(125, 125, 125) :: Views on X
+                <dd> [783,5609,214,21] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/14px/600 lh:21px c:rgb(23, 23, 23) :: 3.6M
+              <div> [1012,5573,243,72] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:14px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+                <dt> [1026,5587,215,18] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/12px/450 lh:18px c:rgb(125, 125, 125) :: Homepage Traffic
+                <dd> [1026,5609,215,21] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/14px/600 lh:21px c:rgb(23, 23, 23) :: 10×
+              <div> [769,5645,243,71] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:14px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+                <dt> [783,5659,214,18] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/12px/450 lh:18px c:rgb(125, 125, 125) :: Positive Sentiment
+                <dd> [783,5681,214,21] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/14px/600 lh:21px c:rgb(23, 23, 23) :: 70%+
+              <div> [1012,5645,243,71] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:14px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+                <dt> [1026,5659,215,18] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/12px/450 lh:18px c:rgb(125, 125, 125) :: Target Achieved
+                <dd> [1026,5681,215,21] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/14px/600 lh:21px c:rgb(23, 23, 23) :: 360%
+          <div> [152,5273,552,470] block row normal normal g:normal bg:rgb(242, 242, 242) r:16px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+            <a> [233,5398,390,219] block row normal normal g:normal bg:rgb(255, 255, 255) r:12px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+              <video> [234,5399,388,217] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+            <div> [152,5695,552,49] flex row space-between center g:normal bg:rgba(0, 0, 0, 0) r:0px p:16px inter/11px/500 lh:16.5px c:rgb(125, 125, 125)
+              <span> [168,5711,91,17] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/11px/500 lh:16.5px c:rgb(125, 125, 125) :: Client testimonial
+              <a> [586,5711,102,17] flex row normal center g:6px bg:rgba(0, 0, 0, 0) r:0px p:0px inter/11px/500 lh:16.5px c:rgb(125, 125, 125) :: View on youtube
+                <svg> [680,5715,8,8] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/11px/500 lh:16.5px c:rgb(125, 125, 125)
+                  <path> [682,5716,4,7] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/11px/500 lh:16.5px c:rgb(125, 125, 125)
+      <div> [152,5863,1136,40] flex row center normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+        <a> [631,5863,178,40] flex row normal center g:8px bg:oklab(0 0 0 / 0.06) r:40px p:0px 16px inter/13px/500 lh:19.5px c:rgb(23, 23, 23) :: View all case studies
+          <svg> [785,5879,8,8] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/13px/500 lh:19.5px c:rgb(23, 23, 23)
+            <path> [787,5880,4,7] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/13px/500 lh:19.5px c:rgb(23, 23, 23)
+
+######## #podcast
+<section> [0,6023,1440,469] block row normal normal g:normal bg:rgb(250, 250, 250) r:0px p:0px inter/16px/400 lh:24px c:rgb(23, 23, 23)
+  <div> [120,6023,1200,469] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:24px 0px inter/16px/400 lh:24px c:rgb(23, 23, 23)
+    <div> [120,6047,1200,421] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:96px 64px inter/16px/400 lh:24px c:rgb(23, 23, 23)
+      <div> [184,6143,1072,229] flex row space-between center g:24px bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(23, 23, 23)
+        <div> [184,6143,400,229] flex column normal flex-start g:40px bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(23, 23, 23)
+          <div> [184,6143,184,61] flex column normal normal g:6px bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(23, 23, 23)
+            <p> [184,6143,184,20] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/13px/450 lh:19.5px c:oklab(0 0 0 / 0.4) :: A podcast by Atomik
+            <h2> [184,6169,184,35] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px switzer/32px/600 lh:35.2px c:rgb(23, 23, 23) :: Distribution.
+          <p> [184,6244,400,48] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/15px/450 lh:24px c:rgb(102, 102, 102) :: Distribution is Atomik’s podcast about the strategies, decisions, and inflection points behind breakout growth.
+          <a> [184,6332,184,40] flex row center center g:8px bg:rgb(23, 23, 23) r:3.35544e+07px p:8px 16px inter/13px/600 lh:19.5px c:rgb(242, 242, 242) :: Listen to Distribution
+            <svg> [200,6345,14,14] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/13px/600 lh:19.5px c:rgb(242, 242, 242)
+              <path> [201,6346,13,13] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/13px/600 lh:19.5px c:rgb(242, 242, 242)
+        <a> [849,6143,407,229] block row normal normal g:normal bg:rgb(255, 255, 255) r:16px p:0px inter/16px/400 lh:24px c:rgb(23, 23, 23)
+          <video> [850,6144,405,227] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(23, 23, 23)
+          <span> [1031,6237,42,42] flex row center center g:normal bg:oklab(0.999994 0.0000455678 0.0000200868 / 0.2) r:3.35544e+07px p:0px inter/16px/400 lh:24px c:rgb(23, 23, 23)
+            <svg> [1046,6251,13,14] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(23, 23, 23)
+              <path> [1046,6251,13,14] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(23, 23, 23)
+          <span> [850,6144,405,227] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:16px p:0px inter/16px/400 lh:24px c:rgb(23, 23, 23)
+
+######## #faq
+<section> [0,6492,1440,721] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+  <div> [120,6492,1200,721] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+    <div> [120,6492,1200,721] flex column normal center g:normal bg:rgba(0, 0, 0, 0) r:0px p:120px 32px 240px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+      <div> [446,6612,549,361] flex column normal center g:48px bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+        <h2> [675,6612,90,40] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px switzer/36px/600 lh:39.6px c:rgb(23, 23, 23) :: FAQs
+        <div> [446,6700,549,274] flex column normal normal g:4px bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+          <div> [446,6700,549,52] block row normal normal g:normal bg:rgb(242, 242, 242) r:12px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+            <button> [446,6700,549,52] flex row space-between center g:16px bg:rgba(0, 0, 0, 0) r:0px p:16px 18px 16px 16px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+              <span> [462,6716,483,20] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/13px/500 lh:19.5px c:rgb(23, 23, 23) :: What’s the typical turnaround time?
+              <span> [961,6718,16,16] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(102, 102, 102)
+                <svg> [961,6718,16,16] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(102, 102, 102)
+                  <path> [964,6726,4,4] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(102, 102, 102)
+                  <path> [969,6721,4,4] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(102, 102, 102)
+              <div> [451,6751,538,73] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px 18px 16px 16px inter/13px/450 lh:19.5px c:rgb(102, 102, 102) :: Seven days from recording to release. You record on day one, and by day seven your podcast episode, YouTube videos, social clips, and articles are ready to publ
+          <div> [446,6755,549,52] block row normal normal g:normal bg:rgb(242, 242, 242) r:12px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+            <button> [446,6755,549,52] flex row space-between center g:16px bg:rgba(0, 0, 0, 0) r:0px p:16px 18px 16px 16px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+              <span> [462,6771,483,20] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/13px/500 lh:19.5px c:rgb(23, 23, 23) :: Do I need my own recording equipment?
+              <span> [961,6773,16,16] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(102, 102, 102)
+                <svg> [961,6773,16,16] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(102, 102, 102)
+                  <path> [964,6782,4,4] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(102, 102, 102)
+                  <path> [969,6776,4,4] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(102, 102, 102)
+              <div> [451,6807,538,73] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px 18px 16px 16px inter/13px/450 lh:19.5px c:rgb(102, 102, 102) :: For remote recordings, we recommend a quality USB microphone. For in-person sessions, we can arrange professional studio bookings in most major cities and provi
+          <div> [446,6811,549,52] block row normal normal g:normal bg:rgb(242, 242, 242) r:12px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+            <button> [446,6811,549,52] flex row space-between center g:16px bg:rgba(0, 0, 0, 0) r:0px p:16px 18px 16px 16px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+              <span> [462,6827,483,20] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/13px/500 lh:19.5px c:rgb(23, 23, 23) :: How much time do I need to commit each week?
+              <span> [961,6829,16,16] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(102, 102, 102)
+                <svg> [961,6829,16,16] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(102, 102, 102)
+                  <path> [964,6837,4,4] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(102, 102, 102)
+                  <path> [969,6832,4,4] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(102, 102, 102)
+              <div> [451,6862,538,54] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px 18px 16px 16px inter/13px/450 lh:19.5px c:rgb(102, 102, 102) :: Just one hour for recording. We handle pre-production, editing, distribution, social media, and reporting so your team can stay focused on the business.
+          <div> [446,6866,549,52] block row normal normal g:normal bg:rgb(242, 242, 242) r:12px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+            <button> [446,6866,549,52] flex row space-between center g:16px bg:rgba(0, 0, 0, 0) r:0px p:16px 18px 16px 16px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+              <span> [462,6882,483,20] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/13px/500 lh:19.5px c:rgb(23, 23, 23) :: What platforms do you distribute to?
+              <span> [961,6884,16,16] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(102, 102, 102)
+                <svg> [961,6884,16,16] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(102, 102, 102)
+                  <path> [964,6893,4,4] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(102, 102, 102)
+                  <path> [969,6887,4,4] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(102, 102, 102)
+              <div> [451,6918,538,73] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px 18px 16px 16px inter/13px/450 lh:19.5px c:rgb(102, 102, 102) :: We create and optimize content for Apple Podcasts, Spotify, YouTube, LinkedIn, Instagram, TikTok, X, and your own website, tailoring the format and timing to ea
+          <div> [446,6922,549,52] block row normal normal g:normal bg:rgb(242, 242, 242) r:12px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+            <button> [446,6922,549,52] flex row space-between center g:16px bg:rgba(0, 0, 0, 0) r:0px p:16px 18px 16px 16px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+              <span> [462,6938,483,20] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/13px/500 lh:19.5px c:rgb(23, 23, 23) :: What makes Atomik different from other agencies?
+              <span> [961,6940,16,16] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(102, 102, 102)
+                <svg> [961,6940,16,16] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(102, 102, 102)
+                  <path> [964,6948,4,4] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(102, 102, 102)
+                  <path> [969,6943,4,4] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(102, 102, 102)
+              <div> [451,6973,538,73] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px 18px 16px 16px inter/13px/450 lh:19.5px c:rgb(102, 102, 102) :: We specialize in content and distribution for technology companies and venture capital firms. That focus means we understand the audience, language, and growth 
+
+######## #footer-cta
+<section> [0,7213,1440,680] block row normal normal g:normal bg:rgb(1, 2, 2) r:0px p:0px inter/16px/400 lh:24px c:rgb(255, 255, 255)
+  <div> [162,7291,1116,524] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(255, 255, 255)
+    <div> [162,7291,1116,524] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(255, 255, 255)
+      <img> [162,7291,1116,524] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgba(0, 0, 0, 0)
+  <div> [120,7213,1200,680] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(255, 255, 255)
+    <div> [120,7213,1200,680] flex row center flex-end g:normal bg:rgba(0, 0, 0, 0) r:0px p:300px 32px 60px inter/16px/400 lh:24px c:rgb(255, 255, 255)
+      <div> [557,7521,326,312] flex column normal center g:40px bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(255, 255, 255)
+        <div> [568,7521,304,232] flex column normal center g:32px bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(255, 255, 255)
+          <div> [670,7521,100,100] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(255, 255, 255)
+            <img> [268,7308,904,526] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgba(0, 0, 0, 0)
+            <img> [670,7521,100,100] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgba(0, 0, 0, 0)
+          <div> [568,7653,304,100] flex column normal center g:16px bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(255, 255, 255)
+            <h2> [603,7653,233,40] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px switzer/36px/600 lh:39.6px c:rgb(255, 255, 255) :: Work With Us
+            <p> [568,7709,304,45] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/450 lh:22.4px c:oklab(0.999994 0.0000455677 0.0000200868 / 0.8) :: Book an intro call to explore our suite of services. We might have a waitlist.
+        <a> [660,7793,120,40] flex row center center g:8px bg:rgb(242, 242, 242) r:3.35544e+07px p:8px 18px inter/13px/600 lh:19.5px c:rgb(0, 0, 0) :: Book a call
+          <svg> [754,7809,8,8] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/13px/600 lh:19.5px c:rgb(0, 0, 0)
+            <path> [756,7810,4,7] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/13px/600 lh:19.5px c:rgb(0, 0, 0)
+
+######## footer
+<footer> [0,7893,1440,704] block row normal normal g:normal bg:rgb(1, 2, 2) r:0px p:0px 119.995px inter/16px/400 lh:24px c:rgb(255, 255, 255)
+  <div> [120,7893,1200,704] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(255, 255, 255)
+    <div> [120,7893,1200,704] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:180px 32px 0px inter/16px/400 lh:24px c:rgb(255, 255, 255)
+      <div> [152,8073,1136,161] flex row space-between normal g:32px bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(255, 255, 255)
+        <div> [152,8073,202,161] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(255, 255, 255)
+          <a> [152,8073,188,24] inline-flex row normal center g:4px bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(255, 255, 255)
+            <svg> [152,8073,24,24] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(255, 255, 255)
+              <g> [152,8073,21,23] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(255, 255, 255)
+                <path> [160,8082,5,5] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(255, 255, 255)
+                <path> [152,8073,21,23] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(255, 255, 255)
+                <path> [152,8074,19,19] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(255, 255, 255)
+            <span> [180,8075,160,20] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/22px/600 lh:19.58px c:rgb(255, 255, 255) :: Atomik Growth
+          <address> [152,8127,202,84] flex column normal normal g:8px bg:rgba(0, 0, 0, 0) r:0px p:0px inter/15px/400 lh:22.5px c:oklab(0.999994 0.0000455678 0.0000200868 / 0.5)
+            <span> [152,8127,202,23] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/15px/400 lh:22.5px c:oklab(0.999994 0.0000455678 0.0000200868 / 0.5) :: Tech Media & Distribution.
+            <span> [152,8158,202,23] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/15px/400 lh:22.5px c:oklab(0.999994 0.0000455678 0.0000200868 / 0.5) :: San Francisco
+            <a> [152,8188,202,23] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/15px/400 lh:22.5px c:oklab(0.999994 0.0000455678 0.0000200868 / 0.5) :: +1 (628) 294-4170
+        <div> [783,8073,505,161] flex row normal normal g:80px bg:rgba(0, 0, 0, 0) r:0px p:0px 24px 0px 0px inter/16px/400 lh:24px c:rgb(255, 255, 255)
+          <nav> [783,8073,106,161] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(255, 255, 255)
+            <h2> [783,8073,106,23] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px switzer/15px/450 lh:22.5px c:rgb(255, 255, 255) :: Services
+            <ul> [783,8120,106,84] flex column normal normal g:8px bg:rgba(0, 0, 0, 0) r:0px p:0px inter/15px/450 lh:22.5px c:oklab(0.999994 0.0000455678 0.0000200868 / 0.4)
+              <li> [783,8120,106,23] list-item row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/15px/450 lh:22.5px c:oklab(0.999994 0.0000455678 0.0000200868 / 0.4)
+                <a> [783,8121,106,19] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/15px/450 lh:22.5px c:oklab(0.999994 0.0000455678 0.0000200868 / 0.4) :: Launch Virality
+              <li> [783,8150,106,23] list-item row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/15px/450 lh:22.5px c:oklab(0.999994 0.0000455678 0.0000200868 / 0.4)
+                <a> [783,8151,80,19] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/15px/450 lh:22.5px c:oklab(0.999994 0.0000455678 0.0000200868 / 0.4) :: Podcasting
+              <li> [783,8181,106,23] list-item row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/15px/450 lh:22.5px c:oklab(0.999994 0.0000455678 0.0000200868 / 0.4)
+                <a> [783,8182,59,19] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/15px/450 lh:22.5px c:oklab(0.999994 0.0000455678 0.0000200868 / 0.4) :: Clipping
+          <nav> [969,8073,94,161] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(255, 255, 255)
+            <h2> [969,8073,94,23] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px switzer/15px/450 lh:22.5px c:rgb(255, 255, 255) :: Company
+            <ul> [969,8120,94,114] flex column normal normal g:8px bg:rgba(0, 0, 0, 0) r:0px p:0px inter/15px/450 lh:22.5px c:oklab(0.999994 0.0000455678 0.0000200868 / 0.4)
+              <li> [969,8120,94,23] list-item row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/15px/450 lh:22.5px c:oklab(0.999994 0.0000455678 0.0000200868 / 0.4)
+                <a> [969,8121,94,19] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/15px/450 lh:22.5px c:oklab(0.999994 0.0000455678 0.0000200868 / 0.4) :: Case Studies
+              <li> [969,8150,94,23] list-item row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/15px/450 lh:22.5px c:oklab(0.999994 0.0000455678 0.0000200868 / 0.4)
+                <a> [969,8151,56,19] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/15px/450 lh:22.5px c:oklab(0.999994 0.0000455678 0.0000200868 / 0.4) :: Contact
+              <li> [969,8181,94,23] list-item row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/15px/450 lh:22.5px c:oklab(0.999994 0.0000455678 0.0000200868 / 0.4)
+                <a> [969,8182,32,19] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/15px/450 lh:22.5px c:oklab(0.999994 0.0000455678 0.0000200868 / 0.4) :: Blog
+              <li> [969,8211,94,23] list-item row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/15px/450 lh:22.5px c:oklab(0.999994 0.0000455678 0.0000200868 / 0.4)
+                <a> [969,8212,56,19] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/15px/450 lh:22.5px c:oklab(0.999994 0.0000455678 0.0000200868 / 0.4) :: Careers
+          <nav> [1143,8073,121,161] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(255, 255, 255)
+            <h2> [1143,8073,121,23] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px switzer/15px/450 lh:22.5px c:rgb(255, 255, 255) :: Legal
+            <ul> [1143,8120,121,53] flex column normal normal g:8px bg:rgba(0, 0, 0, 0) r:0px p:0px inter/15px/450 lh:22.5px c:oklab(0.999994 0.0000455678 0.0000200868 / 0.4)
+              <li> [1143,8120,121,23] list-item row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/15px/450 lh:22.5px c:oklab(0.999994 0.0000455678 0.0000200868 / 0.4)
+                <a> [1143,8121,100,19] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/15px/450 lh:22.5px c:oklab(0.999994 0.0000455678 0.0000200868 / 0.4) :: Privacy Policy
+              <li> [1143,8150,121,23] list-item row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/15px/450 lh:22.5px c:oklab(0.999994 0.0000455678 0.0000200868 / 0.4)
+                <a> [1143,8151,121,19] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/15px/450 lh:22.5px c:oklab(0.999994 0.0000455678 0.0000200868 / 0.4) :: Terms of Service
+      <div> [152,8354,1136,243] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(255, 255, 255)
+        <div> [152,8349,1136,248] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px 16px inter/16px/400 lh:24px c:rgb(255, 255, 255)
+          <svg> [168,8349,1104,248] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(255, 255, 255)
+            <g> [171,8352,1098,243] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(255, 255, 255)
+              <path> [523,8406,174,188] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(255, 255, 255)
+              <path> [1015,8352,50,237] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(255, 255, 255)
+              <path> [723,8406,257,183] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(255, 255, 255)
+              <path> [1099,8352,170,237] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(255, 255, 255)
+              <path> [171,8365,227,224] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(255, 255, 255)
+              <path> [399,8370,108,224] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(255, 255, 255)
+              <path> [523,8406,174,188] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(255, 255, 255)
+              <path> [1015,8352,50,237] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(255, 255, 255)
+              <path> [723,8406,257,183] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(255, 255, 255)
+              <path> [1099,8352,170,237] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(255, 255, 255)
+              <path> [171,8365,227,224] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(255, 255, 255)
+              <path> [399,8370,108,224] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(255, 255, 255)
+        <div> [152,8536,1136,45] flex row space-between center g:24px bg:rgba(0, 0, 0, 0) r:0px p:12px 0px inter/13px/400 lh:19.5px c:oklab(0.999994 0.0000455678 0.0000200868 / 0.4)
+          <p> [152,8549,265,20] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/13px/400 lh:19.5px c:oklab(0.999994 0.0000455678 0.0000200868 / 0.4) :: © 2026 Atomik Growth. All rights reserved.
+          <div> [1210,8550,78,16] flex row normal center g:15px bg:rgba(0, 0, 0, 0) r:0px p:0px inter/13px/400 lh:19.5px c:oklab(0.999994 0.0000455678 0.0000200868 / 0.4)
+            <a> [1210,8550,16,16] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/13px/400 lh:19.5px c:oklab(0.999994 0.0000455678 0.0000200868 / 0.4)
+              <img> [1210,8550,16,16] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/13px/400 lh:19.5px c:rgba(0, 0, 0, 0)
+            <a> [1241,8550,16,16] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/13px/400 lh:19.5px c:oklab(0.999994 0.0000455678 0.0000200868 / 0.4)
+              <img> [1241,8550,16,16] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/13px/400 lh:19.5px c:rgba(0, 0, 0, 0)
+            <a> [1272,8550,16,16] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/13px/400 lh:19.5px c:oklab(0.999994 0.0000455678 0.0000200868 / 0.4)
+              <img> [1272,8550,16,16] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/13px/400 lh:19.5px c:rgba(0, 0, 0, 0)
+
+######## #companies-worked-with
+<section> [0,900,1440,1012] block row normal normal g:normal bg:rgb(250, 250, 250) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+  <div> [120,900,1200,1012] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:120px 0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+    <div> [120,1020,1200,772] flex column normal center g:32px bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+      <h2> [577,1020,287,20] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px 16px inter/13px/500 lh:20px c:rgb(102, 102, 102) :: We’ve worked with over 100+ companies
+      <div> [120,1072,1200,720] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+        <ul> [120,1072,1200,720] grid row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+          <li> [120,1072,240,240] flex row center center g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+            <a> [120,1072,240,240] flex row center center g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+              <span> [128,1080,224,224] block row normal normal g:normal bg:oklab(0.961896 0.000043869 0.0000191927 / 0.8) r:12px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+              <span> [120,1072,240,240] flex row center center g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+                <svg> [188,1182,105,20] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+                  <path> [190,1183,100,19] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+              <span> [201,1258,77,54] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:20px 8px inter/11px/500 lh:normal c:rgb(125, 125, 125) :: Case Study
+          <li> [360,1072,240,240] flex row center center g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+            <span> [360,1072,240,240] flex row center center g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+              <svg> [441,1182,79,20] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+                <g> [441,1182,78,20] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+                  <path> [441,1182,78,20] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+          <li> [600,1072,240,240] flex row center center g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+            <span> [600,1072,240,240] flex row center center g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+              <svg> [661,1182,118,20] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+                <path> [661,1182,26,20] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+                <path> [696,1187,83,10] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+                <path> [713,1189,8,10] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+                <path> [730,1189,4,7] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+                <path> [735,1187,8,10] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+                <path> [765,1187,7,10] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+          <li> [840,1072,240,240] flex row center center g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+            <span> [840,1072,240,240] flex row center center g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+              <svg> [914,1182,92,20] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+                <g> [914,1182,92,20] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+                  <path> [914,1182,92,20] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+          <li> [1080,1072,240,240] flex row center center g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+            <span> [1080,1072,240,240] flex row center center g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+              <svg> [1151,1182,98,20] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+                <path> [1155,1182,16,19] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+                <path> [1152,1183,96,19] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+          <li> [120,1312,240,240] flex row center center g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+            <span> [120,1312,240,240] flex row center center g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+              <svg> [219,1422,42,20] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+                <path> [220,1423,41,19] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+          <li> [360,1312,240,240] flex row center center g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+            <span> [360,1312,240,240] flex row center center g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+              <svg> [398,1425,164,15] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+                <path> [398,1425,164,15] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+                <path> [406,1425,8,8] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+          <li> [600,1312,240,240] flex row center center g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+            <a> [600,1312,240,240] flex row center center g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+              <span> [608,1320,224,224] block row normal normal g:normal bg:oklab(0.961896 0.000043869 0.0000191927 / 0.8) r:12px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+              <span> [600,1312,240,240] flex row center center g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+                <svg> [658,1422,125,20] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+                  <path> [658,1424,124,16] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+              <span> [681,1498,77,54] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:20px 8px inter/11px/500 lh:normal c:rgb(125, 125, 125) :: Case Study
+          <li> [840,1312,240,240] flex row center center g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+            <span> [840,1312,240,240] flex row center center g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+              <svg> [906,1423,108,19] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+                <path> [906,1423,107,19] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+          <li> [1080,1312,240,240] flex row center center g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+            <a> [1080,1312,240,240] flex row center center g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+              <span> [1088,1320,224,224] block row normal normal g:normal bg:oklab(0.961896 0.000043869 0.0000191927 / 0.8) r:12px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+              <span> [1080,1312,240,240] flex row center center g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+                <svg> [1106,1422,189,20] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+                  <path> [1106,1422,189,20] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+              <span> [1161,1498,77,54] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:20px 8px inter/11px/500 lh:normal c:rgb(125, 125, 125) :: Case Study
+          <li> [120,1552,240,240] flex row center center g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+            <span> [120,1552,240,240] flex row center center g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+              <svg> [192,1662,96,20] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+                <path> [193,1662,93,19] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+            <span> [196,1738,88,54] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:20px 8px inter/11px/500 lh:normal c:rgb(125, 125, 125) :: Coming Soon
+          <li> [360,1552,240,240] flex row center center g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+            <span> [360,1552,240,240] flex row center center g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+              <svg> [424,1662,112,20] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+                <path> [425,1668,17,12] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+                <path> [425,1662,17,19] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+                <path> [448,1665,87,17] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+          <li> [600,1552,240,240] flex row center center g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+            <span> [600,1552,240,240] flex row center center g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+              <svg> [686,1662,69,20] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+                <g> [686,1662,68,19] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+                  <path> [686,1665,68,16] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+                  <path> [729,1662,18,19] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+          <li> [840,1552,240,240] flex row center center g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+            <span> [840,1552,240,240] flex row center center g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+              <svg> [924,1662,72,20] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+                <g> [925,1662,71,19] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+                  <path> [925,1662,71,19] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+          <li> [1080,1552,240,240] flex row center center g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+            <span> [1080,1552,240,240] flex row center center g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+              <svg> [1162,1662,77,20] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+                <path> [1163,1662,74,20] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(0, 0, 0)
+
+######## header
+<header> [120,2072,1200,103] flex row space-between flex-end g:32px bg:rgba(0, 0, 0, 0) r:0px p:0px 32px inter/16px/400 lh:24px c:rgb(23, 23, 23)
+  <div> [152,2072,399,103] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/16px/400 lh:24px c:rgb(23, 23, 23)
+    <p> [152,2072,399,24] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/15px/450 lh:24px c:rgb(125, 125, 125) :: Our Services
+    <h2> [152,2096,399,79] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px switzer/36px/600 lh:39.6px c:rgb(23, 23, 23) :: Distribution is the moat. We build yours.
+  <a> [1173,2135,115,40] flex row center center g:8px bg:oklab(0 0 0 / 0.06) r:3.35544e+07px p:8px 16px inter/13px/500 lh:19.5px c:rgb(23, 23, 23) :: Book a call
+    <svg> [1264,2151,8,8] block row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/13px/500 lh:19.5px c:rgb(23, 23, 23)
+      <path> [1266,2152,4,7] inline row normal normal g:normal bg:rgba(0, 0, 0, 0) r:0px p:0px inter/13px/500 lh:19.5px c:rgb(23, 23, 23)

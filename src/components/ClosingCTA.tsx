@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import { ArrowRight, Sparkles, ShieldCheck, Calendar, Users } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 interface ClosingCTAProps {
   onOpenBooking: () => void;
@@ -8,57 +8,46 @@ interface ClosingCTAProps {
 
 export const ClosingCTA: React.FC<ClosingCTAProps> = ({ onOpenBooking }) => {
   return (
-    <section className="py-24 md:py-36 bg-ink text-paper relative overflow-hidden border-t border-paper/10" aria-label="Work With Us">
-      {/* Background Ambient Glow */}
+    <section className="bg-[#010405] text-white py-32 sm:py-44 relative overflow-hidden" aria-label="Work With Us">
+      {/* Central Illuminated Sphere / Atmospheric Horizon Glow */}
       <div 
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-coral/10 rounded-full blur-[150px] pointer-events-none" 
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] bg-gradient-to-b from-[#0072F5]/15 via-[#F59E0B]/10 to-transparent rounded-full blur-[140px] pointer-events-none" 
         aria-hidden="true" 
       />
 
-      <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center relative z-10">
+      <div className="relative z-10 mx-auto w-[calc(100%_-_32px)] max-w-shell text-center">
         
-        {/* Scarcity & Tag Pill */}
-        <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-paper/10 border border-paper/15 text-xs font-mono tracking-wider uppercase text-coral font-bold mb-8 backdrop-blur-sm">
-          <span className="w-2 h-2 rounded-full bg-coral animate-pulse" />
+        {/* Subtle Tag */}
+        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 text-[12px] font-medium text-[#CCCDCD] mb-8">
+          <span className="w-1.5 h-1.5 rounded-full bg-[#0072F5] animate-pulse" />
           <span>Work With Us</span>
         </div>
 
-        {/* Main Display Headline (Atomik Growth Closing Style) */}
-        <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight leading-[1.08] mb-6">
-          Have a book to launch or a story that deserves to reach more readers<span className="text-coral">?</span>
+        {/* Display Headline */}
+        <h2 className="display text-[32px] sm:text-[36px] font-semibold tracking-[0.01em] text-white leading-[1.1] mb-6 max-w-[680px] mx-auto">
+          Have a book to launch or a story that deserves to reach more readers?
         </h2>
 
         {/* Subhead */}
-        <p className="max-w-2xl mx-auto text-base sm:text-lg md:text-xl text-stone-300 font-sans leading-relaxed mb-10">
-          Let’s talk about what we can build together. We take on a limited number of author campaigns each month to ensure dedicated creative focus and exceptional launch execution.
+        <p className="font-sans text-[15px] font-[450] text-[#CCCDCD] max-w-[520px] mx-auto leading-[1.5] mb-10">
+          Book an intro call to explore our suite of services. We take on a limited number of author campaigns each month to ensure dedicated creative focus.
         </p>
 
-        {/* Primary Action Button */}
+        {/* Primary Action Button (Atomik White Pill) */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
           <button
             onClick={onOpenBooking}
-            className="w-full sm:w-auto px-9 py-4 rounded-full bg-coral text-white hover:bg-coral-400 active:bg-coral-600 text-base font-semibold shadow-lg hover:shadow-coral/25 active:scale-[0.98] transition-all duration-200 flex items-center justify-center gap-3 focus:outline-none focus-visible:ring-4 focus-visible:ring-coral/40 min-h-[48px]"
+            className="w-full sm:w-auto px-6 h-10 rounded-full bg-[#E6E6E6] text-black font-semibold text-[13px] hover:bg-white active:scale-[0.98] transition-all flex items-center justify-center gap-2"
           >
-            <span>Discuss Your Book</span>
-            <ArrowRight className="w-5 h-5" />
+            <span>DISCUSS YOUR BOOK</span>
+            <ArrowRight className="w-3.5 h-3.5" />
           </button>
         </div>
 
-        {/* Assurance / Frictionless Details */}
-        <div className="flex flex-wrap items-center justify-center gap-y-3 gap-x-8 text-xs sm:text-sm text-stone-400 font-sans">
-          <div className="flex items-center gap-2">
-            <ShieldCheck className="w-4 h-4 text-coral shrink-0" />
-            <span>Zero hard sales pitches</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <Sparkles className="w-4 h-4 text-coral shrink-0" />
-            <span>Custom trope hook blueprint</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <Users className="w-4 h-4 text-coral shrink-0" />
-            <span>1-on-1 strategy session</span>
-          </div>
-        </div>
+        {/* Assurance Text */}
+        <p className="text-[12px] text-[#7D7D7D] font-sans">
+          Zero commitment required · Custom hook blueprint included
+        </p>
 
       </div>
     </section>

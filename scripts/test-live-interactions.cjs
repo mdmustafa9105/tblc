@@ -90,25 +90,20 @@ async function runInteractiveTests() {
 
   await new Promise(r => setTimeout(r, 2000));
 
-  // 1. Test Marquee Pause / Resume
-  console.log('1. Testing Cover Marquee Pause / Resume:');
-  const marquee = await client.eval(`(async () => {
-    const btn = document.querySelector('button[aria-label*="marquee"]');
-    const labelBefore = btn.getAttribute('aria-label');
-    btn.click();
-    await new Promise(r => setTimeout(r, 100));
-    const labelAfter = btn.getAttribute('aria-label');
-    const track = document.querySelector('.marquee-track');
-    const isPaused = track.style.animationPlayState === 'paused' || window.getComputedStyle(track).animationPlayState === 'paused';
-    btn.click(); // resume
-    return { labelBefore, labelAfter, isPaused };
+  // 1. Test ProofStrip Partner Grid
+  console.log('1. Testing ProofStrip Partner Grid:');
+  const proof = await client.eval(`(() => {
+    const items = document.querySelectorAll('section[aria-label*="Publishing Partners"] .grid > div');
+    const partners = Array.from(items).map(i => i.querySelector('h3')?.textContent.trim());
+    return { count: items.length, sample: partners.slice(0, 5) };
   })()`);
-  console.log('   Result:', marquee);
+  console.log('   Result:', proof);
 
   // 2. Test Audio Mute / Unmute
   console.log('\n2. Testing Video Audio Mute / Unmute:');
   const audio = await client.eval(`(async () => {
     const btn = document.querySelector('button[aria-label*="video"]');
+    if (!btn) return { error: 'Video button not found' };
     const labelBefore = btn.getAttribute('aria-label');
     btn.click();
     await new Promise(r => setTimeout(r, 100));
@@ -117,42 +112,8 @@ async function runInteractiveTests() {
   })()`);
   console.log('   Result:', audio);
 
-  // 3. Test Services Bento: Launch Timeline Phases
-  console.log('\n3. Testing Services Bento Launch Timeline Tabs:');
-  const timeline = await client.eval(`(async () => {
-    const tabs = Array.from(document.querySelectorAll('#services button')).filter(b => 
-      ['Pre-Launch', 'Launch Blitz', 'Read-Through'].includes(b.textContent.trim())
-    );
-    const initialActive = tabs.find(t => t.classList.contains('bg-ink'))?.textContent.trim();
-    if (tabs[0]) tabs[0].click(); // Click Pre-Launch
-    await new Promise(r => setTimeout(r, 100));
-    const preLaunchText = document.querySelector('#services')?.textContent.includes('ARC Seeding');
-    if (tabs[1]) tabs[1].click(); // Click Launch Blitz
-    await new Promise(r => setTimeout(r, 100));
-    const blitzText = document.querySelector('#services')?.textContent.includes('Synchronized Launch Day Wave');
-    return { tabCount: tabs.length, initialActive, preLaunchWorked: preLaunchText, blitzWorked: blitzText };
-  })()`);
-  console.log('   Result:', timeline);
-
-  // 4. Test Services Bento: Trope Repositioning Simulator
-  console.log('\n4. Testing Services Bento Trope Simulator:');
-  const tropeTest = await client.eval(`(async () => {
-    const buttons = Array.from(document.querySelectorAll('#services button')).filter(b => 
-      b.textContent.includes('#')
-    );
-    const initialTags = buttons.map(b => b.textContent.trim());
-    if (buttons[1]) buttons[1].click(); // Click #DarkAcademia
-    await new Promise(r => setTimeout(r, 100));
-    const darkAcademiaActive = document.querySelector('#services')?.textContent.includes('Secret History');
-    if (buttons[0]) buttons[0].click(); // Return to #EnemiesToLovers
-    await new Promise(r => setTimeout(r, 100));
-    const enemiesActive = document.querySelector('#services')?.textContent.includes('Fourth Wing');
-    return { tropeCount: buttons.length, tags: initialTags, darkAcademiaActive, enemiesActive };
-  })()`);
-  console.log('   Result:', tropeTest);
-
-  // 5. Test FAQ Accordion
-  console.log('\n5. Testing FAQ Accordion Toggles:');
+  // 3. Test FAQ Accordion Toggles
+  console.log('\n3. Testing FAQ Accordion Toggles:');
   const faq = await client.eval(`(async () => {
     const btns = Array.from(document.querySelectorAll('#faq button[aria-expanded]'));
     const initialExpanded = btns.map(b => b.getAttribute('aria-expanded'));
@@ -171,8 +132,8 @@ async function runInteractiveTests() {
   })()`);
   console.log('   Result:', faq);
 
-  // 6. Test Booking Modal Lifecycle & Form Submission
-  console.log('\n6. Testing Booking Modal & Form Submission:');
+  // 4. Test Booking Modal Lifecycle & Form Submission
+  console.log('\n4. Testing Booking Modal & Form Submission:');
   const modalTest = await client.eval(`(async () => {
     // Click 'Discuss Your Book' button in header
     const navBtn = Array.from(document.querySelectorAll('header button')).find(b => b.textContent.includes('Discuss Your Book'));

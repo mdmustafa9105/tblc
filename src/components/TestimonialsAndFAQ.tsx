@@ -1,123 +1,96 @@
 'use client';
 import React, { useState } from 'react';
-import { ChevronDown, Star, CheckCircle2, MessageSquare } from 'lucide-react';
-import { FAQ_ITEMS } from '../data/content';
+import { ChevronDown } from 'lucide-react';
 
 interface TestimonialsAndFAQProps {
-  onOpenBooking: () => void;
+  onOpenBooking?: () => void;
 }
 
-export const TestimonialsAndFAQ: React.FC<TestimonialsAndFAQProps> = ({ onOpenBooking }) => {
-  const [openFaq, setOpenFaq] = useState<string | null>(FAQ_ITEMS[0].id);
+const FAQS = [
+  {
+    id: 'turnaround',
+    question: "What's the typical launch campaign timeline?",
+    answer: "For new releases and debut authors, we recommend onboarding 8 to 12 weeks prior to publication date. This allows ample runway for creative hook testing, BookTok ARC seeding, and launch-day creator wave synchronization. For backlist revival campaigns on already published titles, activation begins within 14 business days.",
+  },
+  {
+    id: 'equipment',
+    question: "Do I need my own recording equipment or studio?",
+    answer: "No expensive camera gear is required. In modern short-form feeds, overly polished commercial footage often underperforms authentic, handheld creator-style video. All you need is a modern smartphone and good natural light. We provide done-for-you hook scripts, teleprompter framing, and full technical guidance.",
+  },
+  {
+    id: 'time',
+    question: "How much time do I need to commit each week?",
+    answer: "Approximately 60 minutes per week. We handle all topic research, scriptwriting, hook testing, video editing, sound cues, captions, and multi-channel scheduling so you can stay fully focused on writing your next book.",
+  },
+  {
+    id: 'platforms',
+    question: "What platforms do you distribute to?",
+    answer: "We engineer and optimize video campaigns for TikTok (BookTok), Instagram Reels, YouTube Shorts, and literary podcast feeds. Every asset is tailored to the specific formatting, pacing, and algorithmic cues of each platform.",
+  },
+  {
+    id: 'different',
+    question: "What makes The Book Launch Company different from other agencies?",
+    answer: "Traditional book PR firms rely on sending static press releases to journalists who rarely review them. We specialize exclusively in modern algorithmic reader discovery. Founded by the creators behind @whynotnovels, we test reader hooks daily in front of an active community of 50,000+ fiction readers.",
+  },
+];
+
+export const TestimonialsAndFAQ: React.FC<TestimonialsAndFAQProps> = () => {
+  const [openFaq, setOpenFaq] = useState<string | null>(FAQS[0].id);
 
   const toggleFaq = (id: string) => {
-    setOpenFaq(prev => (prev === id ? null : id));
+    setOpenFaq((prev) => (prev === id ? null : id));
   };
 
   return (
-    <section id="faq" className="py-24 md:py-36 bg-paper border-t border-bone-dark/50 relative" aria-label="Frequently Asked Questions">
-      <div className="max-w-4xl mx-auto px-6 lg:px-8">
+    <section id="faq" className="bg-white text-black py-28 sm:py-36 border-b border-black/10" aria-label="Frequently Asked Questions">
+      <div className="mx-auto w-[calc(100%_-_32px)] max-w-[760px]">
         
-        {/* Section Header (Atomik Growth Minimal FAQs Style) */}
-        <div className="text-center mb-16 md:mb-20 space-y-4">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-bone border border-bone-dark text-xs font-mono uppercase tracking-wider text-coral font-bold">
-            <span className="w-1.5 h-1.5 rounded-full bg-coral animate-pulse" />
-            Clarity &amp; Transparency
-          </div>
-          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-ink tracking-tight">
-            Frequently Asked Questions<span className="text-coral">.</span>
+        {/* Section Heading (Atomik Reference Minimal FAQs) */}
+        <div className="text-center mb-16 sm:mb-20">
+          <h2 className="display text-[32px] sm:text-[36px] font-semibold tracking-[0.01em] text-[#000000] leading-[1.1]">
+            FAQs
           </h2>
-          <p className="font-sans text-stone text-base sm:text-lg max-w-xl mx-auto leading-relaxed">
-            Everything you need to know about timelines, weekly time commitment, and how we launch books.
-          </p>
         </div>
 
-        {/* Featured Author Testimonial Banner (Clean & Restrained) */}
-        <div className="mb-14 p-6 sm:p-8 rounded-3xl bg-bone/70 border border-stone-300/80 shadow-xs">
-          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-4 border-b border-bone-dark/50">
-            <div className="flex items-center gap-1 text-coral" aria-label="5 out of 5 stars">
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-4 h-4 fill-coral" />
-              ))}
-            </div>
-            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-coral/10 text-coral font-mono text-xs font-bold">
-              <CheckCircle2 className="w-3.5 h-3.5" />
-              1.4M Launch Views · #18 Amazon Category Peak
-            </span>
-          </div>
-
-          <blockquote className="font-serif italic text-base sm:text-lg text-ink font-normal leading-relaxed my-5">
-            “The Book Launch Company turned an unknown debut thriller into a BookTok obsession. We reached 1.4 million readers and broke into the Amazon top 20 on release week without paying for vanity PR.”
-          </blockquote>
-
-          <div className="flex items-center justify-between text-xs sm:text-sm text-stone font-sans">
-            <div>
-              <strong className="text-ink font-semibold">Elena Vance</strong> · Author of <em>The Silent Hollow</em>
-            </div>
-            <span className="text-stone-400 font-mono text-xs hidden sm:inline">[TBC Concept Prototype]</span>
-          </div>
-        </div>
-
-        {/* Clean Accordion List (Full Width, Generous Spacing) */}
-        <div className="space-y-4">
-          {FAQ_ITEMS.map((item) => {
-            const isOpen = openFaq === item.id;
+        {/* Clean Accordion List with Thin Horizontal Dividers */}
+        <div className="divide-y divide-black/10 border-y border-black/10">
+          {FAQS.map((faq) => {
+            const isOpen = openFaq === faq.id;
             return (
-              <div
-                key={item.id}
-                className="bg-bone/40 hover:bg-bone/60 rounded-2xl border border-bone-dark transition-all duration-200 overflow-hidden"
-              >
+              <div key={faq.id} className="py-2">
                 <button
                   type="button"
-                  id={`faq-btn-${item.id}`}
+                  id={`faq-btn-${faq.id}`}
                   aria-expanded={isOpen}
-                  aria-controls={`faq-answer-${item.id}`}
-                  onClick={() => toggleFaq(item.id)}
-                  className="w-full p-6 sm:p-7 text-left flex items-center justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-coral focus-visible:ring-inset min-h-[48px]"
+                  aria-controls={`faq-answer-${faq.id}`}
+                  onClick={() => toggleFaq(faq.id)}
+                  className="w-full py-5 text-left flex items-center justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-black rounded-[6px] min-h-[48px] group"
                 >
-                  <span className="font-serif font-bold text-lg sm:text-xl text-ink leading-snug">
-                    {item.question}
+                  <span className="font-sans font-normal text-[16px] leading-[1.5] text-[#000000] group-hover:text-[#666666] transition-colors">
+                    {faq.question}
                   </span>
                   <div
-                    className={`w-9 h-9 rounded-full bg-paper border border-bone-dark flex items-center justify-center shrink-0 transition-transform duration-200 ${
-                      isOpen ? 'rotate-180 bg-coral text-white border-coral' : 'text-stone'
+                    className={`w-7 h-7 rounded-full flex items-center justify-center shrink-0 transition-transform duration-200 text-[#7D7D7D] group-hover:text-black ${
+                      isOpen ? 'rotate-180 text-black' : ''
                     }`}
                   >
-                    <ChevronDown className="w-4 h-4" />
+                    <ChevronDown className="w-4 h-4" strokeWidth={1.8} />
                   </div>
                 </button>
 
                 {isOpen && (
                   <div
-                    id={`faq-answer-${item.id}`}
+                    id={`faq-answer-${faq.id}`}
                     role="region"
-                    aria-labelledby={`faq-btn-${item.id}`}
-                    className="px-6 sm:px-7 pb-6 sm:pb-7 text-base text-stone-700 font-sans leading-relaxed border-t border-bone-dark/40 pt-4"
+                    aria-labelledby={`faq-btn-${faq.id}`}
+                    className="pb-6 text-[15px] font-[450] text-[#666666] font-sans leading-[1.5] pr-8"
                   >
-                    {item.answer}
+                    {faq.answer}
                   </div>
                 )}
               </div>
             );
           })}
-        </div>
-
-        {/* Closing Still Have Questions Prompt */}
-        <div className="mt-12 p-6 sm:p-8 rounded-3xl bg-paper border border-stone-300 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 shadow-xs">
-          <div className="space-y-1">
-            <h3 className="font-serif font-bold text-ink text-base sm:text-lg">
-              Have a unique manuscript or specific release date?
-            </h3>
-            <p className="text-xs sm:text-sm text-stone font-sans">
-              Talk with our team directly during a 20-minute launch strategy session.
-            </p>
-          </div>
-          <button
-            onClick={onOpenBooking}
-            className="shrink-0 px-6 py-3 min-h-[44px] rounded-full bg-ink text-paper hover:bg-coral text-sm font-semibold transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-coral flex items-center justify-center"
-          >
-            Discuss Your Book
-          </button>
         </div>
 
       </div>

@@ -1,0 +1,32 @@
+VIEWPORT {"w":1440,"h":900,"dpr":1}
+
+SECTIONS
+section {"box":{"x":0,"y":0,"w":1440,"h":900},"bg":"rgb(1, 4, 5)","pad":"0px","color":"rgb(255, 255, 255)"}
+companies-worked-with {"box":{"x":0,"y":900,"w":1440,"h":1012},"bg":"rgb(250, 250, 250)","pad":"0px","color":"rgb(0, 0, 0)"}
+services {"box":{"x":0,"y":1912,"w":1440,"h":1671},"bg":"rgb(250, 250, 250)","pad":"0px","color":"rgb(23, 23, 23)"}
+stats {"box":{"x":0,"y":3583,"w":1440,"h":900},"bg":"rgb(0, 0, 0)","pad":"0px","color":"rgb(255, 255, 255)"}
+case-studies {"box":{"x":0,"y":4483,"w":1440,"h":1540},"bg":"rgb(250, 250, 250)","pad":"0px","color":"rgb(0, 0, 0)"}
+podcast {"box":{"x":0,"y":6023,"w":1440,"h":469},"bg":"rgb(250, 250, 250)","pad":"0px","color":"rgb(23, 23, 23)"}
+faq {"box":{"x":0,"y":6492,"w":1440,"h":721},"bg":"rgba(0, 0, 0, 0)","pad":"0px","color":"rgb(0, 0, 0)"}
+footer-cta {"box":{"x":0,"y":7213,"w":1440,"h":680},"bg":"rgb(1, 2, 2)","pad":"0px","color":"rgb(255, 255, 255)"}
+
+HEADINGS
+{"tag":"h1","text":"The New Media Arm for Ambitious Tech Companies","box":{"x":0,"y":0,"w":0,"h":0},"font":"switzer","size":"38px","weight":"600","lh":"38px","ls":"-0.76px","color":"rgb(255, 255, 255)","align":"center"}
+{"tag":"h1","text":"The New Media Arm for Ambitious Tech Companies","box":{"x":152,"y":356,"w":400,"h":108},"font":"switzer","size":"36px","weight":"600","lh":"36px","ls":"normal","color":"rgb(255, 255, 255)","align":"start"}
+{"tag":"h2","text":"We’ve worked with over 100+ companies","box":{"x":577,"y":1020,"w":287,"h":20},"font":"inter","size":"13px","weight":"500","lh":"20px","ls":"normal","color":"rgb(102, 102, 102)","align":"center"}
+{"tag":"h2","text":"Distribution is the moat. We build yours.","box":{"x":152,"y":2096,"w":399,"h":79},"font":"switzer","size":"36px","weight":"600","lh":"39.6px","ls":"0.36px","color":"rgb(23, 23, 23)","align":"start"}
+{"tag":"h3","text":"Launch Virality","box":{"x":224,"y":2451,"w":193,"h":37},"font":"switzer","size":"28px","weight":"600","lh":"normal","ls":"normal","color":"rgb(255, 255, 255)","align":"start"}
+{"tag":"h3","text":"Clipping","box":{"x":160,"y":3346,"w":504,"h":24},"font":"inter","size":"20.0002px","weight":"600","lh":"normal","ls":"normal","color":"rgb(255, 255, 255)","align":"start"}
+{"tag":"h3","text":"Podcasting","box":{"x":756,"y":3346,"w":504,"h":24},"font":"inter","size":"20.0002px","weight":"600","lh":"normal","ls":"normal","color":"rgb(255, 255, 255)","align":"start"}
+{"tag":"h2","text":"Our work and reach, by the numbers.","box":{"x":531,"y":3884,"w":379,"h":79},"font":"switzer","size":"36px","weight":"600","lh":"39.6px","ls":"0.36px","color":"rgb(255, 255, 255)","align":"center"}
+{"tag":"h2","text":"How Acquired Gained 52M Views on Autopilot","box":{"x":184,"y":4737,"w":450,"h":28},"font":"switzer","size":"20px","weight":"500","lh":"28px","ls":"normal","color":"rgb(23, 23, 23)","align":"start"}
+{"tag":"h2","text":"Launching Helena: 3.6M Views on X","box":{"x":768,"y":5367,"w":450,"h":28},"font":"switzer","size":"20px","weight":"500","lh":"28px","ls":"normal","color":"rgb(23, 23, 23)","align":"start"}
+{"tag":"h2","text":"Distribution.","box":{"x":184,"y":6169,"w":184,"h":35},"font":"switzer","size":"32px","weight":"600","lh":"35.2px","ls":"0.32px","color":"rgb(23, 23, 23)","align":"start"}
+{"tag":"h2","text":"FAQs","box":{"x":675,"y":6612,"w":90,"h":40},"font":"switzer","size":"36px","weight":"600","lh":"39.6px","ls":"0.36px","color":"rgb(23, 23, 23)","align":"start"}
+{"tag":"h2","text":"Work With Us","box":{"x":603,"y":7653,"w":233,"h":40},"font":"switzer","size":"36px","weight":"600","lh":"39.6px","ls":"0.36px","color":"rgb(255, 255, 255)","align":"center"}
+{"tag":"h2","text":"Services","box":{"x":0,"y":0,"w":0,"h":0},"font":"switzer","size":"15px","weight":"450","lh":"22.5px","ls":"normal","color":"rgb(255, 255, 255)","align":"start"}
+{"tag":"h2","text":"Company","box":{"x":0,"y":0,"w":0,"h":0},"font":"switzer","size":"15px","weight":"450","lh":"22.5px","ls":"normal","color":"rgb(255, 255, 255)","align":"start"}
+{"tag":"h2","text":"Legal","box":{"x":0,"y":0,"w":0,"h":0},"font":"switzer","size":"15px","weight":"450","lh":"22.5px","ls":"normal","color":"rgb(255, 255, 255)","align":"start"}
+{"tag":"h2","text":"Services","box":{"x":783,"y":8073,"w":106,"h":23},"font":"switzer","size":"15px","weight":"450","lh":"22.5px","ls":"normal","color":"rgb(255, 255, 255)","align":"start"}
+{"tag":"h2","text":"Company","box":{"x":969,"y":8073,"w":94,"h":23},"font":"switzer","size":"15px","weight":"450","lh":"22.5px","ls":"normal","color":"rgb(255, 255, 255)","align":"start"}
+{"tag":"h2","text":"Legal","box":{"x":1143,"y":8073,"w":121,"h":23},"font":"switzer","size":"15px","weight":"450","lh":"22.5px","ls":"normal","color":"rgb(255, 255, 255)","align":"start"}

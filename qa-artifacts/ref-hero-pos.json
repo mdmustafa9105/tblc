@@ -1,0 +1,20 @@
+{
+  "heroY": 0,
+  "heroH": 900,
+  "h1s": [
+    {
+      "tag": "h1",
+      "y": 0,
+      "h": 0,
+      "text": "The New Media Arm for Ambitious Tech Companies"
+    },
+    {
+      "tag": "h1",
+      "y": 356,
+      "h": 108,
+      "text": "The New Media Arm for Ambitious Tech Companies"
+    }
+  ],
+  "bodyH": 8597,
+  "viewportH": 900
+}

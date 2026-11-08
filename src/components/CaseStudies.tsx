@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import { ArrowRight, Bookmark, Heart, Sparkles } from 'lucide-react';
+import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import { CASE_STUDIES } from '../data/content';
 
 interface CaseStudiesProps {
@@ -9,165 +9,150 @@ interface CaseStudiesProps {
 
 export const CaseStudies: React.FC<CaseStudiesProps> = ({ onOpenBooking }) => {
   return (
-    <section id="case-studies" className="py-24 md:py-36 bg-paper border-t border-bone-dark/50" aria-label="Case Studies">
-      <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
+    <section id="case-studies" className="bg-white text-black py-24 sm:py-32 border-b border-black/10" aria-label="Case Studies">
+      <div className="mx-auto w-[calc(100%_-_32px)] max-w-shell">
         
-        {/* Section Header (Atomik Growth Reference Style) */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 lg:mb-20 gap-8">
-          <div className="max-w-[760px]">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-bone border border-bone-dark text-xs font-mono uppercase tracking-wider text-coral font-bold mb-4">
-              <span className="w-1.5 h-1.5 rounded-full bg-coral" />
-              Verified Case Studies
-            </div>
-            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-ink tracking-tight leading-[1.08]">
-              Launches that moved books <br className="hidden sm:inline" />
-              <span className="italic font-normal text-coral">off shelves.</span>
+        {/* Section Header */}
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 lg:mb-24 gap-8">
+          <div className="max-w-[700px] space-y-4">
+            <span className="text-[12px] uppercase tracking-[0.18em] font-medium text-[#7D7D7D] font-sans">
+              Case Studies
+            </span>
+            <h2 className="display text-[32px] sm:text-[36px] font-semibold tracking-[0.01em] text-[#000000] leading-[1.1]">
+              Launches that moved books
+              <br />
+              <span className="text-[#7D7D7D]">into readers' hands.</span>
             </h2>
           </div>
-          <p className="font-sans text-sm sm:text-base text-stone max-w-[420px] leading-relaxed">
-            We don’t deal in vague marketing impressions or inflated vanity numbers. Every campaign is engineered around genuine reader discovery, BookTok hook testing, and measurable retail velocity.
+
+          <p className="font-sans text-[15px] font-[450] text-[#666666] max-w-[400px] leading-[1.5]">
+            Every campaign is engineered around genuine reader discovery, BookTok hook testing, and measurable retail velocity.
           </p>
         </div>
 
-        {/* Narrative Case Studies Stack (Atomik Growth Deep Storytelling Layout) */}
-        <div className="space-y-16 lg:space-y-20">
-          {CASE_STUDIES.map((study, idx) => (
-            <div
-              key={study.id}
-              className="rounded-3xl bg-bone/70 border border-stone-300/80 p-8 sm:p-12 lg:p-14 shadow-sm hover:shadow-xl transition-all duration-300"
-            >
-              <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
-                
-                {/* Left Column: Editorial Narrative & 4-Metric Grid (7 Cols / ~60%) */}
-                <div className="lg:col-span-7 space-y-6">
+        {/* Alternating Editorial Case Studies Stack (Atomik Reference Layout) */}
+        <div className="space-y-24 sm:space-y-32">
+          {CASE_STUDIES.map((study, idx) => {
+            const isFlipped = idx % 2 === 1;
+
+            return (
+              <div
+                key={study.id}
+                className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center"
+              >
+                {/* Text Content Column */}
+                <div className={`space-y-6 ${isFlipped ? 'lg:col-span-6 lg:order-2' : 'lg:col-span-6 lg:order-1'}`}>
                   
-                  {/* Case Study Kicker (e.g. "Acquired case study" in Atomik) */}
+                  {/* Category Pill / Kicker */}
                   <div className="flex flex-wrap items-center gap-2.5">
-                    <span className="text-xs font-mono font-bold uppercase tracking-wider text-coral">
+                    <span className="text-[12px] font-medium text-[#0072F5]">
                       {study.genre} Case Study
                     </span>
-                    <span className="text-stone-300">•</span>
-                    <span className="px-2.5 py-0.5 rounded-full bg-paper border border-bone-dark text-xs font-semibold text-ink">
+                    <span className="text-neutral-300">•</span>
+                    <span className="text-[12px] text-[#7D7D7D]">
                       {study.service}
                     </span>
                     {study.isPlaceholder && (
-                      <span className="px-2.5 py-0.5 rounded-full bg-stone/10 border border-stone/20 text-[11px] font-mono text-stone">
+                      <span className="px-2 py-0.5 rounded-[6px] bg-black/5 text-[11px] font-mono text-[#7D7D7D]">
                         [TBC Concept Prototype]
                       </span>
                     )}
                   </div>
 
-                  {/* Outcome-Led Title */}
-                  <h3 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-ink leading-tight">
+                  {/* Title */}
+                  <h3 className="display text-[24px] sm:text-[30px] font-semibold text-[#000000] tracking-[0.01em] leading-[1.15]">
                     {study.title}
                   </h3>
 
-                  {/* Narrative Problem & Opportunity (Atomik Style) */}
-                  <p className="font-sans text-stone text-sm sm:text-base leading-relaxed">
+                  {/* Narrative Brief */}
+                  <p className="font-sans text-[15px] font-[450] text-[#666666] leading-[1.5]">
                     {study.brief}
                   </p>
 
-                  {/* The Creative Strategy & Hook */}
-                  <div className="p-4 sm:p-5 rounded-2xl bg-paper/80 border border-bone-dark space-y-1.5 text-xs sm:text-sm">
-                    <div className="font-mono text-[11px] font-bold uppercase tracking-wider text-coral flex items-center gap-1.5">
-                      <Sparkles className="w-3.5 h-3.5" /> Creative Strategy &amp; Viral Hook
-                    </div>
-                    <p className="text-stone-800 leading-relaxed font-sans">
+                  {/* Creative Hook Detail */}
+                  <div className="p-4 rounded-[12px] bg-[#F2F2F2] space-y-1.5">
+                    <span className="text-[11px] uppercase tracking-wider font-semibold text-[#000000] block">
+                      Creative Strategy &amp; Viral Hook
+                    </span>
+                    <p className="text-[13px] text-[#444444] leading-[1.4] font-sans">
                       {study.creativeIdea}
                     </p>
                   </div>
 
-                  {/* 4-Metric KPI Grid (Atomik 4-Stat Box) */}
-                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-3.5 pt-2">
+                  {/* 4-Metric Grid (Atomik 2x2 Clean Metrics Box) */}
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
                     {study.metrics.map((metric, mIdx) => (
-                      <div key={mIdx} className="bg-paper p-4 rounded-2xl border border-bone-dark text-left">
-                        <span className="font-serif text-2xl sm:text-3xl font-bold text-ink block font-tabular">
+                      <div key={mIdx} className="p-3.5 rounded-[12px] border border-black/10 bg-white">
+                        <span className="font-sans text-2xl sm:text-3xl font-semibold text-black block">
                           {metric.value}
                         </span>
-                        <span className="font-sans font-semibold text-xs text-ink block mt-1">
+                        <span className="font-sans text-[12px] font-medium text-black block mt-1">
                           {metric.label}
                         </span>
-                        <span className="font-sans text-[11px] text-stone block mt-0.5">
+                        <span className="font-sans text-[11px] text-[#7D7D7D] block">
                           {metric.sublabel}
                         </span>
                       </div>
                     ))}
                   </div>
 
-                  {/* Author Endorsement Quote & Links */}
-                  <div className="pt-5 border-t border-stone-300/60 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                    <div className="space-y-1">
-                      <p className="font-serif italic text-sm text-ink leading-snug">
-                        "{study.authorQuote}"
-                      </p>
-                      <p className="text-xs font-sans text-stone font-medium">
-                        — {study.author}, <span className="text-stone-500">{study.authorTitle}</span>
-                      </p>
-                    </div>
-
+                  {/* Bottom Action Links */}
+                  <div className="pt-2 flex flex-wrap items-center gap-4">
                     <button
                       onClick={onOpenBooking}
-                      className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-coral hover:text-coral-600 transition-colors shrink-0 py-2 px-3 rounded-lg hover:bg-bone min-h-[44px]"
+                      className="inline-flex items-center gap-1.5 text-[13px] font-semibold text-black hover:text-[#0072F5] transition-colors"
                     >
                       <span>Discuss a similar launch</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </button>
                   </div>
+
                 </div>
 
-                {/* Right Column: Visual Campaign Deliverable Card (5 Cols / ~40%) */}
-                <div className="lg:col-span-5 flex justify-center lg:justify-end">
-                  <div className="relative w-full max-w-[340px] rounded-3xl bg-ink text-paper p-6 shadow-2xl border border-stone-700/50 space-y-4">
-                    {/* Header bar */}
-                    <div className="flex items-center justify-between text-xs text-stone-400 border-b border-stone-800 pb-3">
-                      <span className="font-serif font-bold text-paper">Campaign Deliverable</span>
-                      <span className="font-mono text-coral text-[11px]">Wave #0{idx + 1}</span>
+                {/* Media Deliverable Visual Column */}
+                <div className={`flex justify-center ${isFlipped ? 'lg:col-span-6 lg:order-1' : 'lg:col-span-6 lg:order-2'}`}>
+                  <div className="relative w-full max-w-[500px] aspect-[4/3] sm:aspect-[16/11] rounded-[16px] overflow-hidden bg-[#06101A] border border-white/10 shadow-2xl p-6 flex flex-col justify-between text-white">
+                    {/* Top Deliverable Bar */}
+                    <div className="flex items-center justify-between text-[12px] text-[#7D7D7D] border-b border-white/10 pb-3">
+                      <span className="font-medium text-white">{study.bookTitle}</span>
+                      <span className="font-mono text-[#0072F5] text-[11px]">Deliverable Wave #0{idx + 1}</span>
                     </div>
 
-                    {/* Book Mockup Canvas */}
-                    <div className="relative h-64 rounded-2xl bg-gradient-to-br from-stone-900 via-ink to-stone-900 border border-stone-800 p-5 flex flex-col justify-between overflow-hidden">
-                      <div className="absolute top-0 right-0 w-32 h-32 bg-coral/10 rounded-full blur-2xl pointer-events-none" />
-                      
-                      <div className="flex items-center justify-between text-[11px] font-mono text-stone-400">
-                        <span>{study.genre}</span>
-                        <span className="flex items-center gap-1 text-coral"><Heart className="w-3 h-3 fill-coral" /> Viral Hook</span>
+                    {/* Center Artwork & Hook */}
+                    <div className="my-auto space-y-3 py-4">
+                      <div className="inline-block px-2.5 py-0.5 rounded-[6px] bg-[#0072F5]/20 text-[#0072F5] text-[11px] font-medium uppercase tracking-wider">
+                        {study.genre}
                       </div>
-
-                      <div className="space-y-2 z-10">
-                        <span className="inline-block px-2.5 py-0.5 rounded bg-coral text-[10px] font-mono font-bold uppercase text-white">
-                          Verified Surge
-                        </span>
-                        <h4 className="font-serif text-xl font-bold text-white leading-tight">
-                          {study.bookTitle}
-                        </h4>
-                        <p className="text-xs text-stone-300 font-sans">
-                          By {study.author}
-                        </p>
-                      </div>
-
-                      <div className="flex items-center justify-between text-xs text-stone-400 pt-2 border-t border-stone-800/80 z-10">
-                        <span>{study.headline}</span>
-                        <Bookmark className="w-3.5 h-3.5 text-stone-400" />
-                      </div>
+                      <h4 className="display text-xl sm:text-2xl font-semibold text-white leading-tight">
+                        {study.headline}
+                      </h4>
+                      <p className="font-serif italic text-[13px] text-[#CCCDCD] leading-snug">
+                        "{study.authorQuote}"
+                      </p>
                     </div>
 
-                    {/* Deliverable Highlights */}
-                    <div className="space-y-2 text-xs text-stone-300 pt-1">
-                      <div className="flex items-center justify-between">
-                        <span className="text-stone-400">Campaign Window:</span>
-                        <span className="font-medium text-paper">{study.timeline}</span>
-                      </div>
-                      <div className="flex items-center justify-between">
-                        <span className="text-stone-400">Creator Activation:</span>
-                        <span className="font-medium text-coral">Synchronized Wave</span>
-                      </div>
+                    {/* Bottom Metadata */}
+                    <div className="flex items-center justify-between text-[12px] text-[#7D7D7D] border-t border-white/10 pt-3">
+                      <span>Author: <strong className="text-white">{study.author}</strong></span>
+                      <span className="text-neutral-400 font-mono text-[11px]">{study.timeline}</span>
                     </div>
                   </div>
                 </div>
 
               </div>
-            </div>
-          ))}
+            );
+          })}
+        </div>
+
+        {/* Centered Bottom Action */}
+        <div className="mt-20 text-center">
+          <button
+            onClick={onOpenBooking}
+            className="inline-flex items-center gap-2 px-6 h-10 rounded-full bg-black text-white font-semibold text-[13px] hover:bg-neutral-800 transition-colors"
+          >
+            <span>Discuss your launch campaign</span>
+            <ArrowRight className="w-3.5 h-3.5" />
+          </button>
         </div>
 
       </div>

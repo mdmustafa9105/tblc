@@ -9,72 +9,71 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        ink: {
-          DEFAULT: '#121115',
-          950: '#0A090B',
-          900: '#121115',
-          850: '#1F1F1F',
-          800: '#272727',
-          750: '#313131',
-          700: '#3D3945',
-          600: '#524D5C',
-        },
-        paper: {
-          DEFAULT: '#F6F1E8',
-          50: '#FAF7F2',
-          100: '#F6F1E8',
-          200: '#EFE7DB',
-          300: '#ECE4D6', // Bone
-          400: '#DDD3C1',
-        },
-        bone: {
-          DEFAULT: '#ECE4D6',
-          light: '#F2ECE0',
-          dark: '#DDD3C1',
-        },
-        coral: {
-          DEFAULT: '#FF5A36',
-          100: '#FFECE8',
-          200: '#FFD4CB',
-          300: '#FFA592',
-          400: '#FF7556',
-          500: '#FF5A36', // Launch Coral
-          600: '#E84622',
-          700: '#BD3314',
-          hover: '#FF7556',
-        },
-        stone: {
-          DEFAULT: '#7D766B',
-          300: '#AFA99E',
-          400: '#948E83',
-          500: '#7D766B', // Base Stone
-          600: '#655F55',
-        }
+        background: '#010405',
+        surface: '#010405',
+        'on-surface': '#FFFFFF',
+        'on-background': '#FFFFFF',
+        'on-surface-variant': '#CCCDCD',
+        'on-surface-muted': '#7D7D7D',
+        'on-surface-subtle': '#666666',
+        'surface-container-low': '#010202',
+        'surface-container': '#06101A',
+        'surface-container-high': '#171717',
+        overlay: 'rgba(255, 255, 255, 0.20)',
+        'overlay-strong': 'rgba(255, 255, 255, 0.08)',
+        outline: 'rgba(0, 0, 0, 0.10)',
+        primary: '#E6E6E6',
+        'on-primary': '#000000',
+        secondary: '#0072F5',
+        // Semantic aliases
+        ink: '#171717',
+        paper: '#FAFAFA',
+        card: '#F2F2F2',
       },
       fontFamily: {
-        serif: ['var(--font-fraunces)', 'Fraunces', 'Georgia', 'serif'],
-        display: ['var(--font-fraunces)', 'Fraunces', 'Georgia', 'serif'],
-        sans: ['var(--font-manrope)', 'Manrope', 'system-ui', '-apple-system', 'sans-serif'],
+        sans: ['var(--font-inter)', 'Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
+        display: ['Switzer', 'var(--font-inter)', 'system-ui', 'sans-serif'],
         mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'monospace'],
       },
+      maxWidth: {
+        shell: '1200px',
+        container: '588px',
+      },
       borderRadius: {
-        '2xl': '24px',
-        '3xl': '32px',
-        'phone': '36px',
+        xs: '6px',
+        sm: '12px',
+        md: '16px',
+        lg: '32px',
+        xl: '40px',
+        card: '16px',
+        accordion: '12px',
+      },
+      spacing: {
+        gutter: '8px',
       },
       transitionTimingFunction: {
-        'editorial': 'cubic-bezier(0.22, 1, 0.36, 1)',
+        smooth: 'cubic-bezier(0.22, 1, 0.36, 1)',
       },
       animation: {
-        'marquee': 'marquee 35s linear infinite',
+        'fade-up': 'fadeUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) both',
+        'float-slow': 'floatSlow 9s ease-in-out infinite',
+        'drift': 'drift 18s ease-in-out infinite alternate',
       },
       keyframes: {
-        marquee: {
-          '0%': { transform: 'translateX(0%)' },
-          '100%': { transform: 'translateX(-50%)' },
-        }
-      }
+        fadeUp: {
+          '0%': { opacity: '0', transform: 'translateY(18px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        floatSlow: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' },
+        },
+        drift: {
+          '0%': { transform: 'translate3d(-2%, 0, 0) scale(1)' },
+          '100%': { transform: 'translate3d(2%, -2%, 0) scale(1.04)' },
+        },
+      },
     },
   },
   plugins: [],
-}
+};

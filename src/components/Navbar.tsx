@@ -1,188 +1,140 @@
 'use client';
-import React, { useState, useEffect } from 'react';
-import { Menu, X, ArrowRight } from 'lucide-react';
+import React, { useEffect, useState } from 'react';
+import { ArrowUpRight, Menu, X } from 'lucide-react';
 
 interface NavbarProps {
   onOpenBooking: () => void;
 }
 
+const NAV_LINKS = [
+  { label: 'Services', href: '#services' },
+  { label: 'Case Studies', href: '#case-studies' },
+  { label: 'Media', href: '#media' },
+  { label: 'FAQs', href: '#faq' },
+];
+
 export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 30);
-    };
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  // Close mobile menu on Escape key
-  useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape' && mobileMenuOpen) {
-        setMobileMenuOpen(false);
-      }
+      if (e.key === 'Escape' && mobileMenuOpen) setMobileMenuOpen(false);
     };
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [mobileMenuOpen]);
 
-  // Lock body scroll when mobile menu is open
   useEffect(() => {
-    if (mobileMenuOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-    }
+    document.body.style.overflow = mobileMenuOpen ? 'hidden' : '';
     return () => {
       document.body.style.overflow = '';
     };
   }, [mobileMenuOpen]);
 
-  const navLinks = [
-    { label: 'Services', href: '#services' },
-    { label: 'Case Studies', href: '#case-studies' },
-    { label: 'Media Engine', href: '#media-engine' },
-    { label: 'FAQs', href: '#faq' },
-  ];
-
   return (
     <>
-      {/* Skip to Content for Keyboard Accessibility */}
       <a
         href="#main-content"
-        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-coral focus:text-white focus:rounded-md focus:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ink"
+        className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-full focus:bg-white focus:px-4 focus:py-2 focus:text-[13px] focus:font-medium focus:text-ink focus:shadow-lg focus:outline-none"
       >
         Skip to main content
       </a>
 
-      {/* Floating Desktop Navbar (Atomik Growth Minimal Floating Style) */}
-      <header
-        className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 pointer-events-none flex justify-center px-4 ${
-          isScrolled ? 'pt-3' : 'pt-5'
-        }`}
-      >
+      <header className="absolute inset-x-0 top-0 z-40 text-white">
         <nav
-          aria-label="Main Navigation"
-          className={`pointer-events-auto transition-all duration-300 w-full max-w-[960px] rounded-full border border-bone-dark/50 shadow-xs flex items-center justify-between px-4 sm:px-6 py-2.5 sm:py-3 ${
-            isScrolled
-              ? 'bg-paper/95 backdrop-blur-md shadow-md'
-              : 'bg-paper/85 backdrop-blur-md'
-          }`}
+          aria-label="Main navigation"
+          className="relative mx-auto flex h-[72px] w-[calc(100%-24px)] max-w-shell items-center justify-between px-3 sm:w-[calc(100%-64px)] sm:px-8 lg:h-28 xl:w-[calc(100%-240px)] xl:items-start xl:py-10"
         >
-          {/* Brand Logo Wordmark */}
           <a
-            href="#"
-            className="flex items-center gap-2.5 group text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-coral rounded-full px-1 min-h-[44px]"
-            aria-label="The Book Launch Company Homepage"
+            href="#main-content"
+            className="display shrink-0 text-[15px] font-normal leading-none tracking-[-0.01em] text-white transition-opacity hover:opacity-70 lg:text-base"
+            aria-label="The Book Launch Company — home"
           >
-            <span className="w-8 h-8 rounded-full bg-ink text-paper flex items-center justify-center font-serif font-bold text-sm tracking-tighter group-hover:bg-coral transition-colors duration-200 shrink-0">
-              B
-            </span>
-            <span className="font-serif font-bold text-base sm:text-lg tracking-tight text-ink whitespace-nowrap">
-              The Book Launch Co<span className="text-coral">.</span>
-            </span>
+            The Book Launch Company
           </a>
 
-          {/* Desktop Nav Items */}
-          <div className="hidden md:flex items-center gap-1 lg:gap-2">
-            {navLinks.map((link) => (
+          <div className="absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 items-center gap-7 lg:flex">
+            {NAV_LINKS.map((link) => (
               <a
                 key={link.label}
                 href={link.href}
-                className="text-sm font-medium text-stone hover:text-ink transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-coral rounded-full px-3.5 py-2 min-h-[44px] flex items-center"
+                className="whitespace-nowrap text-[13px] font-medium leading-[1.5] text-white transition-opacity hover:opacity-70"
               >
                 {link.label}
               </a>
             ))}
           </div>
 
-          {/* Desktop CTA Button */}
-          <div className="hidden md:flex items-center">
-            <button
-              onClick={onOpenBooking}
-              className="bg-coral hover:bg-coral-400 active:bg-coral-600 text-white font-semibold text-sm px-5 py-2.5 rounded-full transition-all duration-200 shadow-xs hover:shadow active:scale-[0.98] flex items-center gap-1.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-coral min-h-[44px]"
-            >
-              <span>Discuss Your Book</span>
-              <ArrowRight className="w-4 h-4" />
-            </button>
-          </div>
+          <button
+            type="button"
+            onClick={onOpenBooking}
+            className="pill hidden h-8 bg-[#F2F2F2] px-3.5 text-[13px] font-medium text-[#171717] transition-colors hover:bg-white lg:inline-flex"
+          >
+            Discuss Your Book
+          </button>
 
-          {/* Mobile Hamburger Toggle (44px target) */}
-          <div className="flex md:hidden items-center">
-            <button
-              type="button"
-              onClick={() => setMobileMenuOpen(true)}
-              className="w-11 h-11 flex items-center justify-center rounded-full text-ink hover:bg-bone transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-coral shrink-0"
-              aria-label="Open mobile navigation menu"
-              aria-expanded={mobileMenuOpen}
-            >
-              <Menu className="w-6 h-6" />
-            </button>
-          </div>
+          <button
+            type="button"
+            onClick={() => setMobileMenuOpen(true)}
+            className="-mr-1 inline-flex h-10 w-10 items-center justify-center rounded-full text-white transition-colors hover:bg-white/10 lg:hidden"
+            aria-label="Open navigation menu"
+            aria-expanded={mobileMenuOpen}
+            aria-controls="mobile-navigation"
+          >
+            <Menu className="h-5 w-5" strokeWidth={1.6} />
+          </button>
         </nav>
       </header>
 
-      {/* Mobile Fullscreen Navigation Drawer */}
       {mobileMenuOpen && (
         <div
+          id="mobile-navigation"
           role="dialog"
           aria-modal="true"
-          aria-label="Mobile Navigation Drawer"
-          className="fixed inset-0 z-50 bg-paper/98 backdrop-blur-xl flex flex-col justify-between p-6 md:hidden animate-in fade-in duration-200"
+          aria-label="Mobile navigation"
+          className="fixed inset-0 z-50 flex flex-col bg-hero text-white lg:hidden"
         >
-          {/* Drawer Top Header */}
-          <div className="flex items-center justify-between border-b border-bone-dark/30 pb-4">
-            <div className="flex items-center gap-2">
-              <span className="w-8 h-8 rounded-full bg-ink text-paper flex items-center justify-center font-serif font-bold text-sm">
-                B
-              </span>
-              <span className="font-serif font-semibold text-lg text-ink">
-                The Book Launch Co<span className="text-coral">.</span>
-              </span>
-            </div>
+          <div className="flex h-[72px] shrink-0 items-center justify-between px-3">
+            <span className="display text-[15px] leading-none text-white">
+              The Book Launch Company
+            </span>
             <button
               type="button"
               onClick={() => setMobileMenuOpen(false)}
-              className="w-12 h-12 flex items-center justify-center rounded-full text-ink hover:bg-bone focus:outline-none focus-visible:ring-2 focus-visible:ring-coral"
-              aria-label="Close mobile navigation menu"
+              className="-mr-1 inline-flex h-10 w-10 items-center justify-center rounded-full transition-colors hover:bg-white/10"
+              aria-label="Close navigation menu"
             >
-              <X className="w-6 h-6" />
+              <X className="h-5 w-5" strokeWidth={1.6} />
             </button>
           </div>
 
-          {/* Drawer Navigation Links */}
-          <div className="flex flex-col gap-6 py-8">
-            {navLinks.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                onClick={() => setMobileMenuOpen(false)}
-                className="font-serif text-2xl font-semibold text-ink hover:text-coral transition-colors py-1 flex items-center justify-between border-b border-bone-dark/20 pb-3"
-              >
-                <span>{link.label}</span>
-                <ArrowRight className="w-5 h-5 text-stone" />
-              </a>
-            ))}
+          <div className="flex flex-1 flex-col justify-center px-6">
+            <div className="flex flex-col border-t border-white/10">
+              {NAV_LINKS.map((link) => (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="display flex items-center justify-between border-b border-white/10 py-6 text-[30px] font-medium leading-none tracking-[-0.01em] text-white"
+                >
+                  {link.label}
+                  <ArrowUpRight className="h-5 w-5 text-white/40" strokeWidth={1.5} />
+                </a>
+              ))}
+            </div>
           </div>
 
-          {/* Drawer Bottom Actions */}
-          <div className="flex flex-col gap-4 pt-4 border-t border-bone-dark/30">
+          <div className="shrink-0 px-6 pb-8 pt-4">
             <button
+              type="button"
               onClick={() => {
                 setMobileMenuOpen(false);
                 onOpenBooking();
               }}
-              className="w-full bg-coral hover:bg-coral-400 active:bg-coral-600 text-white font-semibold text-base py-4 rounded-full transition-all shadow-md flex items-center justify-center gap-2 min-h-[48px]"
+              className="pill h-12 w-full bg-[#F2F2F2] text-[13px] font-medium text-[#171717]"
             >
-              <span>Discuss Your Book</span>
-              <ArrowRight className="w-5 h-5" />
+              Discuss Your Book
             </button>
-            <p className="text-xs text-center text-stone font-sans">
-              20-minute strategy session · No commitment required
-            </p>
           </div>
         </div>
       )}

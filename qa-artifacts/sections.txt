@@ -1,0 +1,49 @@
+STATS
+{"x":0,"y":3583,"w":1440,"h":900}
+{"tag":"img","text":"","box":{"x":0,"y":0,"w":0,"h":0},"bg":"rgba(0, 0, 0, 0)","radius":"0px","size":"16px","weight":"400","color":"rgba(0, 0, 0, 0)","font":"inter","lh":"24px","ls":"normal","display":"block","grid":"none","gap":"normal"}
+{"tag":"img","text":"","box":{"x":0,"y":4015,"w":1440,"h":468},"bg":"rgba(0, 0, 0, 0)","radius":"0px","size":"16px","weight":"400","color":"rgba(0, 0, 0, 0)","font":"inter","lh":"24px","ls":"normal","display":"block","grid":"none","gap":"normal"}
+{"tag":"div","text":"Our work and reach, by the numbers.:where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(ne","box":{"x":120,"y":3583,"w":1200,"h":900},"bg":"rgba(0, 0, 0, 0)","radius":"0px","size":"16px","weight":"400","color":"rgb(255, 255, 255)","font":"inter","lh":"24px","ls":"normal","display":"block","grid":"none","gap":"normal"}
+{"tag":"div","text":"","box":{"x":120,"y":3583,"w":1,"h":900},"bg":"rgba(0, 0, 0, 0)","radius":"0px","size":"16px","weight":"400","color":"rgb(255, 255, 255)","font":"inter","lh":"24px","ls":"normal","display":"block","grid":"none","gap":"normal"}
+{"tag":"div","text":"","box":{"x":1319,"y":3583,"w":1,"h":900},"bg":"rgba(0, 0, 0, 0)","radius":"0px","size":"16px","weight":"400","color":"rgb(255, 255, 255)","font":"inter","lh":"24px","ls":"normal","display":"block","grid":"none","gap":"normal"}
+{"tag":"h2","text":"Our work and reach, by the numbers.","box":{"x":531,"y":3884,"w":379,"h":79},"bg":"rgba(0, 0, 0, 0)","radius":"0px","size":"36px","weight":"600","color":"rgb(255, 255, 255)","font":"switzer","lh":"39.6px","ls":"0.36px","display":"block","grid":"none","gap":"normal"}
+{"tag":"span","text":"0.0%","box":{"x":0,"y":0,"w":0,"h":0},"bg":"","radius":"","size":"","weight":"","color":"","font":"","lh":"","ls":"","display":"","grid":"","gap":""}
+{"tag":"span","text":"","box":{"x":548,"y":4103,"w":1,"h":52},"bg":"rgba(0, 0, 0, 0)","radius":"0px","size":"16px","weight":"400","color":"rgb(255, 255, 255)","font":"inter","lh":"24px","ls":"normal","display":"block","grid":"none","gap":"normal"}
+{"tag":"span","text":"0B+","box":{"x":0,"y":0,"w":0,"h":0},"bg":"","radius":"","size":"","weight":"","color":"","font":"","lh":"","ls":"","display":"","grid":"","gap":""}
+{"tag":"span","text":"","box":{"x":891,"y":4103,"w":1,"h":52},"bg":"rgba(0, 0, 0, 0)","radius":"0px","size":"16px","weight":"400","color":"rgb(255, 255, 255)","font":"inter","lh":"24px","ls":"normal","display":"block","grid":"none","gap":"normal"}
+{"tag":"span","text":"0M+","box":{"x":0,"y":0,"w":0,"h":0},"bg":"","radius":"","size":"","weight":"","color":"","font":"","lh":"","ls":"","display":"","grid":"","gap":""}
+
+CASES
+{"x":0,"y":4483,"w":1440,"h":1540}
+{"tag":"article","text":"Acquired case studyHow Acquired Gained 52M Views on AutopilotAcquired needed to repurpose long-form episodes into short-form content to stay top of mind, grow i","box":{"x":152,"y":4643,"w":1136,"h":470},"bg":"rgba(0, 0, 0, 0)","radius":"0px","border":"rgb(0, 0, 0) 0px","size":"16px","weight":"400","color":"rgb(0, 0, 0)","font":"inter","display":"grid","grid":"552px 552px"}
+{"tag":"h2","text":"How Acquired Gained 52M Views on Autopilot","box":{"x":184,"y":4737,"w":450,"h":28},"bg":"rgba(0, 0, 0, 0)","radius":"0px","border":"rgb(23, 23, 23) 0px","size":"20px","weight":"500","color":"rgb(23, 23, 23)","font":"switzer","display":"block","grid":"none"}
+{"tag":"p","text":"Acquired needed to repurpose long-form episodes into short-form content to stay top of mind, grow its social following, and create a discovery funnel for new li","box":{"x":184,"y":4789,"w":488,"h":59},"bg":"rgba(0, 0, 0, 0)","radius":"0px","border":"rgb(102, 102, 102) 0px","size":"13px","weight":"450","color":"rgb(102, 102, 102)","font":"inter","display":"block","grid":"none"}
+{"tag":"a","text":"View Case study","box":{"x":184,"y":4872,"w":152,"h":38},"bg":"rgb(242, 242, 242)","radius":"32px","border":"rgb(23, 23, 23) 0px","size":"13px","weight":"500","color":"rgb(23, 23, 23)","font":"inter","display":"inline-flex","grid":"none"}
+{"tag":"a","text":"","box":{"x":817,"y":4768,"w":390,"h":219},"bg":"rgb(255, 255, 255)","radius":"12px","border":"oklab(0 0 0 / 0.1) 1px","size":"16px","weight":"400","color":"rgb(0, 0, 0)","font":"inter","display":"block","grid":"none"}
+{"tag":"video","text":"","box":{"x":818,"y":4769,"w":388,"h":217},"bg":"rgba(0, 0, 0, 0)","radius":"0px","border":"rgb(0, 0, 0) 0px","size":"16px","weight":"400","color":"rgb(0, 0, 0)","font":"inter","display":"block","grid":"none"}
+{"tag":"a","text":"View on youtube","box":{"x":1170,"y":5081,"w":102,"h":17},"bg":"rgba(0, 0, 0, 0)","radius":"0px","border":"rgb(125, 125, 125) 0px","size":"11px","weight":"500","color":"rgb(125, 125, 125)","font":"inter","display":"flex","grid":"none"}
+{"tag":"article","text":"Enrich Labs case studyLaunching Helena: 3.6M Views on XHow we orchestrated Enrich Labs’ autonomous AI marketer to become the largest launch in its category, gen","box":{"x":152,"y":5273,"w":1136,"h":470},"bg":"rgba(0, 0, 0, 0)","radius":"0px","border":"rgb(0, 0, 0) 0px","size":"16px","weight":"400","color":"rgb(0, 0, 0)","font":"inter","display":"grid","grid":"552px 552px"}
+{"tag":"h2","text":"Launching Helena: 3.6M Views on X","box":{"x":768,"y":5367,"w":450,"h":28},"bg":"rgba(0, 0, 0, 0)","radius":"0px","border":"rgb(23, 23, 23) 0px","size":"20px","weight":"500","color":"rgb(23, 23, 23)","font":"switzer","display":"block","grid":"none"}
+{"tag":"p","text":"How we orchestrated Enrich Labs’ autonomous AI marketer to become the largest launch in its category, generating 10× homepage traffic and sustained momentum thr","box":{"x":768,"y":5419,"w":488,"h":59},"bg":"rgba(0, 0, 0, 0)","radius":"0px","border":"rgb(102, 102, 102) 0px","size":"13px","weight":"450","color":"rgb(102, 102, 102)","font":"inter","display":"block","grid":"none"}
+{"tag":"a","text":"View Case study","box":{"x":768,"y":5502,"w":152,"h":38},"bg":"rgb(242, 242, 242)","radius":"32px","border":"rgb(23, 23, 23) 0px","size":"13px","weight":"500","color":"rgb(23, 23, 23)","font":"inter","display":"inline-flex","grid":"none"}
+{"tag":"a","text":"","box":{"x":233,"y":5398,"w":390,"h":219},"bg":"rgb(255, 255, 255)","radius":"12px","border":"oklab(0 0 0 / 0.1) 1px","size":"16px","weight":"400","color":"rgb(0, 0, 0)","font":"inter","display":"block","grid":"none"}
+{"tag":"video","text":"","box":{"x":234,"y":5399,"w":388,"h":217},"bg":"rgba(0, 0, 0, 0)","radius":"0px","border":"rgb(0, 0, 0) 0px","size":"16px","weight":"400","color":"rgb(0, 0, 0)","font":"inter","display":"block","grid":"none"}
+{"tag":"a","text":"View on youtube","box":{"x":586,"y":5711,"w":102,"h":17},"bg":"rgba(0, 0, 0, 0)","radius":"0px","border":"rgb(125, 125, 125) 0px","size":"11px","weight":"500","color":"rgb(125, 125, 125)","font":"inter","display":"flex","grid":"none"}
+{"tag":"a","text":"View all case studies","box":{"x":631,"y":5863,"w":178,"h":40},"bg":"oklab(0 0 0 / 0.06)","radius":"40px","border":"rgb(23, 23, 23) 0px","size":"13px","weight":"500","color":"rgb(23, 23, 23)","font":"inter","display":"flex","grid":"none"}
+
+PODCAST
+{"x":0,"y":6023,"w":1440,"h":469}
+{"tag":"p","text":"A podcast by Atomik","box":{"x":184,"y":6143,"w":184,"h":20},"bg":"rgba(0, 0, 0, 0)","radius":"0px","size":"13px","weight":"450","color":"oklab(0 0 0 / 0.4)","font":"inter"}
+{"tag":"h2","text":"Distribution.","box":{"x":184,"y":6169,"w":184,"h":35},"bg":"rgba(0, 0, 0, 0)","radius":"0px","size":"32px","weight":"600","color":"rgb(23, 23, 23)","font":"switzer"}
+{"tag":"p","text":"Distribution is Atomik’s podcast about the strategies, decisions, and inflection points behind breakout growth.","box":{"x":184,"y":6244,"w":400,"h":48},"bg":"rgba(0, 0, 0, 0)","radius":"0px","size":"15px","weight":"450","color":"rgb(102, 102, 102)","font":"inter"}
+{"tag":"a","text":"Listen to Distribution","box":{"x":184,"y":6332,"w":184,"h":40},"bg":"rgb(23, 23, 23)","radius":"3.35544e+07px","size":"13px","weight":"600","color":"rgb(242, 242, 242)","font":"inter"}
+{"tag":"a","text":"","box":{"x":849,"y":6143,"w":407,"h":229},"bg":"rgb(255, 255, 255)","radius":"16px","size":"16px","weight":"400","color":"rgb(23, 23, 23)","font":"inter"}
+{"tag":"video","text":"","box":{"x":850,"y":6144,"w":405,"h":227},"bg":"rgba(0, 0, 0, 0)","radius":"0px","size":"16px","weight":"400","color":"rgb(23, 23, 23)","font":"inter"}
+
+CTA
+{"x":0,"y":7213,"w":1440,"h":680}
+{"tag":"img","text":"","box":{"x":162,"y":7291,"w":1116,"h":524},"bg":"rgba(0, 0, 0, 0)","radius":"0px","size":"16px","weight":"400","color":"rgba(0, 0, 0, 0)","font":"inter"}
+{"tag":"img","text":"","box":{"x":268,"y":7308,"w":904,"h":526},"bg":"rgba(0, 0, 0, 0)","radius":"0px","size":"16px","weight":"400","color":"rgba(0, 0, 0, 0)","font":"inter"}
+{"tag":"img","text":"","box":{"x":670,"y":7521,"w":100,"h":100},"bg":"rgba(0, 0, 0, 0)","radius":"0px","size":"16px","weight":"400","color":"rgba(0, 0, 0, 0)","font":"inter"}
+{"tag":"h2","text":"Work With Us","box":{"x":603,"y":7653,"w":233,"h":40},"bg":"rgba(0, 0, 0, 0)","radius":"0px","size":"36px","weight":"600","color":"rgb(255, 255, 255)","font":"switzer"}
+{"tag":"p","text":"Book an intro call to explore our suite of services. We might have a waitlist.","box":{"x":568,"y":7709,"w":304,"h":45},"bg":"rgba(0, 0, 0, 0)","radius":"0px","size":"16px","weight":"450","color":"oklab(0.999994 0.0000455677 0.0000200868 / 0.8)","font":"inter"}
+{"tag":"a","text":"Book a call","box":{"x":660,"y":7793,"w":120,"h":40},"bg":"rgb(242, 242, 242)","radius":"3.35544e+07px","size":"13px","weight":"600","color":"rgb(0, 0, 0)","font":"inter"}

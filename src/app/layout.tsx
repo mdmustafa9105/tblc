@@ -1,18 +1,11 @@
 import type { Metadata } from 'next';
-import { Fraunces, Manrope } from 'next/font/google';
+import { Inter } from 'next/font/google';
 import './globals.css';
 
-const fraunces = Fraunces({
+const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-fraunces',
-  axes: ['opsz'],
-});
-
-const manrope = Manrope({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-manrope',
+  variable: '--font-inter',
 });
 
 export const metadata: Metadata = {
@@ -22,7 +15,7 @@ export const metadata: Metadata = {
     template: '%s | The Book Launch Company',
   },
   description:
-    'We turn book releases into cultural moments. Creative, social-first short-form video campaigns, author branding, and podcasts from the team behind @whynotnovels.',
+    'Book launches, backlist revival, author content and podcasts. The new-media launch partner for authors — from launch day to lasting reader discovery.',
   keywords: [
     'book launch marketing',
     'book marketing agency',
@@ -44,7 +37,7 @@ export const metadata: Metadata = {
     url: 'https://thebooklaunchcompany.com',
     title: 'The Book Launch Company — Launch the book. Build the author.',
     description:
-      'The new-media launch partner for authors: creative short-form video campaigns, author branding, and podcasts from the team behind @whynotnovels.',
+      'Book launches, backlist revival, author content and podcasts. From launch day to lasting reader discovery.',
     siteName: 'The Book Launch Company',
     images: [
       {
@@ -59,7 +52,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'The Book Launch Company — Launch the book. Build the author.',
     description:
-      'The new-media launch partner for authors: creative short-form video campaigns, author branding, and podcasts from the team behind @whynotnovels.',
+      'Book launches, backlist revival, author content and podcasts. From launch day to lasting reader discovery.',
     images: ['/og-image.svg'],
   },
   icons: {
@@ -77,7 +70,7 @@ const jsonLd = {
       url: 'https://thebooklaunchcompany.com/',
       logo: 'https://thebooklaunchcompany.com/favicon.svg',
       description:
-        'The new-media launch partner for authors: creative short-form video campaigns, author branding, and podcasts from the team behind @whynotnovels.',
+        'The new-media launch partner for authors: book launches, backlist revival, author brand content, and author podcasts.',
       founder: {
         '@type': 'Person',
         name: 'Ariba',
@@ -113,10 +106,18 @@ const jsonLd = {
         },
         {
           '@type': 'Question',
-          name: 'Do you work with self-published authors?',
+          name: 'Do you work with self-published and indie authors?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Yes — indie authors, debut novelists, traditionally published authors across the Big 5, and specialized overseas publishers.',
+            text: 'Yes — independent authors, debut writers, traditionally published authors, and specialised overseas publishers.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Which genres do you specialize in?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Our strongest organic traction is in Fiction, Thrillers & Mysteries, Romance & Romantasy, Sci-Fi & Fantasy, Historical Fiction, and select narrative Non-Fiction and Memoirs.',
           },
         },
         {
@@ -124,7 +125,7 @@ const jsonLd = {
           name: 'Can you guarantee sales or bestseller status?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Honest answer: No ethical agency can guarantee algorithmic retail sales or specific bestseller rankings. What we guarantee is our work, tested creative hook execution, targeted reader reach, and transparent reporting.',
+            text: 'No ethical agency can guarantee algorithmic retail sales or specific bestseller rankings. What we guarantee is our work, tested creative hook execution, targeted reader reach, and transparent reporting.',
           },
         },
         {
@@ -132,7 +133,7 @@ const jsonLd = {
           name: 'What do you need from me as an author?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'The book (or ARC), a short discovery call, and — for ongoing brand and podcast work — about an hour a week. For book launches, our team handles all scripting, editing, and creator coordination.',
+            text: 'The book (or ARC), a short discovery call, and — for ongoing brand and podcast work — about an hour a week. For book launches and backlist revivals, our team handles scripting, editing, and creator coordination.',
           },
         },
       ],
@@ -146,17 +147,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`scroll-smooth ${fraunces.variable} ${manrope.variable}`}>
+    <html lang="en" className={`scroll-smooth ${inter.variable}`}>
       <head>
+        <link
+          rel="preload"
+          href="/fonts/switzer-600.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="bg-paper text-ink font-sans antialiased selection:bg-coral selection:text-white min-h-screen">
+      <body className="bg-paper text-ink font-sans antialiased min-h-screen">
         {children}
       </body>
     </html>
   );
 }
-
