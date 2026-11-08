@@ -1,6 +1,8 @@
 'use client';
 import React from 'react';
-import { ArrowRight, Sparkles } from 'lucide-react';
+import { Sparkles, ArrowDown } from 'lucide-react';
+import { GoldenWaveCanvas } from './hero/GoldenWaveCanvas';
+import { InteractiveBook3D } from './hero/InteractiveBook3D';
 
 interface HeroProps {
   onOpenBooking: () => void;
@@ -16,83 +18,88 @@ const PRESS_PARTNERS = [
 ];
 
 export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
+  const handleScrollToWork = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const target = document.getElementById('books-showcase') || document.getElementById('case-studies');
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section
+      id="hero"
       aria-label="The Book Launch Company Hero"
-      className="relative min-h-[760px] lg:h-screen lg:min-h-[820px] bg-[#010405] text-white overflow-hidden flex flex-col justify-between pt-24 sm:pt-28 lg:pt-20 pb-8 sm:pb-10"
-      style={{
-        backgroundImage: "radial-gradient(circle at 75% 35%, rgba(212, 175, 55, 0.18) 0%, transparent 60%), radial-gradient(circle at 20% 85%, rgba(180, 130, 40, 0.08) 0%, transparent 50%), url('/images/hero-clean-book.jpg')",
-        backgroundSize: 'cover',
-        backgroundPosition: 'center center',
-      }}
+      className="relative min-h-[780px] lg:h-screen lg:min-h-[840px] bg-[#010405] text-white overflow-hidden flex flex-col justify-between pt-24 sm:pt-28 lg:pt-20 pb-8 sm:pb-10"
     >
-      {/* Subtle vignette scrim to guarantee 100% text readability on any device */}
+      {/* 1. Animated Golden Wave Signature Canvas (Beams, Flowing Ribbons & Particles) */}
+      <GoldenWaveCanvas />
+
+      {/* 2. Top Header Scrim Gradient */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0 z-0 bg-gradient-to-r from-[#010405]/95 via-[#010405]/45 to-transparent lg:from-[#010405]/90 lg:via-[#010405]/20 lg:to-[#010405]/40"
-      />
-      
-      {/* Top subtle fade from header */}
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-[#010405]/80 to-transparent z-0"
+        className="pointer-events-none absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-[#010405]/90 via-[#010405]/40 to-transparent z-10"
       />
 
-      {/* Main 3-Column Content Zone (Matching Reference Image Composition) */}
-      <div className="relative z-10 mx-auto w-[calc(100%-32px)] max-w-shell my-auto py-8 sm:py-10 lg:py-0">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-6 items-center">
+      {/* 3. Main 3-Column Content Zone */}
+      <div className="relative z-20 mx-auto w-[calc(100%-32px)] max-w-shell my-auto py-6 sm:py-8 lg:py-0">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-4 items-center">
           
-          {/* Column 1: Left Display Headline, Subtitle & CTAs (5 cols) */}
-          <div className="lg:col-span-5 max-w-[540px] text-left">
-            <h1 className="display text-[34px] sm:text-[42px] lg:text-[46px] xl:text-[52px] font-semibold text-white leading-[1.08] tracking-[-0.015em]">
+          {/* Column 1: Left Display Headline, Subtitle & CTAs (4 cols) */}
+          <div className="lg:col-span-4 xl:col-span-4 max-w-[500px] text-left order-1">
+            <h1 className="display text-[34px] sm:text-[42px] lg:text-[44px] xl:text-[48px] font-semibold text-white leading-[1.08] tracking-[-0.015em]">
               The New Media Partner
               <br />
               For Ambitious Authors
             </h1>
 
-            {/* Subtitle in warm golden wheat (#D1B48C) matching reference */}
-            <p className="mt-3 sm:mt-4 text-[18px] sm:text-[21px] font-normal text-[#D1B48C] tracking-wide font-sans">
+            {/* Subtitle in warm golden wheat */}
+            <p className="mt-3 sm:mt-4 text-[18px] sm:text-[20px] font-normal text-[#D1B48C] tracking-wide font-sans">
               By The Book Launch Company
             </p>
 
-            {/* CTAs matching reference pill + ghost link */}
+            {/* CTAs matching exact instructions: Discuss Your Book › & See Our Work ↓ */}
             <div className="mt-8 sm:mt-10 flex flex-wrap items-center gap-4 sm:gap-6">
               <button
                 type="button"
                 onClick={onOpenBooking}
-                className="h-10 px-6 rounded-full bg-white text-black font-semibold text-[13px] hover:bg-[#F2F2F2] active:scale-[0.98] transition-all inline-flex items-center gap-2 shadow-lg shadow-black/40"
+                className="h-10 px-6 rounded-full bg-white text-black font-semibold text-[13px] hover:bg-[#F2F2F2] active:scale-[0.98] transition-all inline-flex items-center gap-2 shadow-lg shadow-black/40 group"
               >
                 <span>Discuss Your Book</span>
-                <span className="text-[15px] leading-none font-bold">›</span>
+                <span className="text-[15px] leading-none font-bold group-hover:translate-x-0.5 transition-transform">›</span>
               </button>
 
               <a
-                href="#case-studies"
-                className="inline-flex items-center gap-2 text-[13px] font-medium text-white/90 hover:text-white transition-colors group py-2"
+                href="#books-showcase"
+                onClick={handleScrollToWork}
+                className="inline-flex items-center gap-1.5 text-[13px] font-medium text-white/85 hover:text-white transition-colors group py-2"
               >
-                <span>See our launches</span>
-                <span className="transition-transform group-hover:translate-x-1">→</span>
+                <span>See Our Work</span>
+                <ArrowDown className="w-3.5 h-3.5 text-[#D1B48C] group-hover:translate-y-0.5 transition-transform" />
               </a>
             </div>
           </div>
 
-          {/* Column 2: Center Spacer / Anchor for the 3D Floating Book (4 cols) */}
-          <div className="lg:col-span-4 hidden lg:flex items-center justify-center min-h-[380px] pointer-events-none" aria-hidden="true">
-            {/* The 3D hardcover book visual is anchored directly in the high-res background at this coordinate */}
+          {/* Column 2: Center Interactive 3D Hardcover Book (5 cols) */}
+          <div className="lg:col-span-5 xl:col-span-5 flex items-center justify-center order-2 py-4 lg:py-0">
+            <InteractiveBook3D onOpenBooking={onOpenBooking} />
           </div>
 
           {/* Column 3: Right Narrative Paragraph Block (3 cols) */}
-          <div className="lg:col-span-3 max-w-[360px] text-left lg:pt-4">
-            <p className="text-[14px] sm:text-[15px] font-[450] leading-[1.65] text-white/90 font-sans">
-              Dive into modern reader discovery. Book launches, backlist revival, author brand and podcasts. We engineer viral launch waves, tested BookTok hooks, and sustained retail velocity for modern authors and publishers.
+          <div className="lg:col-span-3 xl:col-span-3 max-w-[340px] text-left lg:pt-4 order-3">
+            <p className="text-[14px] sm:text-[15px] font-[450] leading-[1.65] text-white/85 font-sans">
+              Dive into modern reader discovery.
+              <br />
+              <br />
+              Book launches, backlist revival, author brand and podcasts. We create campaigns that connect ambitious books with the readers who will love them.
             </p>
           </div>
 
         </div>
       </div>
 
-      {/* Bottom Press & Media Logo Strip with 4-Point Star Accent */}
-      <div className="relative z-10 w-full border-t border-white/10 pt-5 pb-2">
+      {/* 4. Bottom Press & Media Logo Strip with 4-Point Star Accent */}
+      <div className="relative z-20 w-full border-t border-white/10 pt-5 pb-2">
         <div className="mx-auto w-[calc(100%-32px)] max-w-shell flex flex-col sm:flex-row items-center justify-between gap-4">
           
           {/* Press Logos in subtle muted monochrome matching reference image */}
