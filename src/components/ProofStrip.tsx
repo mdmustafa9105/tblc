@@ -16,41 +16,41 @@ const PARTNERS = [
 
 export const ProofStrip: React.FC = () => {
   return (
-    <section id="proof" className="bg-[#FAFAFA] text-[#171717] py-20 sm:py-28 border-b border-black/10" aria-label="Publishing Partners & Client Titles">
+    <section id="proof" className="bg-[#FAFAFA] text-[#171717] py-20 sm:py-28 border-b border-black/[0.08]" aria-label="Publishing Partners & Client Titles">
       <div className="mx-auto w-[calc(100%_-_32px)] max-w-shell">
         
         {/* Section Header */}
         <div className="text-center mb-12 sm:mb-16">
-          <p className="text-[12px] uppercase tracking-[0.18em] font-medium text-[#7D7D7D] font-sans">
+          <p className="text-[12px] uppercase tracking-[0.18em] font-medium text-[#71717A] font-sans">
             We partner with authors and publishers worldwide
           </p>
         </div>
 
         {/* Clean Logo / Title Proof Grid (Atomik Growth Reference Signature) */}
-        <div className="grid grid-cols-2 md:grid-cols-5 border-t border-l border-black/10">
+        <div className="grid grid-cols-2 md:grid-cols-5 border-t border-l border-black/[0.08]">
           {PARTNERS.map((partner, idx) => (
             <div
               key={idx}
-              className="p-6 sm:p-8 border-r border-b border-black/10 flex flex-col justify-between items-center text-center hover:bg-[#F2F2F2]/60 transition-colors min-h-[140px] sm:min-h-[160px]"
+              className="p-6 sm:p-8 border-r border-b border-black/[0.08] flex flex-col justify-between items-center text-center hover:bg-white hover:shadow-xs transition-all min-h-[140px] sm:min-h-[160px]"
             >
               <div className="w-full flex justify-end">
-                <span className="text-[10px] font-mono tracking-wider text-[#7D7D7D] uppercase">
+                <span className="text-[10px] font-mono tracking-wider text-[#71717A] uppercase">
                   {partner.tag}
                 </span>
               </div>
 
               <div className="my-auto py-2">
-                <h3 className="font-sans font-semibold text-[14px] leading-[1.4] tracking-tight text-[#000000] uppercase">
+                <h3 className="font-sans font-semibold text-[14px] leading-[1.4] tracking-tight text-[#111827] uppercase">
                   {partner.name}
                 </h3>
                 {partner.author && (
-                  <p className="text-[12px] text-[#7D7D7D] font-sans mt-0.5">
+                  <p className="text-[12px] text-[#71717A] font-sans mt-0.5">
                     by {partner.author}
                   </p>
                 )}
               </div>
 
-              <span className="text-[11px] text-[#7D7D7D] font-sans">
+              <span className="text-[11px] text-[#71717A] font-sans">
                 {partner.type}
               </span>
             </div>

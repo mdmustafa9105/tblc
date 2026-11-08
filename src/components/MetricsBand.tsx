@@ -142,24 +142,24 @@ export const MetricsBand: React.FC = () => {
         </div>
 
         {/* 4-Column Horizontal Metrics (Atomik Growth Signature) */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 sm:gap-8 divide-y sm:divide-y-0 sm:divide-x divide-white/10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {METRICS.map((metric, idx) => (
             <div
               key={idx}
-              className={`flex flex-col items-center text-center px-4 ${idx > 0 ? 'pt-8 sm:pt-0' : ''}`}
+              className="flex flex-col items-center text-center p-6 rounded-[16px] bg-white/[0.02] border border-white/[0.08] hover:border-white/20 hover:bg-white/[0.04] transition-all"
             >
               {/* Massive Display Number */}
-              <div className="font-sans text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-white mb-3">
+              <div className="font-sans text-5xl sm:text-6xl font-semibold tracking-tight text-white mb-3">
                 {hasAnimated ? metric.value : '0'}
               </div>
 
               {/* Bold Primary Label */}
-              <h3 className="font-sans font-semibold text-[16px] text-white mb-2 leading-[1.4]">
+              <h3 className="font-sans font-semibold text-[15px] text-white mb-2 leading-[1.4]">
                 {metric.label}
               </h3>
 
               {/* Concise Supporting Description */}
-              <p className="font-sans text-[13px] text-[#7D7D7D] max-w-[240px] leading-[1.5]">
+              <p className="font-sans text-[13px] text-[#A1A1AA] max-w-[240px] leading-[1.5]">
                 {metric.sublabel}
               </p>
             </div>

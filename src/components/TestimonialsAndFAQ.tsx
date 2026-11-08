@@ -47,13 +47,13 @@ export const TestimonialsAndFAQ: React.FC<TestimonialsAndFAQProps> = () => {
         
         {/* Section Heading (Atomik Reference Minimal FAQs) */}
         <div className="text-center mb-16 sm:mb-20">
-          <h2 className="display text-[32px] sm:text-[36px] font-semibold tracking-[0.01em] text-[#000000] leading-[1.1]">
+          <h2 className="display text-[32px] sm:text-[36px] font-semibold tracking-[0.01em] text-[#111827] leading-[1.1]">
             FAQs
           </h2>
         </div>
 
         {/* Clean Accordion List with Thin Horizontal Dividers */}
-        <div className="divide-y divide-black/10 border-y border-black/10">
+        <div className="divide-y divide-black/[0.08] border-y border-black/[0.08]">
           {FAQS.map((faq) => {
             const isOpen = openFaq === faq.id;
             return (
@@ -66,12 +66,12 @@ export const TestimonialsAndFAQ: React.FC<TestimonialsAndFAQProps> = () => {
                   onClick={() => toggleFaq(faq.id)}
                   className="w-full py-5 text-left flex items-center justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-black rounded-[6px] min-h-[48px] group"
                 >
-                  <span className="font-sans font-normal text-[16px] leading-[1.5] text-[#000000] group-hover:text-[#666666] transition-colors">
+                  <span className="font-sans font-normal text-[16px] leading-[1.5] text-[#111827] group-hover:text-[#0072F5] transition-colors">
                     {faq.question}
                   </span>
                   <div
-                    className={`w-7 h-7 rounded-full flex items-center justify-center shrink-0 transition-transform duration-200 text-[#7D7D7D] group-hover:text-black ${
-                      isOpen ? 'rotate-180 text-black' : ''
+                    className={`w-7 h-7 rounded-full flex items-center justify-center shrink-0 transition-transform duration-200 text-[#71717A] group-hover:text-[#111827] ${
+                      isOpen ? 'rotate-180 text-[#111827]' : ''
                     }`}
                   >
                     <ChevronDown className="w-4 h-4" strokeWidth={1.8} />
@@ -83,7 +83,7 @@ export const TestimonialsAndFAQ: React.FC<TestimonialsAndFAQProps> = () => {
                     id={`faq-answer-${faq.id}`}
                     role="region"
                     aria-labelledby={`faq-btn-${faq.id}`}
-                    className="pb-6 text-[15px] font-[450] text-[#666666] font-sans leading-[1.5] pr-8"
+                    className="pb-6 text-[15px] font-[450] text-[#52525B] font-sans leading-[1.6] pr-8"
                   >
                     {faq.answer}
                   </div>

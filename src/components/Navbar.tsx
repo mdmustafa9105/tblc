@@ -1,6 +1,6 @@
 'use client';
 import React, { useEffect, useState } from 'react';
-import { ArrowUpRight, Menu, X } from 'lucide-react';
+import { ArrowUpRight, BookOpen, Menu, X } from 'lucide-react';
 
 interface NavbarProps {
   onOpenBooking: () => void;
@@ -43,22 +43,27 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
       <header className="absolute inset-x-0 top-0 z-40 text-white">
         <nav
           aria-label="Main navigation"
-          className="relative mx-auto flex h-[72px] w-[calc(100%-24px)] max-w-shell items-center justify-between px-3 sm:w-[calc(100%-64px)] sm:px-8 lg:h-28 xl:w-[calc(100%-240px)] xl:items-start xl:py-10"
+          className="relative mx-auto flex h-[72px] w-[calc(100%-24px)] max-w-shell items-center justify-between px-3 sm:w-[calc(100%-64px)] sm:px-8 lg:h-24 xl:w-[calc(100%-160px)] xl:items-center xl:py-6"
         >
           <a
             href="#main-content"
-            className="display shrink-0 text-[15px] font-normal leading-none tracking-[-0.01em] text-white transition-opacity hover:opacity-70 lg:text-base"
+            className="flex items-center gap-2.5 text-white transition-opacity hover:opacity-85"
             aria-label="The Book Launch Company — home"
           >
-            The Book Launch Company
+            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-white/10 border border-white/15">
+              <BookOpen className="h-4 w-4 text-white" strokeWidth={1.8} />
+            </div>
+            <span className="display text-[15px] sm:text-[16px] font-medium leading-none tracking-[-0.01em] text-white">
+              The Book Launch Company
+            </span>
           </a>
 
-          <div className="absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 items-center gap-7 lg:flex">
+          <div className="absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 items-center gap-8 lg:flex">
             {NAV_LINKS.map((link) => (
               <a
                 key={link.label}
                 href={link.href}
-                className="whitespace-nowrap text-[13px] font-medium leading-[1.5] text-white transition-opacity hover:opacity-70"
+                className="whitespace-nowrap text-[13px] font-medium leading-[1.5] text-white/80 transition-colors hover:text-white"
               >
                 {link.label}
               </a>
@@ -68,9 +73,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
           <button
             type="button"
             onClick={onOpenBooking}
-            className="pill hidden h-8 bg-[#F2F2F2] px-3.5 text-[13px] font-medium text-[#171717] transition-colors hover:bg-white lg:inline-flex"
+            className="hidden h-8.5 rounded-full bg-white px-4 text-[13px] font-semibold text-[#111827] shadow-sm transition-all hover:bg-[#F2F2F2] active:scale-[0.98] lg:inline-flex lg:items-center lg:gap-1.5"
           >
-            Discuss Your Book
+            <span>Discuss Your Book</span>
+            <span className="text-[14px]">›</span>
           </button>
 
           <button

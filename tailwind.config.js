@@ -28,7 +28,22 @@ module.exports = {
         // Semantic aliases
         ink: '#171717',
         paper: '#FAFAFA',
-        card: '#F2F2F2',
+        // Coordinated card design tokens
+        card: {
+          DEFAULT: '#FFFFFF',
+          light: '#FFFFFF',
+          'light-border': 'rgba(0, 0, 0, 0.08)',
+          'light-border-hover': 'rgba(0, 0, 0, 0.20)',
+          'light-inset': '#F8F9FA',
+          'light-text': '#111827',
+          'light-muted': '#52525B',
+          dark: '#0A0E14',
+          'dark-border': 'rgba(255, 255, 255, 0.08)',
+          'dark-border-hover': 'rgba(255, 255, 255, 0.20)',
+          'dark-inset': '#06080B',
+          'dark-text': '#FFFFFF',
+          'dark-muted': '#CCCDCD',
+        },
       },
       fontFamily: {
         sans: ['var(--font-inter)', 'Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],

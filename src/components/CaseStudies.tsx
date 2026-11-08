@@ -60,21 +60,21 @@ export const CaseStudies: React.FC<CaseStudiesProps> = ({ onOpenBooking }) => {
                   </div>
 
                   {/* Title */}
-                  <h3 className="display text-[24px] sm:text-[30px] font-semibold text-[#000000] tracking-[0.01em] leading-[1.15]">
+                  <h3 className="display text-[24px] sm:text-[30px] font-semibold text-[#111827] tracking-[0.01em] leading-[1.15]">
                     {study.title}
                   </h3>
 
                   {/* Narrative Brief */}
-                  <p className="font-sans text-[15px] font-[450] text-[#666666] leading-[1.5]">
+                  <p className="font-sans text-[15px] font-[450] text-[#52525B] leading-[1.5]">
                     {study.brief}
                   </p>
 
                   {/* Creative Hook Detail */}
-                  <div className="p-4 rounded-[12px] bg-[#F2F2F2] space-y-1.5">
-                    <span className="text-[11px] uppercase tracking-wider font-semibold text-[#000000] block">
+                  <div className="p-4 rounded-[12px] bg-[#F8F9FA] border border-black/[0.06] space-y-1.5">
+                    <span className="text-[11px] uppercase tracking-wider font-semibold text-[#111827] block">
                       Creative Strategy &amp; Viral Hook
                     </span>
-                    <p className="text-[13px] text-[#444444] leading-[1.4] font-sans">
+                    <p className="text-[13px] text-[#52525B] leading-[1.4] font-sans">
                       {study.creativeIdea}
                     </p>
                   </div>
@@ -82,14 +82,14 @@ export const CaseStudies: React.FC<CaseStudiesProps> = ({ onOpenBooking }) => {
                   {/* 4-Metric Grid (Atomik 2x2 Clean Metrics Box) */}
                   <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
                     {study.metrics.map((metric, mIdx) => (
-                      <div key={mIdx} className="p-3.5 rounded-[12px] border border-black/10 bg-white">
-                        <span className="font-sans text-2xl sm:text-3xl font-semibold text-black block">
+                      <div key={mIdx} className="p-3.5 rounded-[12px] border border-black/[0.08] bg-white shadow-sm hover:border-black/20 hover:shadow-md transition-all">
+                        <span className="font-sans text-2xl sm:text-3xl font-semibold text-[#111827] block">
                           {metric.value}
                         </span>
-                        <span className="font-sans text-[12px] font-medium text-black block mt-1">
+                        <span className="font-sans text-[12px] font-medium text-[#111827] block mt-1">
                           {metric.label}
                         </span>
-                        <span className="font-sans text-[11px] text-[#7D7D7D] block">
+                        <span className="font-sans text-[11px] text-[#71717A] block">
                           {metric.sublabel}
                         </span>
                       </div>
@@ -100,7 +100,7 @@ export const CaseStudies: React.FC<CaseStudiesProps> = ({ onOpenBooking }) => {
                   <div className="pt-2 flex flex-wrap items-center gap-4">
                     <button
                       onClick={onOpenBooking}
-                      className="inline-flex items-center gap-1.5 text-[13px] font-semibold text-black hover:text-[#0072F5] transition-colors"
+                      className="inline-flex items-center gap-1.5 text-[13px] font-semibold text-[#111827] hover:text-[#0072F5] transition-colors"
                     >
                       <span>Discuss a similar launch</span>
                       <ArrowRight className="w-3.5 h-3.5" />
@@ -111,7 +111,7 @@ export const CaseStudies: React.FC<CaseStudiesProps> = ({ onOpenBooking }) => {
 
                 {/* Media Deliverable Visual Column */}
                 <div className={`flex justify-center ${isFlipped ? 'lg:col-span-6 lg:order-1' : 'lg:col-span-6 lg:order-2'}`}>
-                  <div className="relative w-full max-w-[500px] aspect-[4/3] sm:aspect-[16/11] rounded-[16px] overflow-hidden bg-[#06101A] border border-white/10 shadow-2xl p-6 flex flex-col justify-between text-white">
+                  <div className="relative w-full max-w-[500px] aspect-[4/3] sm:aspect-[16/11] rounded-[16px] overflow-hidden bg-[#0A0D12] border border-black/10 shadow-2xl p-6 flex flex-col justify-between text-white">
                     {/* Top Deliverable Bar */}
                     <div className="flex items-center justify-between text-[12px] text-[#7D7D7D] border-b border-white/10 pb-3">
                       <span className="font-medium text-white">{study.bookTitle}</span>
