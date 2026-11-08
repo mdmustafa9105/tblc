@@ -16,7 +16,7 @@ const PARTNERS = [
 
 export const ProofStrip: React.FC = () => {
   return (
-    <section className="bg-white text-black py-20 sm:py-28 border-b border-black/10" aria-label="Publishing Partners & Client Titles">
+    <section id="proof" className="bg-[#FAFAFA] text-[#171717] py-20 sm:py-28 border-b border-black/10" aria-label="Publishing Partners & Client Titles">
       <div className="mx-auto w-[calc(100%_-_32px)] max-w-shell">
         
         {/* Section Header */}
@@ -27,7 +27,7 @@ export const ProofStrip: React.FC = () => {
         </div>
 
         {/* Clean Logo / Title Proof Grid (Atomik Growth Reference Signature) */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 border-t border-l border-black/10">
+        <div className="grid grid-cols-2 md:grid-cols-5 border-t border-l border-black/10">
           {PARTNERS.map((partner, idx) => (
             <div
               key={idx}

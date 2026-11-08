@@ -8,7 +8,7 @@ interface FounderSectionProps {
 
 export const FounderSection: React.FC<FounderSectionProps> = ({ onOpenBooking }) => {
   return (
-    <section id="media" className="bg-white text-black py-24 sm:py-32 border-b border-black/10" aria-label="Our Media Engine">
+    <section id="media" className="bg-[#FAFAFA] text-[#171717] py-24 sm:py-32 border-b border-black/10" aria-label="Our Media Engine">
       <div className="mx-auto w-[calc(100%_-_32px)] max-w-shell">
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">

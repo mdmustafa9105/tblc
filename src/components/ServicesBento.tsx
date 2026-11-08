@@ -10,7 +10,7 @@ export const ServicesBento: React.FC<ServicesProps> = ({ onOpenBooking }) => {
   const [isMuted, setIsMuted] = useState(true);
 
   return (
-    <section id="services" className="bg-white text-black py-24 sm:py-32 border-b border-black/10" aria-label="Our Services">
+    <section id="services" className="bg-[#FAFAFA] text-[#171717] py-24 sm:py-32 border-b border-black/10" aria-label="Our Services">
       <div className="mx-auto w-[calc(100%_-_32px)] max-w-shell">
         
         {/* Section Header (Atomik Reference Thesis Layout) */}

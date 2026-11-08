@@ -9,7 +9,7 @@ interface CaseStudiesProps {
 
 export const CaseStudies: React.FC<CaseStudiesProps> = ({ onOpenBooking }) => {
   return (
-    <section id="case-studies" className="bg-white text-black py-24 sm:py-32 border-b border-black/10" aria-label="Case Studies">
+    <section id="case-studies" className="bg-[#FAFAFA] text-[#171717] py-24 sm:py-32 border-b border-black/10" aria-label="Case Studies">
       <div className="mx-auto w-[calc(100%_-_32px)] max-w-shell">
         
         {/* Section Header */}

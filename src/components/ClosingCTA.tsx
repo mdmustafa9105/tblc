@@ -8,7 +8,7 @@ interface ClosingCTAProps {
 
 export const ClosingCTA: React.FC<ClosingCTAProps> = ({ onOpenBooking }) => {
   return (
-    <section className="bg-[#010405] text-white py-32 sm:py-44 relative overflow-hidden" aria-label="Work With Us">
+    <section id="footer-cta" className="bg-[#010202] text-white py-32 sm:py-44 relative overflow-hidden" aria-label="Work With Us">
       {/* Central Illuminated Sphere / Atmospheric Horizon Glow */}
       <div 
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] bg-gradient-to-b from-[#0072F5]/15 via-[#F59E0B]/10 to-transparent rounded-full blur-[140px] pointer-events-none" 

@@ -23,3 +23,6 @@ Thumbs.db
 
 # Environment variables
 .env*.local
+
+# Chrome QA temporary test profiles
+qa-artifacts/chrome-profile*

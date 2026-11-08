@@ -42,7 +42,7 @@ export const TestimonialsAndFAQ: React.FC<TestimonialsAndFAQProps> = () => {
   };
 
   return (
-    <section id="faq" className="bg-white text-black py-28 sm:py-36 border-b border-black/10" aria-label="Frequently Asked Questions">
+    <section id="faq" className="bg-[#FAFAFA] text-[#171717] py-28 sm:py-36 border-b border-black/10" aria-label="Frequently Asked Questions">
       <div className="mx-auto w-[calc(100%_-_32px)] max-w-[760px]">
         
         {/* Section Heading (Atomik Reference Minimal FAQs) */}

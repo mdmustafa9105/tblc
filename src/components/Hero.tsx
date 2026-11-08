@@ -38,7 +38,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
               <button
                 type="button"
                 onClick={onOpenBooking}
-                className="pill h-11 w-full bg-white px-5 text-[12px] font-semibold text-[#171717] transition-colors hover:bg-[#e9e9e9] sm:w-auto sm:text-[13px] lg:h-10"
+                className="pill h-11 w-full bg-[#E6E6E6] px-5 text-[12px] font-semibold text-[#000000] transition-colors hover:bg-white sm:w-auto sm:text-[13px] lg:h-10"
               >
                 Discuss your book
                 <ArrowRight className="h-3 w-3" strokeWidth={1.8} />
@@ -55,11 +55,31 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
           </div>
 
           <div className="flex justify-center lg:col-span-5 lg:justify-end lg:pt-[104px] xl:col-span-4">
-            <p className="max-w-[302px] text-center text-[15px] font-medium leading-[1.5] text-white/80 sm:text-base lg:max-w-[288px] lg:text-left lg:font-medium">
+            <p className="max-w-[302px] text-center text-[15px] font-[450] leading-[1.5] text-white/80 sm:text-base lg:max-w-[288px] lg:text-left lg:font-medium">
               Book launches, backlist revival, author content and podcasts. From launch day to
               lasting reader discovery.
             </p>
           </div>
+        </div>
+      </div>
+
+      {/* Bottom Partner Ticker (Atomik Reference Signature Marquee) */}
+      <div
+        aria-hidden="true"
+        className="absolute inset-x-0 bottom-4 z-10 hidden w-full overflow-hidden px-4 [mask-image:linear-gradient(90deg,transparent_0%,black_15%,black_85%,transparent_100%)] [-webkit-mask-image:linear-gradient(90deg,transparent_0%,black_15%,black_85%,transparent_100%)] sm:flex sm:bottom-6 lg:bottom-8 lg:px-8"
+      >
+        <div className="mx-auto flex w-full max-w-shell items-center justify-between gap-6 text-[11px] font-medium tracking-[0.14em] uppercase text-white/40">
+          <span>PENGUIN RANDOM HOUSE</span>
+          <span className="hidden md:inline text-white/20">•</span>
+          <span>HARPERCOLLINS</span>
+          <span className="hidden md:inline text-white/20">•</span>
+          <span>SIMON &amp; SCHUSTER</span>
+          <span className="hidden md:inline text-white/20">•</span>
+          <span>MACMILLAN</span>
+          <span className="hidden lg:inline text-white/20">•</span>
+          <span className="hidden lg:inline">BLOOMSBURY</span>
+          <span className="hidden xl:inline text-white/20">•</span>
+          <span className="hidden xl:inline">HACHETTE</span>
         </div>
       </div>
     </section>
